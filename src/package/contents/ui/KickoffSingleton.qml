@@ -11,6 +11,7 @@ import QtQuick.Templates as T
 import org.kde.kirigami as Kirigami
 import org.kde.ksvg as KSvg
 import org.kde.plasma.plasma5support as P5Support
+import org.kde.plasma.components as PC3
 
 // Using Item because it has a default property.
 // Trying to create a default property for a QtObject seems to cause segfaults.
@@ -52,27 +53,11 @@ Item {
         font: Kirigami.Theme.defaultFont
     }
 
-    readonly property real gridCellSize: gridDelegate.implicitHeight
     readonly property real compactListDelegateHeight: compactListDelegate.implicitHeight
     readonly property real compactListDelegateContentHeight: compactListDelegate.implicitContentHeight
     //END
 
     //BEGIN Private
-    KickoffGridDelegate {
-        id: gridDelegate
-        visible: false
-        enabled: false
-        model: null
-        index: -1
-        text: "asdf"
-        url: ""
-        decoration: "start-here-kde"
-        description: "asdf"
-        width: implicitHeight
-        action: null
-        indicator: null
-        isMultilineText: false
-    }
     KickoffListDelegate {
         id: compactListDelegate
         visible: false
@@ -83,6 +68,7 @@ Item {
         text: "asdf"
         url: ""
         decoration: "start-here-kde"
+        PC3.ToolTip.text: ""
         description: "asdf"
         action: null
         indicator: null

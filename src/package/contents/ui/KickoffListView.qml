@@ -33,6 +33,9 @@ EmptyPage {
     property alias section: view.section
     property alias highlight: view.highlight
     property alias view: view
+    property bool isOnFrontPage: false
+    property int maximumRows: -1
+    property bool showSectionHeader: true
 
     property bool mainContentView: false
     property bool hasSectionView: false
@@ -72,13 +75,13 @@ EmptyPage {
         }
     }
 
-    implicitWidth: Math.max(implicitBackgroundWidth + leftInset + rightInset,
+    implicitWidth: isOnFrontPage ? contentWidth : Math.max(implicitBackgroundWidth + leftInset + rightInset,
                             contentWidth, // exclude padding to avoid scrollbars automatically affecting implicitWidth
                             implicitHeaderWidth2,
                             implicitFooterWidth2)
 
-    leftPadding: verticalScrollBar.visible && root.mirrored ? verticalScrollBar.implicitWidth : 0
-    rightPadding: verticalScrollBar.visible && !root.mirrored ? verticalScrollBar.implicitWidth : 0
+    leftPadding: !isOnFrontPage && verticalScrollBar.visible && root.mirrored ? verticalScrollBar.implicitWidth : 0
+    rightPadding: !isOnFrontPage && verticalScrollBar.visible && !root.mirrored ? verticalScrollBar.implicitWidth : 0
 
     contentItem: ListView {
         id: view
@@ -96,13 +99,16 @@ EmptyPage {
                 if (kickoff.mayHaveGridWithScrollBar) {
                     totalMargins += verticalScrollBar.implicitWidth
                 }
-                return KickoffSingleton.gridCellSize * kickoff.minimumGridRowCount + totalMargins
+                return kickoff.gridCellSize * kickoff.minimumGridRowCount + totalMargins
             }
             return contentWidth + totalMargins
         }
         implicitHeight: {
+            if (root.isOnFrontPage) {
+                return KickoffSingleton.compactListDelegateHeight * Math.min(root.maximumRows, model.count)
+            }
             // use grid cells to determine size
-            let h = KickoffSingleton.gridCellSize * kickoff.minimumGridRowCount
+            let h = kickoff.gridCellSize * kickoff.minimumGridRowCount
             // If no grids are used, use the number of items that would fit in the grid height
             if (Plasmoid.configuration.favoritesDisplay !== 0 && Plasmoid.configuration.applicationsDisplay !== 0) {
                 h = Math.floor(h / kickoff.listDelegateHeight) * kickoff.listDelegateHeight
@@ -113,9 +119,9 @@ EmptyPage {
         leftMargin: kickoff.backgroundMetrics.leftPadding
         rightMargin: kickoff.backgroundMetrics.rightPadding
 
-        currentIndex: count > 0 ? 0 : -1
-        focus: true
-        interactive: height < contentHeight
+        currentIndex: !root.isOnFrontPage && count > 0 ? 0 : -1
+        focus: !root.isOnFrontPage
+        interactive: root.isOnFrontPage ? false : height < contentHeight
         pixelAligned: true
         reuseItems: false // explicitely disabled because it doesnt work correctly with switching models like we do
         boundsBehavior: Flickable.StopAtBounds
@@ -141,11 +147,12 @@ EmptyPage {
         }
 
         delegate: KickoffListDelegate {
+            visible: root.maximumRows > 0 ? index < root.maximumRows : true
             width: view.availableWidth
         }
 
         section {
-            property: "group"
+            property: showSectionHeader ? "group" : null
             criteria: ViewSection.FullString
             delegate: PlasmaExtras.ListSectionHeader {
                 required property string section
@@ -177,6 +184,7 @@ EmptyPage {
 
         PC3.ScrollBar.vertical: PC3.ScrollBar {
             id: verticalScrollBar
+            visible: root.isOnFrontPage ? false : view.contentHeight > height
             parent: root
             z: 2
             height: root.height
@@ -184,7 +192,7 @@ EmptyPage {
         }
 
         Kirigami.WheelHandler {
-            target: view
+            target: root.isOnFrontPage ? null : view
             filterMouseEvents: true
             // `20 * Qt.styleHints.wheelScrollLines` is the default speed.
             horizontalStepSize: 20 * Qt.styleHints.wheelScrollLines
@@ -200,7 +208,7 @@ EmptyPage {
         Connections {
             target: kickoff
             function onExpandedChanged() {
-                if (kickoff.expanded) {
+                if (!kickoff.expanded) {
                     view.currentIndex = 0
                     view.positionViewAtBeginning()
                 }
@@ -227,6 +235,22 @@ EmptyPage {
             event.accepted = true
         }
 
+        function focusFirstItem() {
+            forceActiveFocus(Qt.TabFocusReason)
+            const visibleItems = root.maximumRows > 0 ? root.maximumRows : count
+            if (visibleItems > 0) {
+                currentIndex = 0
+            }
+        }
+
+        function focusLastItem() {
+            forceActiveFocus(Qt.BacktabFocusReason)
+            const visibleItems = root.maximumRows > 0 ? root.maximumRows : count
+            if (visibleItems > 0) {
+                currentIndex = visibleItems - 1
+            }
+        }
+
         Keys.onMenuPressed: event => {
             const delegate = currentItem as AbstractKickoffItemDelegate;
             if (delegate !== null) {
@@ -239,8 +263,9 @@ EmptyPage {
             let targetY = currentItem ? currentItem.y : contentY
             let targetIndex = currentIndex
             const atFirst = currentIndex === 0
-            const atLast = currentIndex === count - 1
-            if (count >= 1) {
+            const visibleItems = root.maximumRows > 0 ? root.maximumRows : count
+            const atLast = currentIndex === visibleItems - 1
+            if (visibleItems >= 0) {
                 switch (event.key) {
                     case Qt.Key_Up: if (!atFirst) {
                         decrementCurrentIndex()
@@ -250,6 +275,11 @@ EmptyPage {
                         }
 
                         focusCurrentItem(event, Qt.BacktabFocusReason)
+                    } else {
+                        const previousSection = kickoff.previousSection(view)
+                        if (previousSection !== null) {
+                            previousSection.focusLastItem()
+                        }
                     } break
                     case Qt.Key_K: if (!atFirst && event.modifiers & Qt.ControlModifier) {
                         decrementCurrentIndex()
@@ -263,6 +293,11 @@ EmptyPage {
                         }
 
                         focusCurrentItem(event, Qt.TabFocusReason)
+                    } else {
+                        const nextSection = kickoff.nextSection(view)
+                        if (nextSection !== null) {
+                            nextSection.focusFirstItem()
+                        }
                     } break
                     case Qt.Key_J: if (!atLast && event.modifiers & Qt.ControlModifier) {
                         incrementCurrentIndex()
@@ -273,7 +308,7 @@ EmptyPage {
                         focusCurrentItem(event, Qt.BacktabFocusReason)
                     } break
                     case Qt.Key_End: if (!atLast) {
-                        currentIndex = count - 1
+                        currentIndex = visibleItems - 1
                         focusCurrentItem(event, Qt.TabFocusReason)
                     } break
                     case Qt.Key_PageUp: if (!atFirst) {
@@ -295,7 +330,7 @@ EmptyPage {
                             targetY -= 1
                             targetIndex = indexAt(targetX, targetY)
                         }
-                        currentIndex = Math.min(targetIndex, count - 1)
+                        currentIndex = Math.min(targetIndex, visibleItems - 1)
                         focusCurrentItem(event, Qt.TabFocusReason)
                     } break
                     case Qt.Key_Return:
@@ -310,6 +345,12 @@ EmptyPage {
             movedWithKeyboard = event.accepted
             if (movedWithKeyboard) {
                 movedWithKeyboardTimer.restart()
+            }
+        }
+
+        onCurrentIndexChanged: {
+            if (root.isOnFrontPage && currentIndex >= 0) {
+                kickoff.clearSelectionExcept(view)
             }
         }
     }

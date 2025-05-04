@@ -74,46 +74,22 @@ BasePage {
             }
         }
 
-        readonly property string preferredFavoritesViewObjectName: Plasmoid.configuration.favoritesDisplay === 0 ? "favoritesGridView" : "favoritesListView"
-        readonly property Component preferredFavoritesViewComponent: Plasmoid.configuration.favoritesDisplay === 0 ? favoritesGridViewComponent : favoritesListViewComponent
         readonly property string preferredAllAppsViewObjectName: Plasmoid.configuration.applicationsDisplay === 0 ? "listOfGridsView" : "applicationsListView"
         readonly property Component preferredAllAppsViewComponent: Plasmoid.configuration.applicationsDisplay === 0 ? listOfGridsViewComponent : applicationsListViewComponent
 
         readonly property string preferredAppsViewObjectName: Plasmoid.configuration.applicationsDisplay === 0 ? "applicationsGridView" : "applicationsListView"
         readonly property Component preferredAppsViewComponent: Plasmoid.configuration.applicationsDisplay === 0 ? applicationsGridViewComponent : applicationsListViewComponent
-        // NOTE: The 0 index modelForRow isn't supposed to be used. That's just how it works.
-        // But to trigger model data update, set initial value to 0
+
         property int appsModelRow: 0
         readonly property Kicker.AppsModel appsModel: kickoff.rootModel.modelForRow(appsModelRow)
         focus: true
-        initialItem: preferredFavoritesViewComponent
+        initialItem: preferredAllAppsViewComponent
 
         function showSectionView(sectionName: string, parentView: KickoffListView): void {
             stackView.push(applicationsSectionViewComponent, {
                 currentSection: sectionName,
                 parentView,
             });
-        }
-
-        Component {
-            id: favoritesListViewComponent
-            DropAreaListView {
-                id: favoritesListView
-                objectName: "favoritesListView"
-                mainContentView: true
-                focus: true
-                model: kickoff.rootModel.favoritesModel
-            }
-        }
-
-        Component {
-            id: favoritesGridViewComponent
-            DropAreaGridView {
-                id: favoritesGridView
-                objectName: "favoritesGridView"
-                focus: true
-                model: kickoff.rootModel.favoritesModel
-            }
         }
 
         Component {
@@ -127,7 +103,7 @@ BasePage {
                 // we want to semantically switch between group and "", disabling grouping, workaround for QTBUG-121797
                 section.property: model && model.description === "KICKER_ALL_MODEL" ? "group" : "_unset"
                 section.criteria: ViewSection.FirstCharacter
-                hasSectionView: stackView.appsModelRow === 1
+                hasSectionView: stackView.appsModelRow === 0
 
                 onShowSectionViewRequested: sectionName => {
                     stackView.showSectionView(sectionName, this);
@@ -174,18 +150,13 @@ BasePage {
             }
         }
 
-        onPreferredFavoritesViewComponentChanged: {
-            if (root.sideBarItem !== null && root.sideBarItem.currentIndex === 0) {
-                stackView.replace(stackView.preferredFavoritesViewComponent)
-            }
-        }
         onPreferredAllAppsViewComponentChanged: {
-            if (root.sideBarItem !== null && root.sideBarItem.currentIndex === 1) {
+            if (root.sideBarItem !== null && root.sideBarItem.currentIndex === 0) {
                 stackView.replace(stackView.preferredAllAppsViewComponent)
             }
         }
         onPreferredAppsViewComponentChanged: {
-            if (root.sideBarItem !== null && root.sideBarItem.currentIndex > 1) {
+            if (root.sideBarItem !== null && root.sideBarItem.currentIndex > 0) {
                 stackView.replace(stackView.preferredAppsViewComponent)
             }
         }
@@ -193,47 +164,15 @@ BasePage {
         Connections {
             target: root.sideBarItem
             function onCurrentIndexChanged() {
-                // Only update row index if the condition is met.
-                // The 0 index modelForRow isn't supposed to be used. That's just how it works.
-                if (root.sideBarItem.currentIndex > 0) {
-                    stackView.appsModelRow = root.sideBarItem.currentIndex
-                }
+                stackView.appsModelRow = root.sideBarItem.currentIndex
                 if (root.sideBarItem.currentIndex === 0
-                    && stackView.currentItem.objectName !== stackView.preferredFavoritesViewObjectName) {
-                    stackView.replace(stackView.preferredFavoritesViewComponent)
-                } else if (root.sideBarItem.currentIndex === 1
                     && stackView.currentItem.objectName !== stackView.preferredAllAppsViewObjectName) {
                     stackView.replace(stackView.preferredAllAppsViewComponent)
-                } else if (root.sideBarItem.currentIndex > 1
+                } else if (root.sideBarItem.currentIndex > 0
                     && stackView.currentItem.objectName !== stackView.preferredAppsViewObjectName) {
                     stackView.replace(stackView.preferredAppsViewComponent)
                 }
             }
         }
-        Connections {
-            target: kickoff
-            function onExpandedChanged() {
-                if (kickoff.expanded && kickoff.contentArea.currentItem) {
-                    kickoff.contentArea.currentItem.forceActiveFocus()
-                }
-            }
-        }
-    }
-    // NormalPage doesn't get destroyed when deactivated, so the binding uses
-    // StackView.status and visible. This way the bindings are reset when
-    // NormalPage is Activated again.
-    Binding {
-        target: kickoff
-        property: "sideBar"
-        value: root.sideBarItem
-        when: root.T.StackView.status === T.StackView.Active && root.visible
-        restoreMode: Binding.RestoreBinding
-    }
-    Binding {
-        target: kickoff
-        property: "contentArea"
-        value: root.contentAreaItem.currentItem // NOT just root.contentAreaItem
-        when: root.T.StackView.status === T.StackView.Active && root.visible
-        restoreMode: Binding.RestoreBinding
     }
 }

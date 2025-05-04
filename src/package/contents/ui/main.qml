@@ -32,6 +32,30 @@ PlasmoidItem {
     // The properties are defined here instead of the singleton because each
     // instance of Kickoff requires different instances of these properties
 
+    readonly property int appIconSize: [Kirigami.Units.iconSizes.small, Kirigami.Units.iconSizes.smallMedium, Kirigami.Units.iconSizes.medium, Kirigami.Units.iconSizes.large, Kirigami.Units.iconSizes.huge, Kirigami.Units.iconSizes.enormous][Plasmoid.configuration.appIconSize]
+    readonly property real gridCellSize: gridDelegateMetrics.implicitHeight
+    readonly property real sideBarWidth: 200
+    readonly property real defaultWidth: gridCellSize * minimumGridRowCount + 15 + sideBarWidth + backgroundMetrics.leftPadding + backgroundMetrics.rightPadding
+    readonly property real defaultHeight: gridCellSize * minimumGridRowCount + 150 + backgroundMetrics.topPadding + backgroundMetrics.bottomPadding
+
+    KickoffGridDelegate {
+        id: gridDelegateMetrics
+        appIconSize: kickoff.appIconSize
+        visible: false
+        enabled: false
+        model: null
+        index: -1
+        text: "asdf"
+        url: ""
+        decoration: "start-here-kde"
+        description: "asdf"
+        PC3.ToolTip.text: ""
+        width: implicitHeight
+        action: null
+        indicator: null
+        isMultilineText: false
+    }
+
     readonly property bool inPanel: [
         PlasmaCore.Types.TopEdge,
         PlasmaCore.Types.RightEdge,
@@ -63,6 +87,7 @@ PlasmoidItem {
         showRecentDocs: false
         showPowerSession: false
         showFavoritesPlaceholder: false
+        //highlightNewlyInstalledApps: Plasmoid.configuration.highlightNewlyInstalledApps
 
         Component.onCompleted: {
             favoritesModel.initForClient("org.kde.plasma.kickoff.favorites.instance-" + Plasmoid.id)
@@ -86,15 +111,6 @@ PlasmoidItem {
         appletInterface: kickoff
         mergeResults: true
         favoritesModel: rootModel.favoritesModel
-    }
-
-    readonly property Kicker.ComputerModel computerModel: Kicker.ComputerModel {
-        appletInterface: kickoff
-        favoritesModel: rootModel.favoritesModel
-        systemApplications: Plasmoid.configuration.systemApplications
-        Component.onCompleted: {
-            //systemApplications = Plasmoid.configuration.systemApplications;
-        }
     }
 
     readonly property alias recentUsageModel: recentUsageModel
@@ -133,8 +149,76 @@ PlasmoidItem {
     property Item sideBar: null // is null when searching
     property Item contentArea: null // is searchView when searching
 
-    // Set in NormalPage.qml
+    // Set in FullRepresentation.qml
+    property Item stackView: null
     property Item footer: null
+    property Item frontPageSection1: null
+    property Item frontPageSection2: null
+    property Item frontPageSection3: null
+    property Item frontPageSection4: null
+
+    function visibleSections() {
+        var frontPageSections = [frontPageSection1, frontPageSection2, frontPageSection3, frontPageSection4]
+        var visible = []
+        for (var i of frontPageSections) {
+            if (i && i.visible) {
+                visible.push(i)
+            }
+        }
+        return visible
+    }
+
+    function clearSelectionExcept(section) {
+        for (var i of visibleSections()) {
+            if (i !== section) {
+                i.currentIndex = -1
+            }
+        }
+    }
+
+    function firstSection() {
+        const t = visibleSections()
+        if (t.length > 0) {
+            return t[0]
+        }
+        return null
+    }
+
+    function lastSection() {
+        const t = visibleSections()
+        if (t.length > 0) {
+            return t[t.length - 1]
+        }
+        return null
+    }
+
+    function previousSection(section) {
+        const t = visibleSections()
+        for (var i = 0; i < t.length; i++) {
+            if (t[i] === section) {
+                if (i > 0) {
+                    return t[i - 1]
+                } else {
+                    return null
+                }
+            }
+        }
+        return null
+    }
+
+    function nextSection(section) {
+        const t = visibleSections()
+        for (var i = 0; i < t.length; i++) {
+            if (t[i] === section) {
+                if (i + 1 < t.length) {
+                    return t[i + 1]
+                } else {
+                    return null
+                }
+            }
+        }
+        return null
+    }
 
     // True when central pane (and header) LayoutMirroring diverges from global
     // LayoutMirroring, in order to achieve the desired sidebar position
@@ -184,7 +268,7 @@ PlasmoidItem {
     }
 
     // Used to show smaller Kickoff on small screens
-    readonly property int minimumGridRowCount: Math.min(Screen.desktopAvailableWidth, Screen.desktopAvailableHeight) * Screen.devicePixelRatio < KickoffSingleton.gridCellSize * 4 + (fullRepresentationItem ? fullRepresentationItem.normalPage.preferredSideBarWidth : KickoffSingleton.gridCellSize * 2) ? 2 : 4
+    readonly property int minimumGridRowCount: Math.min(Screen.desktopAvailableWidth, Screen.desktopAvailableHeight) * Screen.devicePixelRatio < kickoff.gridCellSize * 4 + kickoff.sideBarWidth ? 2 : 4
     //END
 
     Plasmoid.icon: Plasmoid.configuration.icon
@@ -322,7 +406,7 @@ PlasmoidItem {
                 readonly property bool nonSquareImage: sourceSize.width != sourceSize.height
 
                 visible: nonSquareImage && status == Image.Ready
-                source: Plasmoid.icon
+                source: Plasmoid.icon.startsWith("file:/") ? Plasmoid.icon : ""
 
                 Layout.fillWidth: kickoff.vertical
                 Layout.fillHeight: !kickoff.vertical

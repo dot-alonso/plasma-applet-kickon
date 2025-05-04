@@ -69,7 +69,7 @@ T.ItemDelegate {
         let actions = Array.from(model.actionList);
         const favoriteActions = Tools.createFavoriteActions(
             i18n, //i18n() function callback
-            view.model.favoritesModel,
+            view.model.favoritesModel || kickoff.rootModel.favoritesModel,
             model.favoriteId,
         );
         if (favoriteActions) {
@@ -122,7 +122,8 @@ T.ItemDelegate {
             // Unless we're showing search results, eat the activation if we
             // don't have focus, to prevent the return/enter key from
             // inappropriately activating unfocused items
-            if (!root.activeFocus && !root.isSearchResult) {
+            // Also block activation while dragging.
+            if ((!root.activeFocus && !root.isSearchResult) || dragHandler.active || touchDragHandler.active) {
                 return;
             }
             view.currentIndex = index
@@ -237,9 +238,10 @@ T.ItemDelegate {
     }
 
     PC3.ToolTip.text: {
-        if (root.labelTruncated && root.descriptionTruncated) {
+        if (root.labelTruncated) {
             return model.display
-        } else if (root.descriptionTruncated || !root.descriptionVisible) {
+        } else if (root.descriptionTruncated || (!root.descriptionVisible && (root.isSearchResult
+                                                                              || Plasmoid.configuration.appNameFormat > 1))) {
             return description
         }
         return ""

@@ -16,6 +16,7 @@ import QtQuick
 import QtQuick.Templates as T
 import QtQuick.Layouts
 import QtQuick.Controls as QQC2
+import org.kde.plasma.components as PC3
 import org.kde.plasma.plasmoid
 import org.kde.kirigami as Kirigami
 import org.kde.plasma.extras as PlasmaExtras
@@ -30,10 +31,10 @@ EmptyPage {
     bottomPadding: -kickoff.backgroundMetrics.bottomPadding
     readonly property var appletInterface: kickoff
 
-    //Layout.minimumWidth: implicitWidth
-    //Layout.minimumHeight: implicitHeight
-    //Layout.preferredWidth: Math.max(implicitWidth, width)
-    //Layout.preferredHeight: Math.max(implicitHeight, height)
+    Layout.minimumWidth: kickoff.defaultWidth
+    Layout.minimumHeight: kickoff.defaultHeight
+    Layout.preferredWidth: Math.max(kickoff.defaultWidth, width)
+    Layout.preferredHeight: Math.max(kickoff.defaultHeight, height)
 
     property bool blockingHoverFocus: false
 
@@ -68,8 +69,7 @@ EmptyPage {
 
     header: Header {
         id: header
-        preferredNameAndIconWidth: 200
-        stackView: contentItemStackView
+        preferredNameAndIconWidth: kickoff.sideBarWidth
         Binding {
             target: kickoff
             property: "header"
@@ -80,7 +80,6 @@ EmptyPage {
 
     footer: Footer {
         id: footer
-        preferredTabBarWidth: 200
         Binding {
             target: kickoff
             property: "footer"
@@ -94,20 +93,31 @@ EmptyPage {
 
     contentItem: VerticalStackView {
         id: contentItemStackView
+        Binding {
+            target: kickoff
+            property: "stackView"
+            value: contentItemStackView
+            restoreMode: Binding.RestoreBinding
+        }
         focus: true
         movementTransitionsEnabled: false
         // Not using a component to prevent it from being destroyed
-        initialItem: QQC2.ScrollView {
+        // initialItem: QQC2.ScrollView { //FIXME: DnD not working in ScrollView
+        initialItem: EmptyPage {
             id: scrollView
             anchors.fill: parent
-            leftPadding: 10
-            rightPadding: 10
-            topPadding: 10
+
             ColumnLayout {
-                anchors.horizontalCenter: parent.horizontalCenter
+                id: mainContentView
+                anchors.left: parent.left
+                anchors.top: parent.top
+                anchors.margins: Kirigami.Units.largeSpacing
+                width: scrollView.availableWidth - Kirigami.Units.largeSpacing * 2
+
                 RowLayout {
                     id: favoritesHeader
-                    
+                    visible: Plasmoid.configuration.showFavoritesSection
+
                     Text {
                         Layout.fillWidth: true
                         text: i18n("Favorites")
@@ -116,46 +126,72 @@ EmptyPage {
 
                     QQC2.Button {
                         Layout.alignment: Qt.AlignRight
-                        text: i18n("All Applications...")
+                        flat: true
+                        text: i18n("All Apps >")
                         onClicked: {
-                            contentItemStackView.push(applicationsPage)
+                            contentItemStackView.push(allAppsComponent)
                         }
                     }
                 }
 
-                AppGrid {
+                DropAreaGridView {
                     id: favoriteAppsGridView
+                    visible: Plasmoid.configuration.showFavoritesSection
+                    Layout.alignment: Qt.AlignHCenter
+
                     model: kickoff.rootModel.favoritesModel
-                    availableWidth: scrollView.availableWidth
+                    isOnFrontPage: true
+                    parentAvailableWidth: parent.width
+                }
+
+                Binding {
+                    target: kickoff
+                    property: "frontPageSection1"
+                    value: favoriteAppsGridView.view
+                    restoreMode: Binding.RestoreBinding
                 }
 
                 RowLayout {
                     id: recentAppsHeader
+                    visible: Plasmoid.configuration.showRecentAppsSection
 
                     Text {
                         Layout.fillWidth: true
-                        text: i18n("Recent Applications")
+                        text: i18n("Recent Apps")
                         font.bold: true
                     }
 
                     QQC2.Button {
                         Layout.alignment: Qt.AlignRight
-                        text: i18n("More...")
+                        flat: true
+                        text: i18n("More >")
                         onClicked: {
                             contentItemStackView.push(recentAppsComponent)
                         }
                     }
                 }
 
-                AppGrid {
+                KickoffGridView {
                     id: recentAppsGridView
+                    visible: Plasmoid.configuration.showRecentAppsSection
+                    Layout.alignment: Qt.AlignHCenter
+
                     model: kickoff.recentAppsModel
-                    availableWidth: scrollView.availableWidth
-                    maximumRows: 1
+                    isOnFrontPage: true
+                    parentAvailableWidth: parent.width
+                    maximumRows: Plasmoid.configuration.recentAppsRows
                 }
         
+                Binding {
+                    target: kickoff
+                    property: "frontPageSection2"
+                    value: recentAppsGridView.view
+                    restoreMode: Binding.RestoreBinding
+                }
+
                 RowLayout {
                     id: frequentFilesHeader
+                    visible: Plasmoid.configuration.showFrequentFilesSection
 
                     Text {
                         Layout.fillWidth: true
@@ -165,20 +201,35 @@ EmptyPage {
 
                     QQC2.Button {
                         Layout.alignment: Qt.AlignRight
-                        text: i18n("More...")
+                        flat: true
+                        text: i18n("More >")
                         onClicked: {
                             contentItemStackView.push(frequentFilesComponent)
                         }
                     }
                 }
 
-                FileList {
+                KickoffListView {
                     id: frequentFilesListView
+                    visible: Plasmoid.configuration.showFrequentFilesSection
+                    Layout.fillWidth: true
+
                     model: kickoff.frequentUsageModel
+                    isOnFrontPage: true
+                    showSectionHeader: false
+                    maximumRows: Plasmoid.configuration.frequentFilesRows
+                }
+
+                Binding {
+                    target: kickoff
+                    property: "frontPageSection3"
+                    value: frequentFilesListView.view
+                    restoreMode: Binding.RestoreBinding
                 }
 
                 RowLayout {
                     id: recentFilesHeader
+                    visible: Plasmoid.configuration.showRecentFilesSection
 
                     Text {
                         Layout.fillWidth: true
@@ -188,25 +239,46 @@ EmptyPage {
 
                     QQC2.Button {
                         Layout.alignment: Qt.AlignRight
-                        text: i18n("More...")
+                        flat: true
+                        text: i18n("More >")
                         onClicked: {
                             contentItemStackView.push(recentFilesComponent)
                         }
                     }
                 }        
 
-                FileList {
+                KickoffListView {
                     id: recentFilesListView
+                    visible: Plasmoid.configuration.showRecentFilesSection
+                    Layout.fillWidth: true
+
                     model: kickoff.recentUsageModel
+                    isOnFrontPage: true
+                    showSectionHeader: false
+                    maximumRows: Plasmoid.configuration.recentFilesRows
+                }
+
+                Binding {
+                    target: kickoff
+                    property: "frontPageSection4"
+                    value: recentFilesListView.view
+                    restoreMode: Binding.RestoreBinding
+                }
+
+                QQC2.Control {
+                    height: Kirigami.Units.largeSpacing
                 }
             }
         }
         
-        ApplicationsPage {
-            preferredSideBarWidth: 200
-            id: applicationsPage
-            objectName: "applicationsPage"
-            visible: false
+        Component {
+            id: allAppsComponent
+            ApplicationsPage {
+                preferredSideBarWidth: kickoff.sideBarWidth
+                id: applicationsPage
+                objectName: "applicationsPage"
+                visible: false
+            }
         }
 
         Component {
@@ -217,6 +289,7 @@ EmptyPage {
                 focus: true
                 objectName: "recentAppsView"
                 model: kickoff.recentAppsModel
+                showSectionHeader: false
             }
         }
 
@@ -228,6 +301,7 @@ EmptyPage {
                 focus: true
                 objectName: "recentFilesView"
                 model: kickoff.recentUsageModel
+                showSectionHeader: false
             }
         }
 
@@ -239,6 +313,7 @@ EmptyPage {
                 focus: true
                 objectName: "frequentFilesView"
                 model: kickoff.frequentUsageModel
+                showSectionHeader: false
             }
         }
 
@@ -267,6 +342,10 @@ EmptyPage {
                 T.StackView.onActivated: {
                     kickoff.sideBar = null
                     kickoff.contentArea = searchView
+                }
+
+                T.StackView.onDeactivated: {
+                    kickoff.searchField.clear()
                 }
 
                 Connections {
@@ -336,10 +415,11 @@ EmptyPage {
         Connections {
             target: root.header
             function onSearchTextChanged() {
-                if (root.header.searchText.length === 0 && contentItemStackView.currentItem.objectName !== "normalPage") {
+                if (root.header.searchText.length === 0 && contentItemStackView.currentItem.objectName === "searchView") {
                     root.blockingHoverFocus = false
                     contentItemStackView.reverseTransitions = true
                     contentItemStackView.pop()
+                    kickoff.firstSection()?.forceActiveFocus();
                 } else if (root.header.searchText.length > 0) {
                     if (contentItemStackView.currentItem.objectName !== "searchView") {
                         contentItemStackView.reverseTransitions = false
@@ -349,6 +429,19 @@ EmptyPage {
                         contentItemStackView.contentItem.interceptedPosition = null
                         contentItemStackView.contentItem.currentIndex = 0
                     }
+                }
+            }
+        }
+
+        Connections {
+            target: kickoff
+            function onExpandedChanged() {
+                if (!kickoff.expanded) {
+                    while (contentItemStackView.depth > 1) {
+                        contentItemStackView.pop();
+                    }
+                } else {
+                    kickoff.firstSection()?.forceActiveFocus();
                 }
             }
         }

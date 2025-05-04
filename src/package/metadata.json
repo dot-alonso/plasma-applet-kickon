@@ -107,14 +107,20 @@
                 "Name[x-test]": "xxMikel Johnsonxx",
                 "Name[zh_CN]": "Mikel Johnson",
                 "Name[zh_TW]": "Mikel Johnson"
+            },
+            {
+                "Email": "m.liu.jin@gmail.com",
+                "Name": "Jin Liu"
             }
         ],
+        "BugReportUrl": "https://bugs.kde.org/enter_bug.cgi?product=plasmashell&component=Application%20Launcher%20(Kickoff)",
         "Category": "Application Launchers",
         "Description": "Launcher to start applications",
         "Icon": "start-here-kde",
         "Id": "io.github.jinliu.kickon",
         "License": "GPL-2.0+",
-        "Name": "Application Launcher (new)"
+        "Name": "Application Launcher (alt)",
+    	"Website": "https://github.com/jinliu/plasma-applet-kickon"
     },
     "X-Plasma-API-Minimum-Version": "6.0",
     "X-Plasma-Provides": [

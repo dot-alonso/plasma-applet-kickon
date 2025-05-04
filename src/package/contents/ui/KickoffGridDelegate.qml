@@ -26,8 +26,9 @@ AbstractKickoffItemDelegate {
     topPadding: Kirigami.Units.smallSpacing * 2
     bottomPadding: Kirigami.Units.smallSpacing * 2
 
-    icon.width: Kirigami.Units.iconSizes.medium
-    icon.height: Kirigami.Units.iconSizes.medium
+    required property int appIconSize
+    icon.width: appIconSize
+    icon.height: appIconSize
 
     labelTruncated: label.truncated
     descriptionVisible: false
@@ -46,6 +47,21 @@ AbstractKickoffItemDelegate {
             animated: false
             selected: root.iconAndLabelsShouldlookSelected
             source: root.decoration || root.icon.name || root.icon.source
+
+            Loader {
+                anchors {
+                    right: parent.right
+                    rightMargin: -root.rightPadding
+                    top: parent.top
+                }
+                visible: active
+                active: root.model?.isNewlyInstalled ?? false
+
+                sourceComponent: Badge {
+                    text: i18nc("Newly installed app, badge, keep short", "New!")
+                    Accessible.name: i18n("Newly installed application")
+                }
+            }
         }
 
         PC3.Label {

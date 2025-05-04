@@ -28,6 +28,9 @@ EmptyPage {
     property alias delegate: view.delegate
     property alias blockTargetWheel: wheelHandler.blockTargetWheel
     property alias view: view
+    property bool isOnFrontPage: false
+    property int maximumRows: -1
+    property real parentAvailableWidth: 0
 
     clip: view.height < view.contentHeight
 
@@ -70,6 +73,9 @@ EmptyPage {
         // Not storing them as properties somehow avoids a dubious warning
         // about *Binding loop detected for property "rows"*
         function availableWidth(): real {
+            if (root.isOnFrontPage) {
+                return root.parentAvailableWidth
+            }
             return width - leftMargin - rightMargin;
         }
         function availableHeight(): real {
@@ -77,18 +83,19 @@ EmptyPage {
         }
 
         readonly property int columns: Math.floor(availableWidth() / cellWidth)
-        readonly property int rows: Math.floor(availableHeight() / cellHeight)
+        readonly property int rows: root.isOnFrontPage ? (root.maximumRows > 0 ? Math.min(root.maximumRows, Math.ceil(root.model.count / columns)) : Math.ceil(root.model.count / columns)) : Math.floor(availableHeight() / cellHeight)
+        readonly property int maximumItems: columns * rows
         property bool movedWithKeyboard: false
         property bool movedWithWheel: false
 
         // NOTE: parent is the contentItem that Control subclasses automatically
         // create when no contentItem is set, but content is added.
-        height: parent.height
+        height: root.isOnFrontPage ? rows * cellHeight : parent.height
         // There are lots of ways to try to center the content of a GridView
         // and many of them have bad visual flaws. This way works pretty well.
         // Not center aligning when there might be a scrollbar to keep click target positions consistent.
-        anchors.horizontalCenter: kickoff.mayHaveGridWithScrollBar ? undefined : parent.horizontalCenter
-        anchors.horizontalCenterOffset: if (kickoff.mayHaveGridWithScrollBar) {
+        anchors.horizontalCenter: isOnFrontPage || kickoff.mayHaveGridWithScrollBar ? undefined : parent.horizontalCenter
+        anchors.horizontalCenterOffset: if (isOnFrontPage && kickoff.mayHaveGridWithScrollBar) {
             if (root.mirrored) {
                 return verticalScrollBar.implicitWidth/2
             } else {
@@ -97,29 +104,35 @@ EmptyPage {
         } else {
             return 0
         }
-        width: Math.min(parent.width, Math.floor((parent.width - leftMargin - rightMargin - (kickoff.mayHaveGridWithScrollBar ? verticalScrollBar.implicitWidth : 0)) / cellWidth) * cellWidth + leftMargin + rightMargin)
+        width: root.isOnFrontPage ? columns * cellWidth : Math.min(parent.width, Math.floor((parent.width - leftMargin - rightMargin - (kickoff.mayHaveGridWithScrollBar ? verticalScrollBar.implicitWidth : 0)) / cellWidth) * cellWidth + leftMargin + rightMargin)
 
         Accessible.description: i18n("Grid with %1 rows, %2 columns", rows, columns) // can't use i18np here
 
 
         implicitWidth: {
+            if (root.isOnFrontPage)
+                return columns * cellWidth
             let w = view.cellWidth * kickoff.minimumGridRowCount + leftMargin + rightMargin
             if (kickoff.mayHaveGridWithScrollBar) {
                 w += verticalScrollBar.implicitWidth
             }
             return w
         }
-        implicitHeight: view.cellHeight * kickoff.minimumGridRowCount + topMargin + bottomMargin
+        implicitHeight: {
+            if (root.isOnFrontPage)
+                return rows * cellHeight
+            return view.cellHeight * kickoff.minimumGridRowCount + topMargin + bottomMargin
+        }
 
-        leftMargin: kickoff.backgroundMetrics.leftPadding
-        rightMargin: kickoff.backgroundMetrics.rightPadding
+        leftMargin: root.isOnFrontPage ? 0 : kickoff.backgroundMetrics.leftPadding
+        rightMargin: root.isOnFrontPage ? 0 : kickoff.backgroundMetrics.rightPadding
 
-        cellHeight: KickoffSingleton.gridCellSize
-        cellWidth: KickoffSingleton.gridCellSize
+        cellHeight: kickoff.gridCellSize
+        cellWidth: kickoff.gridCellSize
 
         currentIndex: count > 0 ? 0 : -1
         focus: true
-        interactive: height < contentHeight
+        interactive: !root.isOnFrontPage && height < contentHeight
         pixelAligned: true
         reuseItems: true
         boundsBehavior: Flickable.StopAtBounds
@@ -147,7 +160,9 @@ EmptyPage {
         delegate: KickoffGridDelegate {
             id: itemDelegate
             width: view.cellWidth
+            appIconSize: kickoff.appIconSize
             Accessible.role: Accessible.Cell
+            visible: view.maximumItems > 0 ? index < view.maximumItems : true
         }
 
         move: normalTransition
@@ -164,6 +179,7 @@ EmptyPage {
 
         PC3.ScrollBar.vertical: PC3.ScrollBar {
             id: verticalScrollBar
+            visible: isOnFrontPage ? false : view.contentHeight > height
             parent: root
             z: 2
             height: root.height
@@ -172,7 +188,7 @@ EmptyPage {
 
         Kirigami.WheelHandler {
             id: wheelHandler
-            target: view
+            target: root.isOnFrontPage ? null : view
             filterMouseEvents: true
             // `20 * Qt.styleHints.wheelScrollLines` is the default speed.
             horizontalStepSize: 20 * Qt.styleHints.wheelScrollLines
@@ -188,7 +204,7 @@ EmptyPage {
         Connections {
             target: kickoff
             function onExpandedChanged() {
-                if (kickoff.expanded) {
+                if (!kickoff.expanded) {
                     view.currentIndex = 0
                     view.positionViewAtBeginning()
                 }
@@ -215,6 +231,22 @@ EmptyPage {
             event.accepted = true
         }
 
+        function focusFirstItem() {
+            forceActiveFocus(Qt.TabFocusReason)
+            const visibleItems = Math.min(view.maximumItems, count)
+            if (visibleItems > 0) {
+                currentIndex = 0
+            }
+        }
+
+        function focusLastItem() {
+            forceActiveFocus(Qt.BacktabFocusReason)
+            const visibleItems = Math.min(view.maximumItems, count)
+            if (visibleItems > 0) {
+                currentIndex = (rows - 1) * columns
+            }
+        }
+
         Keys.onMenuPressed: event => {
             const delegate = currentItem as AbstractKickoffItemDelegate;
             if (delegate !== null) {
@@ -237,10 +269,11 @@ EmptyPage {
             const atRight = currentIndex % columns === (Qt.application.layoutDirection == Qt.RightToLeft ? 0 : columns - 1)
             // at the end of a line
             const isTrailing = currentIndex % columns === columns - 1
+            const visibleItems = Math.min(view.maximumItems, count)
             // at bottom of a given column, not necessarily in the last row
-            let atBottom = currentIndex >= count - columns
+            let atBottom = currentIndex >= visibleItems - columns
             // Implements the keyboard navigation described in https://www.w3.org/TR/wai-aria-practices-1.2/#grid
-            if (count > 1) {
+            if (visibleItems > 0) {
                 switch (event.key) {
                     case Qt.Key_Left: if (!atLeft && !kickoff.searchField.activeFocus) {
                         moveCurrentIndexLeft()
@@ -253,6 +286,11 @@ EmptyPage {
                     case Qt.Key_Up: if (!atTop) {
                         moveCurrentIndexUp()
                         focusCurrentItem(event, Qt.BacktabFocusReason)
+                    } else {
+                        const previousSection = kickoff.previousSection(view)
+                        if (previousSection !== null) {
+                            previousSection.focusLastItem()
+                        }
                     } break
                     case Qt.Key_K: if (!atTop && event.modifiers & Qt.ControlModifier) {
                         moveCurrentIndexUp()
@@ -269,6 +307,11 @@ EmptyPage {
                     case Qt.Key_Down: if (!atBottom) {
                         moveCurrentIndexDown()
                         focusCurrentItem(event, Qt.TabFocusReason)
+                    } else {
+                        const nextSection = kickoff.nextSection(view)
+                        if (nextSection !== null) {
+                            nextSection.focusFirstItem()
+                        }
                     } break
                     case Qt.Key_J: if (!atBottom && event.modifiers & Qt.ControlModifier) {
                         moveCurrentIndexDown()
@@ -282,12 +325,12 @@ EmptyPage {
                         currentIndex = Math.max(targetIndex, 0)
                         focusCurrentItem(event, Qt.BacktabFocusReason)
                     } break
-                    case Qt.Key_End: if (event.modifiers === Qt.ControlModifier && currentIndex !== count - 1) {
-                        currentIndex = count - 1
+                    case Qt.Key_End: if (event.modifiers === Qt.ControlModifier && currentIndex !== visibleItems - 1) {
+                        currentIndex = visibleItems - 1
                         focusCurrentItem(event, Qt.TabFocusReason)
                     } else if (!isTrailing) {
                         targetIndex += columns - 1 - (currentIndex % columns)
-                        currentIndex = Math.min(targetIndex, count - 1)
+                        currentIndex = Math.min(targetIndex, visibleItems - 1)
                         focusCurrentItem(event, Qt.TabFocusReason)
                     } break
                     case Qt.Key_PageUp: if (!atTop) {
@@ -309,7 +352,7 @@ EmptyPage {
                             targetY -= 1
                             targetIndex = indexAt(targetX, targetY)
                         }
-                        currentIndex = Math.min(targetIndex, count - 1)
+                        currentIndex = Math.min(targetIndex, visibleItems - 1)
                         focusCurrentItem(event, Qt.TabFocusReason)
                     } break
                     case Qt.Key_Return:
@@ -324,6 +367,12 @@ EmptyPage {
             movedWithKeyboard = event.accepted
             if (movedWithKeyboard) {
                 movedWithKeyboardTimer.restart()
+            }
+        }
+
+        onCurrentIndexChanged: {
+            if (root.isOnFrontPage && currentIndex >= 0) {
+                kickoff.clearSelectionExcept(view)
             }
         }
     }

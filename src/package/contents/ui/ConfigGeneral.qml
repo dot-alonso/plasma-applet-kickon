@@ -31,14 +31,22 @@ KCM.SimpleKCM {
     property string cfg_icon: Plasmoid.configuration.icon
     property alias cfg_appNameFormat: appNameFormat.currentIndex
     property bool cfg_paneSwap: Plasmoid.configuration.paneSwap
-    property int cfg_favoritesDisplay: Plasmoid.configuration.favoritesDisplay
     property int cfg_applicationsDisplay: Plasmoid.configuration.applicationsDisplay
     property alias cfg_alphaSort: alphaSort.checked
     property var cfg_systemFavorites: String(Plasmoid.configuration.systemFavorites)
     property int cfg_primaryActions: Plasmoid.configuration.primaryActions
     property alias cfg_showActionButtonCaptions: showActionButtonCaptions.checked
     property alias cfg_compactMode: compactModeCheckbox.checked
+    property alias cfg_highlightNewlyInstalledApps: highlightNewlyInstalledAppsCheckbox.checked
     property alias cfg_switchCategoryOnHover: switchCategoryOnHoverCheckbox.checked
+    property alias cfg_showFavoritesSection: showFavoritesSectionCheckbox.checked
+    property alias cfg_showRecentAppsSection: showRecentAppsSectionCheckbox.checked
+    property alias cfg_recentAppsRows: recentAppsRowsSpinBox.value
+    property alias cfg_showFrequentFilesSection: showFrequentFilesSectionCheckbox.checked
+    property alias cfg_frequentFilesRows: frequentFilesRowsSpinBox.value
+    property alias cfg_showRecentFilesSection: showRecentFilesSectionCheckbox.checked
+    property alias cfg_recentFilesRows: recentFilesRowsSpinBox.value
+    property alias cfg_appIconSize: iconSize.currentIndex
 
     Kirigami.FormLayout {
         QQC2.Button {
@@ -168,9 +176,91 @@ KCM.SimpleKCM {
         }
 
         QQC2.CheckBox {
-            id: alphaSort
-            Kirigami.FormData.label: i18nc("General options", "General:")
-            text: i18n("Always sort applications alphabetically")
+            Kirigami.FormData.label: i18n("Front page:")
+            id: showFavoritesSectionCheckbox
+            text: i18n("Favorites")
+        }
+
+        RowLayout {
+            QQC2.CheckBox {
+                id: showRecentAppsSectionCheckbox
+                text: i18n("Recent apps:")
+            }
+
+            QQC2.SpinBox {
+                id: recentAppsRowsSpinBox
+                editable: true
+                from: 1
+                to: 10
+                enabled: showRecentAppsSectionCheckbox.checked
+            }
+
+            QQC2.Label {
+                text: i18n("rows")
+            }
+        }
+
+        RowLayout {
+            QQC2.CheckBox {
+                id: showFrequentFilesSectionCheckbox
+                text: i18n("Frequent files:")
+            }
+
+            QQC2.SpinBox {
+                id: frequentFilesRowsSpinBox
+                editable: true
+                from: 1
+                to: 10
+                enabled: showFrequentFilesSectionCheckbox.checked
+            }
+
+            QQC2.Label {
+                text: i18n("rows")
+            }
+        }
+
+        RowLayout {
+            QQC2.CheckBox {
+                id: showRecentFilesSectionCheckbox
+                text: i18n("Recent files:")
+            }
+
+            QQC2.SpinBox {
+                id: recentFilesRowsSpinBox
+                editable: true
+                from: 1
+                to: 10
+                enabled: showRecentFilesSectionCheckbox.checked
+            }
+
+            QQC2.Label {
+                text: i18n("rows")
+            }
+        }
+
+        QQC2.ComboBox {
+            id: iconSize
+
+            Kirigami.FormData.label: i18n("Icon size:")
+
+            model: [i18n("Small"), i18n("Small-Medium"), i18n("Medium"), i18n("Large"), i18n("Huge"), i18n("Enormous")]
+        }
+
+        Item {
+            Kirigami.FormData.isSection: true
+        }
+
+        RowLayout {
+            spacing: Kirigami.Units.smallSpacing
+            QQC2.CheckBox {
+                id: alphaSort
+                Kirigami.FormData.label: i18nc("General options", "General:")
+                text: i18nc("@option:check", "Sort applications alphabetically")
+            }
+
+            Kirigami.ContextualHelpButton {
+                toolTipText: i18nc("@info:whatsthis", "This doesn't affect how applications are sorted in either search results or the favorites page.")
+            }
         }
 
         QQC2.CheckBox {
@@ -185,6 +275,12 @@ KCM.SimpleKCM {
             Layout.fillWidth: true
             wrapMode: Text.Wrap
             font: Kirigami.Theme.smallFont
+        }
+
+        QQC2.CheckBox {
+            id: highlightNewlyInstalledAppsCheckbox
+            visible: false
+            text: i18n("Highlight newly installed applications")
         }
 
         QQC2.CheckBox {
@@ -221,26 +317,9 @@ KCM.SimpleKCM {
         }
 
         QQC2.RadioButton {
-            id: showFavoritesInGrid
-            Kirigami.FormData.label: i18n("Show favorites:")
-            text: i18nc("Part of a sentence: 'Show favorites in a grid'", "In a grid")
-            QQC2.ButtonGroup.group: favoritesDisplayGroup
-            property int index: 0
-            checked: Plasmoid.configuration.favoritesDisplay === index
-        }
-
-        QQC2.RadioButton {
-            id: showFavoritesInList
-            text: i18nc("Part of a sentence: 'Show favorites in a list'", "In a list")
-            QQC2.ButtonGroup.group: favoritesDisplayGroup
-            property int index: 1
-            checked: Plasmoid.configuration.favoritesDisplay === index
-        }
-
-        QQC2.RadioButton {
             id: showAppsInGrid
-            Kirigami.FormData.label: i18n("Show other applications:")
-            text: i18nc("Part of a sentence: 'Show other applications in a grid'", "In a grid")
+            Kirigami.FormData.label: i18n("Show all applications:")
+            text: i18nc("Part of a sentence: 'Show all applications in a grid'", "In a grid")
             QQC2.ButtonGroup.group: applicationsDisplayGroup
             property int index: 0
             checked: Plasmoid.configuration.applicationsDisplay === index
@@ -286,6 +365,15 @@ KCM.SimpleKCM {
             checked: Plasmoid.configuration.primaryActions === index
         }
 
+        QQC2.RadioButton {
+            id: noActionsButton
+            text: i18n("None")
+            QQC2.ButtonGroup.group: radioGroup
+            property string actions: ""
+            property int index: 4
+            checked: Plasmoid.configuration.primaryActions === index
+        }
+
         QQC2.CheckBox {
             id: showActionButtonCaptions
             text: i18n("Show action button captions")
@@ -297,15 +385,6 @@ KCM.SimpleKCM {
         onCheckedButtonChanged: {
             if (checkedButton) {
                 root.cfg_paneSwap = checkedButton.index === 1
-            }
-        }
-    }
-
-    QQC2.ButtonGroup {
-        id: favoritesDisplayGroup
-        onCheckedButtonChanged: {
-            if (checkedButton) {
-                root.cfg_favoritesDisplay = checkedButton.index
             }
         }
     }

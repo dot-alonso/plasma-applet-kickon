@@ -26,7 +26,7 @@
             <default>suspend,hibernate,reboot,shutdown</default>
         </entry>
         <entry name="primaryActions" type="Int">
-            <label>Which actions should be displayed in the footer: 0 = Power, 1 = Session, 2 = Custom, 3 = Power and session</label>
+            <label>Which actions should be displayed in the footer: 0 = Power, 1 = Session, 2 = Custom, 3 = Power and session, 4 = None</label>
             <default>0</default>
         </entry>
         <entry name="favoritesPortedToKAstats" type="Bool">
@@ -40,10 +40,6 @@
         <entry name="paneSwap" type="Bool">
             <label>Whether to swap the sidebar and content panes</label>
             <default>false</default>
-        </entry>
-        <entry name="favoritesDisplay" type="Int">
-            <label>How to display favorites: 0 = Grid, 1 = List</label>
-            <default>0</default>
         </entry>
         <entry name="applicationsDisplay" type="Int">
             <label>How to display applications: 0 = Grid, 1 = List</label>
@@ -68,6 +64,42 @@
         <entry name="switchCategoryOnHover" type="Bool">
             <label>Whether to allow switching category items on hover</label>
             <default>false</default>
+        </entry>
+        <entry name="highlightNewlyInstalledApps" type="Bool">
+            <label>Whether to highlight newly installed applications</label>
+            <default>true</default>
+        </entry>
+        <entry name="showFavoritesSection" type="Bool">
+            <label>Whether to show "Favorites" on the front page</label>
+            <default>true</default>
+        </entry>
+        <entry name="showRecentAppsSection" type="Bool">
+            <label>Whether to show "Recent Applications" on the front page</label>
+            <default>true</default>
+        </entry>
+        <entry name="recentAppsRows" type="Int">
+            <label>Number of rows to display for recent applications</label>
+            <default>1</default>
+        </entry>
+        <entry name="showFrequentFilesSection" type="Bool">
+            <label>Whether to show "Frequently Used Files" on the front page</label>
+            <default>false</default>
+        </entry>
+        <entry name="frequentFilesRows" type="Int">
+            <label>Number of rows to display for frequent files</label>
+            <default>4</default>
+        </entry>
+        <entry name="showRecentFilesSection" type="Bool">
+            <label>Whether to show "Recent Files" on the front page</label>
+            <default>false</default>
+        </entry>
+        <entry name="recentFilesRows" type="Int">
+            <label>Number of rows to display for recent files</label>
+            <default>4</default>
+        </entry>
+        <entry name="appIconSize" type="Int">
+            <label>Size of the app icons displayed: 0 = small, 1 = smallMedium, 2 = medium, 3 = Large, 4 = huge, 5 = enormous</label>
+            <default>2</default>
         </entry>
     </group>
 </kcfg>
