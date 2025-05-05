@@ -34,6 +34,7 @@ PlasmoidItem {
 
     readonly property int appIconSize: [Kirigami.Units.iconSizes.small, Kirigami.Units.iconSizes.smallMedium, Kirigami.Units.iconSizes.medium, Kirigami.Units.iconSizes.large, Kirigami.Units.iconSizes.huge, Kirigami.Units.iconSizes.enormous][Plasmoid.configuration.appIconSize]
     readonly property real gridCellSize: gridDelegateMetrics.implicitHeight
+    readonly property real listItemHeight: listDelegateMetrics.implicitHeight
     readonly property real sideBarWidth: 200
     readonly property real defaultWidth: gridCellSize * minimumGridRowCount + 15 + sideBarWidth + backgroundMetrics.leftPadding + backgroundMetrics.rightPadding
     readonly property real defaultHeight: gridCellSize * minimumGridRowCount + 150 + backgroundMetrics.topPadding + backgroundMetrics.bottomPadding
@@ -51,6 +52,23 @@ PlasmoidItem {
         description: "asdf"
         PC3.ToolTip.text: ""
         width: implicitHeight
+        action: null
+        indicator: null
+        isMultilineText: false
+    }
+
+    KickoffListDelegate {
+        id: listDelegateMetrics
+        visible: false
+        enabled: false
+        compact: Plasmoid.configuration.compactMode
+        model: null
+        index: -1
+        text: "asdf"
+        url: ""
+        decoration: "start-here-kde"
+        PC3.ToolTip.text: ""
+        description: "asdf"
         action: null
         indicator: null
         isMultilineText: false

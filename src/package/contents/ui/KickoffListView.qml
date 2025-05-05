@@ -105,7 +105,7 @@ EmptyPage {
         }
         implicitHeight: {
             if (root.isOnFrontPage) {
-                return KickoffSingleton.compactListDelegateHeight * Math.min(root.maximumRows, model.count)
+                return kickoff.listItemHeight * Math.min(root.maximumRows, model.count)
             }
             // use grid cells to determine size
             let h = kickoff.gridCellSize * kickoff.minimumGridRowCount
