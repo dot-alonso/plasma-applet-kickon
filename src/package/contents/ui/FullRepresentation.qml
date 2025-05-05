@@ -437,10 +437,11 @@ EmptyPage {
             target: kickoff
             function onExpandedChanged() {
                 if (!kickoff.expanded) {
+                    root.blockingHoverFocus = false
+                    contentItemStackView.reverseTransitions = true
                     while (contentItemStackView.depth > 1) {
                         contentItemStackView.pop();
                     }
-                } else {
                     kickoff.firstSection()?.forceActiveFocus();
                 }
             }
