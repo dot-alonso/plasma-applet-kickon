@@ -16,7 +16,7 @@
 ![Screenshot_20250505_194909](https://github.com/user-attachments/assets/104a7124-5636-4328-a188-d4eb019eb740)
 
 ### A new option "None" for "Show power buttons".
-![Screenshot_20250505_195053](https://github.com/user-attachments/assets/d2fe8bfb-b1ce-439b-8c6d-501690e7f80d)
+![Screenshot_20250505_194459](https://github.com/user-attachments/assets/15ca7fec-ef19-4a18-962a-7d7be47d27f4)
 ![Screenshot_20250505_194530](https://github.com/user-attachments/assets/3e1f7848-027f-4b18-a94e-1385b3ed193e)
 
 ## Known Problems
