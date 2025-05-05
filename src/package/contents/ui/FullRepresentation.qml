@@ -118,7 +118,7 @@ EmptyPage {
                     id: favoritesHeader
                     visible: Plasmoid.configuration.showFavoritesSection
 
-                    Text {
+                    QQC2.Label {
                         Layout.fillWidth: true
                         text: i18n("Favorites")
                         font.bold: true
@@ -155,7 +155,7 @@ EmptyPage {
                     id: recentAppsHeader
                     visible: Plasmoid.configuration.showRecentAppsSection
 
-                    Text {
+                    QQC2.Label {
                         Layout.fillWidth: true
                         text: i18n("Recent Apps")
                         font.bold: true
@@ -193,7 +193,7 @@ EmptyPage {
                     id: frequentFilesHeader
                     visible: Plasmoid.configuration.showFrequentFilesSection
 
-                    Text {
+                    QQC2.Label {
                         Layout.fillWidth: true
                         text: i18n("Frequently Used Files")
                         font.bold: true
@@ -231,7 +231,7 @@ EmptyPage {
                     id: recentFilesHeader
                     visible: Plasmoid.configuration.showRecentFilesSection
 
-                    Text {
+                    QQC2.Label {
                         Layout.fillWidth: true
                         text: i18n("Recently Used Files")
                         font.bold: true
