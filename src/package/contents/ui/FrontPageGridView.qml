@@ -117,6 +117,7 @@ EmptyPage {
             KickoffListDelegate {
                 visible: index < view.maximumItems
                 width: view.cellWidth
+                compact: false
                 Accessible.role: Accessible.Cell
             }
         }
