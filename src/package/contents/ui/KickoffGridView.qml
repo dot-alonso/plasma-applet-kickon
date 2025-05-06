@@ -35,7 +35,7 @@ EmptyPage {
     clip: view.height < view.contentHeight
 
     header: MouseArea {
-        implicitHeight: KickoffSingleton.listItemMetrics.margins.top
+        implicitHeight: root.isOnFrontPage ? 0 : KickoffSingleton.listItemMetrics.margins.top
         hoverEnabled: true
         onEntered: {
             if (containsMouse) {
@@ -49,7 +49,7 @@ EmptyPage {
     }
 
     footer: MouseArea {
-        implicitHeight: KickoffSingleton.listItemMetrics.margins.bottom
+        implicitHeight: root.isOnFrontPage ? 0 : KickoffSingleton.listItemMetrics.margins.bottom
         hoverEnabled: true
         onEntered: {
             if (containsMouse) {

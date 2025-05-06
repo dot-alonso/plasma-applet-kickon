@@ -48,7 +48,7 @@ EmptyPage {
     clip: view.height < view.contentHeight
 
     header: MouseArea {
-        implicitHeight: KickoffSingleton.listItemMetrics.margins.top
+        implicitHeight: root.isOnFrontPage ? 0 : KickoffSingleton.listItemMetrics.margins.top
         hoverEnabled: mainContentView || Plasmoid.configuration.switchCategoryOnHover
         onEntered: {
             if (containsMouse) {
@@ -62,7 +62,7 @@ EmptyPage {
     }
 
     footer: MouseArea {
-        implicitHeight: KickoffSingleton.listItemMetrics.margins.bottom
+        implicitHeight: root.isOnFrontPage ? 0 : KickoffSingleton.listItemMetrics.margins.bottom
         hoverEnabled: mainContentView || Plasmoid.configuration.switchCategoryOnHover
         onEntered: {
             if (containsMouse) {
@@ -105,7 +105,7 @@ EmptyPage {
         }
         implicitHeight: {
             if (root.isOnFrontPage) {
-                return kickoff.listItemHeight * Math.min(root.maximumRows, model.count)
+                return kickoff.listDelegateHeight * Math.min(root.maximumRows, model.count) + topMargin + bottomMargin
             }
             // use grid cells to determine size
             let h = kickoff.gridCellSize * kickoff.minimumGridRowCount
