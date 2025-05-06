@@ -53,28 +53,11 @@ Item {
         font: Kirigami.Theme.defaultFont
     }
 
-    readonly property real gridCellSize: gridDelegate.implicitHeight
     readonly property real compactListDelegateHeight: compactListDelegate.implicitHeight
     readonly property real compactListDelegateContentHeight: compactListDelegate.implicitContentHeight
     //END
 
     //BEGIN Private
-    KickoffGridDelegate {
-        id: gridDelegate
-        visible: false
-        enabled: false
-        model: null
-        index: -1
-        text: "asdf"
-        url: ""
-        decoration: "start-here-kde"
-        description: "asdf"
-        PC3.ToolTip.text: ""
-        width: implicitHeight
-        action: null
-        indicator: null
-        isMultilineText: false
-    }
     KickoffListDelegate {
         id: compactListDelegate
         visible: false

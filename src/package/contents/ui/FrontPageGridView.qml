@@ -44,26 +44,13 @@ EmptyPage {
     GridView {
         id: view
 
-        function availableWidth(): real {
-            console.log("availableWidth", root.parentAvailableWidth)
-            return root.parentAvailableWidth
-        }
-        function availableHeight(): real {
-            return height - topMargin - bottomMargin;
-        }
-
-        readonly property int columns: Math.floor(availableWidth() / (root.isAppMode ? kickoff.gridCellSize : kickoff.minimumFileGridWidth))
+        readonly property int columns: Math.floor(root.parentAvailableWidth / (root.isAppMode ? kickoff.gridCellSize : kickoff.minimumFileGridWidth))
         readonly property int rows: root.maximumRows > 0 ? Math.min(root.maximumRows, Math.ceil(root.model.count / columns)) : Math.ceil(root.model.count / columns)
         // Note: This is the maximum number of items that can be displayed in the grid. We can't limit the number
         // of items in the model, because this number changes dynamically when the user resizes the applet.
         readonly property int maximumItems: columns * rows
         property bool movedWithKeyboard: false
         property bool movedWithWheel: false
-
-        // NOTE: parent is the contentItem that Control subclasses automatically
-        // create when no contentItem is set, but content is added.
-        height: rows * cellHeight
-        width: columns * cellWidth
 
         Accessible.description: i18n("Grid with %1 rows, %2 columns", rows, columns) // can't use i18np here
 
