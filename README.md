@@ -7,7 +7,7 @@
 ![Second page](https://github.com/user-attachments/assets/b82340b5-6994-4e35-9d68-2e306e794e77)
 
 ### Optional "Recent Apps", "Frequent Files" and "Recent Files" sections, each can be turn on/off and specify number of rows.
-![Screenshot_20250505_195053](https://github.com/user-attachments/assets/31fe1c17-6aaa-4b90-8ed3-e2ec53e19d53)
+![Screenshot_20250506_084012](https://github.com/user-attachments/assets/cec93eb5-c785-4ec1-a8f4-444aae0caa58)
 ![Screenshot_20250505_194415](https://github.com/user-attachments/assets/ed89039f-7947-48cb-9529-b3dfb12c8acf)
 
 ### Icon size customizable.
