@@ -52,7 +52,6 @@ KickoffGridView {
     delegate: KickoffGridDelegate {
         id: itemDelegate
         width: view.cellWidth
-        appIconSize: kickoff.appIconSize
         Accessible.role: Accessible.Cell
 
         Connections {

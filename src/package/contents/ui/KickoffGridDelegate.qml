@@ -26,9 +26,8 @@ AbstractKickoffItemDelegate {
     topPadding: Kirigami.Units.smallSpacing * 2
     bottomPadding: Kirigami.Units.smallSpacing * 2
 
-    required property int appIconSize
-    icon.width: appIconSize
-    icon.height: appIconSize
+    icon.width: kickoff.appIconSize
+    icon.height: kickoff.appIconSize
 
     labelTruncated: label.truncated
     descriptionVisible: false

@@ -39,6 +39,7 @@ PlasmoidItem {
     readonly property real sideBarWidth: 200
     readonly property real defaultWidth: gridCellSize * minimumGridRowCount + 15 + sideBarWidth + backgroundMetrics.leftPadding + backgroundMetrics.rightPadding
     readonly property real defaultHeight: gridCellSize * minimumGridRowCount + 150 + backgroundMetrics.topPadding + backgroundMetrics.bottomPadding
+    readonly property real minimumFileGridWidth: 200
 
     readonly property bool inPanel: [
         PlasmaCore.Types.TopEdge,
@@ -254,7 +255,6 @@ PlasmoidItem {
     readonly property real gridCellSize: gridDelegateMetrics.implicitHeight
     KickoffGridDelegate {
         id: gridDelegateMetrics
-        appIconSize: kickoff.appIconSize
         visible: false
         enabled: false
         model: null

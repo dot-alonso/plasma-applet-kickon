@@ -134,14 +134,21 @@ EmptyPage {
                     }
                 }
 
-                DropAreaGridView {
+                FrontPageGridView {
                     id: favoriteAppsGridView
                     visible: Plasmoid.configuration.showFavoritesSection
                     Layout.alignment: Qt.AlignHCenter
 
                     model: kickoff.rootModel.favoritesModel
-                    isOnFrontPage: true
                     parentAvailableWidth: parent.width
+                    isAppMode: true
+
+                    KickoffDropArea {
+                        z: -1
+                        parent: favoriteAppsGridView
+                        anchors.fill: parent
+                        targetView: parent.view
+                    }
                 }
 
                 Binding {
@@ -171,14 +178,14 @@ EmptyPage {
                     }
                 }
 
-                KickoffGridView {
+                FrontPageGridView {
                     id: recentAppsGridView
                     visible: Plasmoid.configuration.showRecentAppsSection
                     Layout.alignment: Qt.AlignHCenter
 
                     model: kickoff.recentAppsModel
-                    isOnFrontPage: true
                     parentAvailableWidth: parent.width
+                    isAppMode: true
                     maximumRows: Plasmoid.configuration.recentAppsRows
                 }
         
@@ -209,14 +216,14 @@ EmptyPage {
                     }
                 }
 
-                KickoffListView {
+                FrontPageGridView {
                     id: frequentFilesListView
                     visible: Plasmoid.configuration.showFrequentFilesSection
                     Layout.fillWidth: true
 
                     model: kickoff.frequentUsageModel
-                    isOnFrontPage: true
-                    showSectionHeader: false
+                    parentAvailableWidth: parent.width
+                    isAppMode: false
                     maximumRows: Plasmoid.configuration.frequentFilesRows
                 }
 
@@ -247,14 +254,14 @@ EmptyPage {
                     }
                 }        
 
-                KickoffListView {
+                FrontPageGridView {
                     id: recentFilesListView
                     visible: Plasmoid.configuration.showRecentFilesSection
                     Layout.fillWidth: true
 
                     model: kickoff.recentUsageModel
-                    isOnFrontPage: true
-                    showSectionHeader: false
+                    parentAvailableWidth: parent.width
+                    isAppMode: false
                     maximumRows: Plasmoid.configuration.recentFilesRows
                 }
 

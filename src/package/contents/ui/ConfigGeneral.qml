@@ -31,6 +31,7 @@ KCM.SimpleKCM {
     property string cfg_icon: Plasmoid.configuration.icon
     property alias cfg_appNameFormat: appNameFormat.currentIndex
     property bool cfg_paneSwap: Plasmoid.configuration.paneSwap
+    property int cfg_favoritesDisplay: Plasmoid.configuration.favoritesDisplay
     property int cfg_applicationsDisplay: Plasmoid.configuration.applicationsDisplay
     property alias cfg_alphaSort: alphaSort.checked
     property var cfg_systemFavorites: String(Plasmoid.configuration.systemFavorites)
@@ -317,6 +318,25 @@ KCM.SimpleKCM {
         }
 
         QQC2.RadioButton {
+            id: showFavoritesInGrid
+            visible: false
+            Kirigami.FormData.label: i18n("Show favorites:")
+            text: i18nc("Part of a sentence: 'Show favorites in a grid'", "In a grid")
+            QQC2.ButtonGroup.group: favoritesDisplayGroup
+            property int index: 0
+            checked: Plasmoid.configuration.favoritesDisplay === index
+        }
+
+        QQC2.RadioButton {
+            id: showFavoritesInList
+            visible: false
+            text: i18nc("Part of a sentence: 'Show favorites in a list'", "In a list")
+            QQC2.ButtonGroup.group: favoritesDisplayGroup
+            property int index: 1
+            checked: Plasmoid.configuration.favoritesDisplay === index
+        }
+
+        QQC2.RadioButton {
             id: showAppsInGrid
             Kirigami.FormData.label: i18n("Show all applications:")
             text: i18nc("Part of a sentence: 'Show all applications in a grid'", "In a grid")
@@ -385,6 +405,15 @@ KCM.SimpleKCM {
         onCheckedButtonChanged: {
             if (checkedButton) {
                 root.cfg_paneSwap = checkedButton.index === 1
+            }
+        }
+    }
+
+    QQC2.ButtonGroup {
+        id: favoritesDisplayGroup
+        onCheckedButtonChanged: {
+            if (checkedButton) {
+                root.cfg_favoritesDisplay = checkedButton.index
             }
         }
     }
