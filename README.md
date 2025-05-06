@@ -23,6 +23,7 @@
 
 * Scrolling doesn't work in the front page (conflicts with Drag&Drop).
 * Keyboard navigation only partially works.
+* Right-click on recent files then "Forget" doesn't update the view (it does remove the file from history).
 
 ## Installation
 
