@@ -113,7 +113,7 @@
                 "Name": "Jin Liu"
             }
         ],
-        "BugReportUrl": "https://bugs.kde.org/enter_bug.cgi?product=plasmashell&component=Application%20Launcher%20(Kickoff)",
+        "BugReportUrl": "https://github.com/jinliu/plasma-applet-kickon/issues",
         "Category": "Application Launchers",
         "Description": "Launcher to start applications",
         "Icon": "start-here-kde",
