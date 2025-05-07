@@ -15,7 +15,6 @@ pragma ComponentBehavior: Bound
 import QtQuick
 import QtQuick.Templates as T
 import QtQuick.Layouts
-import QtQuick.Controls as QQC2
 import org.kde.plasma.components as PC3
 import org.kde.plasma.plasmoid
 import org.kde.kirigami as Kirigami
@@ -102,7 +101,7 @@ EmptyPage {
         focus: true
         movementTransitionsEnabled: false
         // Not using a component to prevent it from being destroyed
-        // initialItem: QQC2.ScrollView { //FIXME: DnD not working in ScrollView
+        // initialItem: PC3.ScrollView { //FIXME: DnD not working in ScrollView
         initialItem: EmptyPage {
             id: scrollView
             anchors.fill: parent
@@ -118,13 +117,13 @@ EmptyPage {
                     id: favoritesHeader
                     visible: Plasmoid.configuration.showFavoritesSection
 
-                    QQC2.Label {
+                    PC3.Label {
                         Layout.fillWidth: true
                         text: i18n("Favorites")
                         font.bold: true
                     }
 
-                    QQC2.Button {
+                    PC3.Button {
                         Layout.alignment: Qt.AlignRight
                         flat: true
                         text: i18n("All Apps >")
@@ -162,13 +161,13 @@ EmptyPage {
                     id: recentAppsHeader
                     visible: Plasmoid.configuration.showRecentAppsSection
 
-                    QQC2.Label {
+                    PC3.Label {
                         Layout.fillWidth: true
                         text: i18n("Recent Apps")
                         font.bold: true
                     }
 
-                    QQC2.Button {
+                    PC3.Button {
                         Layout.alignment: Qt.AlignRight
                         flat: true
                         text: i18n("More >")
@@ -200,13 +199,13 @@ EmptyPage {
                     id: frequentFilesHeader
                     visible: Plasmoid.configuration.showFrequentFilesSection
 
-                    QQC2.Label {
+                    PC3.Label {
                         Layout.fillWidth: true
                         text: i18n("Frequently Used Files")
                         font.bold: true
                     }
 
-                    QQC2.Button {
+                    PC3.Button {
                         Layout.alignment: Qt.AlignRight
                         flat: true
                         text: i18n("More >")
@@ -238,13 +237,13 @@ EmptyPage {
                     id: recentFilesHeader
                     visible: Plasmoid.configuration.showRecentFilesSection
 
-                    QQC2.Label {
+                    PC3.Label {
                         Layout.fillWidth: true
                         text: i18n("Recently Used Files")
                         font.bold: true
                     }
 
-                    QQC2.Button {
+                    PC3.Button {
                         Layout.alignment: Qt.AlignRight
                         flat: true
                         text: i18n("More >")
@@ -272,9 +271,6 @@ EmptyPage {
                     restoreMode: Binding.RestoreBinding
                 }
 
-                QQC2.Control {
-                    height: Kirigami.Units.largeSpacing
-                }
             }
         }
         

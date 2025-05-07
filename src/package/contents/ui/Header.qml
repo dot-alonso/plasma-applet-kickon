@@ -11,7 +11,6 @@ pragma ComponentBehavior: Bound
 
 import QtQuick
 import QtQuick.Layouts
-import QtQuick.Controls as QQC2
 import QtQuick.Templates as T
 import Qt5Compat.GraphicalEffects
 import org.kde.plasma.components as PC3
@@ -174,7 +173,7 @@ PlasmaExtras.PlasmoidHeading {
                 }
             }
 
-            QQC2.Button {
+            PC3.Button {
                 id: backButton
                 anchors.left: parent.left
                 text: i18n("< Back")
