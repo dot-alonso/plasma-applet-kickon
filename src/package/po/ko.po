@@ -135,52 +135,52 @@ msgstr "책갈피"
 
 #: ../contents/ui/ConfigGeneral.qml
 msgid "Recent apps:"
-msgstr ""
+msgstr "최근 앱:"
 
 #: ../contents/ui/ConfigGeneral.qml
 msgid "rows"
-msgstr ""
+msgstr "행"
 
 #: ../contents/ui/ConfigGeneral.qml
 msgid "Frequent files:"
-msgstr ""
+msgstr "자주 사용한 파일""
 
 #: ../contents/ui/ConfigGeneral.qml
 msgid "Recent files:"
-msgstr ""
+msgstr "최근 파일:"
 
 #: ../contents/ui/ConfigGeneral.qml
 msgid "Icon size:"
-msgstr ""
+msgstr "아이콘 크기:"
 
 #: ../contents/ui/ConfigGeneral.qml
 msgid "Small"
-msgstr ""
+msgstr "작게"
 
 #: ../contents/ui/ConfigGeneral.qml
 msgid "Small-Medium"
-msgstr ""
+msgstr "약간 작게"
 
 #: ../contents/ui/ConfigGeneral.qml
 msgid "Medium"
-msgstr ""
+msgstr "보통"
 
 #: ../contents/ui/ConfigGeneral.qml
 msgid "Large"
-msgstr ""
+msgstr "크게"
 
 #: ../contents/ui/ConfigGeneral.qml
 msgid "Huge"
-msgstr ""
+msgstr "더 크게"
 
 #: ../contents/ui/ConfigGeneral.qml
 msgid "Enormous"
-msgstr ""
+msgstr "가장 크게"
 
 #: ../contents/ui/ConfigGeneral.qml
 msgctxt "Application List options"
 msgid "App list:"
-msgstr ""
+msgstr "앱 목록:"
 
 #: ../contents/ui/ConfigGeneral.qml
 msgctxt "@option:check"
@@ -206,7 +206,7 @@ msgstr "터치 모드에서 자동으로 비활성화됨"
 
 #: ../contents/ui/ConfigGeneral.qml
 msgid "Highlight newly installed applications"
-msgstr ""
+msgstr "최근 설치된 앱 강조하기"
 
 #: ../contents/ui/ConfigGeneral.qml
 msgid "Switch sidebar categories when hovering over them"
@@ -245,12 +245,12 @@ msgstr "목록으로"
 
 #: ../contents/ui/ConfigGeneral.qml
 msgid "Show all applications:"
-msgstr ""
+msgstr "모든 앱 보기:"
 
 #: ../contents/ui/ConfigGeneral.qml
 msgctxt "Part of a sentence: 'Show all applications in a grid'"
 msgid "In a grid"
-msgstr ""
+msgstr "격자로"
 
 #: ../contents/ui/ConfigGeneral.qml
 msgctxt "Part of a sentence: 'Show other applications in a list'"
@@ -275,7 +275,7 @@ msgstr "전원과 세션"
 
 #: ../contents/ui/ConfigGeneral.qml
 msgid "None"
-msgstr ""
+msgstr "없음"
 
 #: ../contents/ui/ConfigGeneral.qml
 msgid "Show action button captions"
@@ -287,23 +287,23 @@ msgstr "%1줄, %2칸 크기 격자"
 
 #: ../contents/ui/FullRepresentation.qml
 msgid "All Apps >"
-msgstr ""
+msgstr "모든 앱 >"
 
 #: ../contents/ui/FullRepresentation.qml
 msgid "Recent Apps"
-msgstr ""
+msgstr "최근 앱"
 
 #: ../contents/ui/FullRepresentation.qml
 msgid "More >"
-msgstr ""
+msgstr "더 보기 >"
 
 #: ../contents/ui/FullRepresentation.qml
 msgid "Frequently Used Files"
-msgstr ""
+msgstr "자주 사용한 파일"
 
 #: ../contents/ui/FullRepresentation.qml
 msgid "Recently Used Files"
-msgstr ""
+msgstr "최근 사용한 파일"
 
 #: ../contents/ui/FullRepresentation.qml
 msgctxt "@info:status"
@@ -316,7 +316,7 @@ msgstr "사용자 설정 열기"
 
 #: ../contents/ui/Header.qml
 msgid "< Back"
-msgstr ""
+msgstr "< 뒤로"
 
 #: ../contents/ui/Header.qml
 msgid "Keep Open"
@@ -326,7 +326,7 @@ msgstr "열린 상태로 유지"
 #: ../contents/ui/KickoffListDelegate.qml
 msgctxt "Newly installed app, badge, keep short"
 msgid "New!"
-msgstr ""
+msgstr "추가됨!"
 
 #: ../contents/ui/KickoffGridDelegate.qml
 #: ../contents/ui/KickoffListDelegate.qml
@@ -336,7 +336,7 @@ msgstr "최근 사용된 프로그램"
 
 #: ../contents/ui/KickoffListDelegate.qml
 msgid "There is a newly installed application in this category"
-msgstr ""
+msgstr "이 카테고리에는 새로 설치된 앱이 있습니다"
 
 #: ../contents/ui/LeaveButtons.qml
 msgid "Leave"
