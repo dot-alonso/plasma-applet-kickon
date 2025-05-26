@@ -122,60 +122,60 @@ msgstr "面板垂直时无法设置文字标签。"
 
 #: ../contents/ui/ConfigGeneral.qml
 msgid "Front page:"
-msgstr ""
+msgstr "首页："
 
 #: ../contents/ui/ConfigGeneral.qml ../contents/ui/FullRepresentation.qml
 msgid "Favorites"
-msgstr ""
+msgstr "常用程序"
 
 #: ../contents/ui/ConfigGeneral.qml
 msgid "Recent apps:"
-msgstr ""
+msgstr "最近应用程序："
 
 #: ../contents/ui/ConfigGeneral.qml
 msgid "rows"
-msgstr ""
+msgstr "行"
 
 #: ../contents/ui/ConfigGeneral.qml
 msgid "Frequent files:"
-msgstr ""
+msgstr "常用文件："
 
 #: ../contents/ui/ConfigGeneral.qml
 msgid "Recent files:"
-msgstr ""
+msgstr "最近文件："
 
 #: ../contents/ui/ConfigGeneral.qml
 msgid "Icon size:"
-msgstr ""
+msgstr "图标大小："
 
 #: ../contents/ui/ConfigGeneral.qml
 msgid "Small"
-msgstr ""
+msgstr "小"
 
 #: ../contents/ui/ConfigGeneral.qml
 msgid "Small-Medium"
-msgstr ""
+msgstr "中小"
 
 #: ../contents/ui/ConfigGeneral.qml
 msgid "Medium"
-msgstr ""
+msgstr "中"
 
 #: ../contents/ui/ConfigGeneral.qml
 msgid "Large"
-msgstr ""
+msgstr "大"
 
 #: ../contents/ui/ConfigGeneral.qml
 msgid "Huge"
-msgstr ""
+msgstr "巨大"
 
 #: ../contents/ui/ConfigGeneral.qml
 msgid "Enormous"
-msgstr ""
+msgstr "超级巨大"
 
 #: ../contents/ui/ConfigGeneral.qml
 msgctxt "Application List options"
 msgid "App list:"
-msgstr ""
+msgstr "应用程序列表："
 
 #: ../contents/ui/ConfigGeneral.qml
 msgctxt "@option:check"
@@ -237,12 +237,12 @@ msgstr "列表"
 
 #: ../contents/ui/ConfigGeneral.qml
 msgid "Show all applications:"
-msgstr ""
+msgstr "显示全部应用程序："
 
 #: ../contents/ui/ConfigGeneral.qml
 msgctxt "Part of a sentence: 'Show all applications in a grid'"
 msgid "In a grid"
-msgstr ""
+msgstr "网格"
 
 #: ../contents/ui/ConfigGeneral.qml
 msgctxt "Part of a sentence: 'Show other applications in a list'"
@@ -267,7 +267,7 @@ msgstr "电源和会话"
 
 #: ../contents/ui/ConfigGeneral.qml
 msgid "None"
-msgstr ""
+msgstr "无"
 
 #: ../contents/ui/ConfigGeneral.qml
 msgid "Show action button captions"
@@ -279,23 +279,23 @@ msgstr "%1 行 %2 列的网格"
 
 #: ../contents/ui/FullRepresentation.qml
 msgid "All Apps >"
-msgstr ""
+msgstr "全部应用程序 >"
 
 #: ../contents/ui/FullRepresentation.qml
 msgid "Recent Apps"
-msgstr ""
+msgstr "最近应用程序"
 
 #: ../contents/ui/FullRepresentation.qml
 msgid "More >"
-msgstr ""
+msgstr "更多 >"
 
 #: ../contents/ui/FullRepresentation.qml
 msgid "Frequently Used Files"
-msgstr ""
+msgstr "常用文件"
 
 #: ../contents/ui/FullRepresentation.qml
 msgid "Recently Used Files"
-msgstr ""
+msgstr "最近文件"
 
 #: ../contents/ui/FullRepresentation.qml
 msgctxt "@info:status"
@@ -308,7 +308,7 @@ msgstr "打开用户设置"
 
 #: ../contents/ui/Header.qml
 msgid "< Back"
-msgstr ""
+msgstr "< 返回"
 
 #: ../contents/ui/Header.qml
 msgid "Keep Open"
@@ -329,7 +329,7 @@ msgstr "此类别中有一个新安装的应用程序"
 
 #: ../contents/ui/LeaveButtons.qml
 msgid "Leave"
-msgstr ""
+msgstr "离开"
 
 #: ../contents/ui/LeaveButtons.qml
 msgid "More"
