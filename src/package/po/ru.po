@@ -1,0 +1,750 @@
+# translation of plasma_applet_launcher.po to Russian
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# SPDX-FileCopyrightText: 2018, 2019, 2021, 2022, 2023, 2024, 2025 Alexander Yavorsky <kekcuha@gmail.com>
+# Nick Shaforostoff <shaforostoff@kde.ru>, 2007, 2008, 2009.
+# Leonid Kanter <leon@asplinux.ru>, 2008.
+# Artem Sereda <overmind88@gmail.com>, 2008, 2010.
+# Andrey Cherepanov <skull@kde.ru>, 2009.
+# Alexander Potashev <aspotashev@gmail.com>, 2009, 2010, 2014, 2015, 2016, 2017, 2018.
+# Nick Shaforostoff <shafff@ukr.net>, 2009, 2010.
+# Yuri Efremov <yur.arh@gmail.com>, 2011, 2012.
+# Alexander Lakhin <exclusion@gmail.com>, 2013.
+# Alexander Yavorsky <kekcuha@gmail.com>, 2025.
+msgid ""
+msgstr ""
+"Project-Id-Version: plasma_applet_launcher\n"
+"Report-Msgid-Bugs-To: https://github.com/jinliu/plasma-applet-kickon/issues\n"
+"POT-Creation-Date: 2025-05-26 10:55+0800\n"
+"PO-Revision-Date: 2025-05-23 09:41+0300\n"
+"Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
+"Language-Team: Russian <kde-russian@lists.kde.ru>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 21.08.3\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : "
+"n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Environment: kde\n"
+"X-Accelerator-Marker: &\n"
+"X-Text-Markup: kde4\n"
+
+#: ../contents/config/config.qml
+msgid "General"
+msgstr "Общие"
+
+#: ../contents/ui/code/tools.js
+msgid "Remove from Favorites"
+msgstr "Убрать из избранного"
+
+#: ../contents/ui/code/tools.js
+msgid "Add to Favorites"
+msgstr "Добавить в избранное"
+
+#: ../contents/ui/code/tools.js
+msgid "On All Activities"
+msgstr "Во всех комнатах"
+
+#: ../contents/ui/code/tools.js
+msgid "On the Current Activity"
+msgstr "Только в текущей комнате"
+
+#: ../contents/ui/code/tools.js
+msgid "Show in Favorites"
+msgstr "Показывать в избранном"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Icon:"
+msgstr "Значок:"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@action:button"
+msgid "Change Application Launcher's icon"
+msgstr "Изменить значок меню запуска приложений"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@info:whatsthis"
+msgid ""
+"Current icon is %1. Click to open menu to change the current icon or reset "
+"to the default icon."
+msgstr ""
+"Текущий значок: %1. Нажмите, чтобы открыть меню, позволяющее изменить значок "
+"или применить значок по умолчанию."
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@info:tooltip"
+msgid "Icon name is \"%1\""
+msgstr "Название значка: «%1»"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@item:inmenu Open icon chooser dialog"
+msgid "Choose…"
+msgstr "Выбрать…"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@info:whatsthis"
+msgid "Choose an icon for Application Launcher"
+msgstr "Выберите значок меню запуска приложений"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@item:inmenu Reset icon to default"
+msgid "Reset to default icon"
+msgstr "Значок по умолчанию"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@action:inmenu"
+msgid "Remove icon"
+msgstr "Удалить значок"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Show applications as:"
+msgstr "Формат наименования программ:"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Name only"
+msgstr "Только названия"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Description only"
+msgstr "Только описания"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Name (Description)"
+msgstr "Название (Описание)"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Description (Name)"
+msgstr "Описание (Название)"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@label:textbox"
+msgid "Text label:"
+msgstr "Надпись:"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@info:placeholder"
+msgid "Type here to add a text label"
+msgstr "Введите текст надписи…"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@action:button"
+msgid "Reset menu label"
+msgstr "Сбросить текст надписи"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@info"
+msgid "A text label cannot be set when the Panel is vertical."
+msgstr "Надпись не может быть использована при вертикальной ориентации панели."
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Front page:"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml ../contents/ui/FullRepresentation.qml
+msgid "Favorites"
+msgstr "Избранное"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Recent apps:"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "rows"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Frequent files:"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Recent files:"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Icon size:"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Small"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Small-Medium"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Medium"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Large"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Huge"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Enormous"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "Application List options"
+msgid "App list:"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@option:check"
+msgid "Sort applications alphabetically"
+msgstr "Сортировать приложения по алфавиту"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@info:whatsthis"
+msgid ""
+"This doesn't affect how applications are sorted in either search results or "
+"the favorites page."
+msgstr ""
+"Этот параметр не влияет на порядок сортировки приложений в результатах "
+"поиска иди на странице «Избранное»."
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Use compact list item style"
+msgstr "Компактные элементы в списках"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@info:usagetip under a checkbox when Touch Mode is on"
+msgid "Automatically disabled when in Touch Mode"
+msgstr "Отключать автоматически в сенсорном режиме"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Highlight newly installed applications"
+msgstr "Выделять недавно установленные приложения"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Switch sidebar categories when hovering over them"
+msgstr "Переключать категории при наведении курсора мыши"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@action:button opens plasmasearch kcm"
+msgid "Configure Search Plugins…"
+msgstr "Настроить модули поиска…"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Sidebar position:"
+msgstr "Расположение боковой панели:"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Right"
+msgstr "Справа"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Left"
+msgstr "Слева"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Show favorites:"
+msgstr "Избранные приложения:"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "Part of a sentence: 'Show favorites in a grid'"
+msgid "In a grid"
+msgstr "Сеткой"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "Part of a sentence: 'Show favorites in a list'"
+msgid "In a list"
+msgstr "Списком"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Show all applications:"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "Part of a sentence: 'Show all applications in a grid'"
+msgid "In a grid"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "Part of a sentence: 'Show other applications in a list'"
+msgid "In a list"
+msgstr "Списком"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Show buttons for:"
+msgstr "Показывать кнопки:"
+
+#: ../contents/ui/ConfigGeneral.qml ../contents/ui/LeaveButtons.qml
+msgid "Power"
+msgstr "Управления питанием"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Session"
+msgstr "Управление сеансами"
+
+# shutdown-method
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Power and session"
+msgstr "Управление питанием и сеансами"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "None"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Show action button captions"
+msgstr "Подписи кнопок действия"
+
+#: ../contents/ui/FrontPageGridView.qml ../contents/ui/KickoffGridView.qml
+msgid "Grid with %1 rows, %2 columns"
+msgstr "Сетка, строк: %1, столбцов: %2"
+
+#: ../contents/ui/FullRepresentation.qml
+msgid "All Apps >"
+msgstr ""
+
+#: ../contents/ui/FullRepresentation.qml
+msgid "Recent Apps"
+msgstr ""
+
+#: ../contents/ui/FullRepresentation.qml
+msgid "More >"
+msgstr ""
+
+#: ../contents/ui/FullRepresentation.qml
+msgid "Frequently Used Files"
+msgstr ""
+
+#: ../contents/ui/FullRepresentation.qml
+msgid "Recently Used Files"
+msgstr ""
+
+#: ../contents/ui/FullRepresentation.qml
+msgctxt "@info:status"
+msgid "No matches"
+msgstr "Совпадений не найдено"
+
+#: ../contents/ui/Header.qml
+msgid "Open user settings"
+msgstr "Открыть настройки пользователя"
+
+#: ../contents/ui/Header.qml
+msgid "< Back"
+msgstr ""
+
+#: ../contents/ui/Header.qml
+msgid "Keep Open"
+msgstr "Не закрывать"
+
+#: ../contents/ui/KickoffGridDelegate.qml
+#: ../contents/ui/KickoffListDelegate.qml
+msgctxt "Newly installed app, badge, keep short"
+msgid "New!"
+msgstr "Новое"
+
+#: ../contents/ui/KickoffGridDelegate.qml
+#: ../contents/ui/KickoffListDelegate.qml
+msgid "Newly installed application"
+msgstr "Недавно установленные приложения"
+
+#: ../contents/ui/KickoffListDelegate.qml
+msgid "There is a newly installed application in this category"
+msgstr "В этом разделе имеются недавно установленные приложения"
+
+# shutdown-method
+#: ../contents/ui/LeaveButtons.qml
+msgid "Leave"
+msgstr "Выход"
+
+#: ../contents/ui/LeaveButtons.qml
+msgid "More"
+msgstr "Больше"
+
+#: ../contents/ui/main.qml
+msgid "Edit Applications…"
+msgstr "Редактировать меню..."
+
+#, kde-format
+#~ msgctxt "General options"
+#~ msgid "General:"
+#~ msgstr "Основные:"
+
+#, kde-format
+#~ msgid "Show other applications:"
+#~ msgstr "Остальные приложения:"
+
+#, kde-format
+#~ msgctxt "Part of a sentence: 'Show other applications in a grid'"
+#~ msgid "In a grid"
+#~ msgstr "Сеткой"
+
+#, kde-format
+#~ msgid "Applications"
+#~ msgstr "Приложения"
+
+#, kde-format
+#~ msgid "Places"
+#~ msgstr "Точки входа"
+
+#, kde-format
+#~ msgid "Session and Power "
+#~ msgstr "Управление сеансом и питанием "
+
+#, kde-format
+#~ msgctxt "category in Places sidebar"
+#~ msgid "Computer"
+#~ msgstr "Компьютер"
+
+#, kde-format
+#~ msgctxt "category in Places sidebar"
+#~ msgid "History"
+#~ msgstr "Последние"
+
+#, kde-format
+#~ msgctxt "category in Places sidebar"
+#~ msgid "Frequently Used"
+#~ msgstr "Часто используемые"
+
+#~ msgctxt "@item:inmenu Reset icon to default"
+#~ msgid "Clear Icon"
+#~ msgstr "Вернуть стандартный значок"
+
+#~ msgid "Search…"
+#~ msgstr "Поиск..."
+
+#~ msgid "Primary actions:"
+#~ msgstr "Основные действия:"
+
+#~ msgid "Power actions"
+#~ msgstr "Управление питанием"
+
+# shutdown-method
+#~ msgid "Leave…"
+#~ msgstr "Завершить работу..."
+
+#~ msgid "Power…"
+#~ msgstr "Управление питанием…"
+
+#~ msgid "More…"
+#~ msgstr "Больше…"
+
+#~ msgid "Updating applications…"
+#~ msgstr "Обновление списка приложений..."
+
+#~ msgid "Allow labels to have two lines"
+#~ msgstr "Разрешить перенос описания на вторую строку"
+
+#~ msgid "%2@%3 (%1)"
+#~ msgstr "%2 на %3 (%1)"
+
+#~ msgid "%1@%2"
+#~ msgstr "%1 на %2"
+
+#~ msgid "List with 1 item"
+#~ msgid_plural "List with %1 items"
+#~ msgstr[0] "Список с %1 объектом"
+#~ msgstr[1] "Список с %1 объектами"
+#~ msgstr[2] "Список с %1 объектами"
+#~ msgstr[3] "Список с одним объектом"
+
+#~ msgid "%1 submenu"
+#~ msgstr "%1 вложенное меню"
+
+#~ msgid "Leave..."
+#~ msgstr "Выйти..."
+
+#~ msgid "Power..."
+#~ msgstr "Управление питанием..."
+
+#~ msgid "More..."
+#~ msgstr "Больше..."
+
+#~ msgid "Applications updated."
+#~ msgstr "Список приложений обновлён."
+
+#~ msgid "Switch tabs on hover"
+#~ msgstr "Переключать вкладки при наведении мыши"
+
+#~ msgid "All Applications"
+#~ msgstr "Все приложения"
+
+#~ msgid "Often Used"
+#~ msgstr "Популярные"
+
+#~ msgid "Active Tabs"
+#~ msgstr "Активные вкладки"
+
+#~ msgid "Inactive Tabs"
+#~ msgstr "Неактивные вкладки"
+
+#~ msgid ""
+#~ "Drag tabs between the boxes to show/hide them, or reorder the visible "
+#~ "tabs by dragging."
+#~ msgstr ""
+#~ "Перетаскивайте кнопки, чтобы добавить или убрать вкладки или изменить их "
+#~ "порядок."
+
+#~ msgid "Expand search to bookmarks, files and emails"
+#~ msgstr "Также искать закладки, файлы и электронные письма"
+
+#~ msgid "Appearance"
+#~ msgstr "Внешний вид"
+
+#~ msgid "Menu Buttons"
+#~ msgstr "Вкладки меню"
+
+#~ msgid "Visible Tabs"
+#~ msgstr "Видимые вкладки"
+
+#~ msgctxt "Type is a verb here, not a noun"
+#~ msgid "Type to search..."
+#~ msgstr "Введите текст для поиска..."
+
+#~ msgid "Recently Installed"
+#~ msgstr "Последние установленные"
+
+#~ msgctxt "@title:column"
+#~ msgid "Favorites"
+#~ msgstr "Избранное"
+
+# shutdown-method
+#~ msgid "Log out"
+#~ msgstr "Завершить сеанс"
+
+#~ msgid "Lock"
+#~ msgstr "Заблокировать"
+
+#~ msgid "Lock screen"
+#~ msgstr "Заблокировать экран"
+
+#~ msgid "Switch user"
+#~ msgstr "Переключить пользователя"
+
+#~ msgid "Start a parallel session as a different user"
+#~ msgstr "Начать параллельный сеанс от имени другого пользователя"
+
+# shutdown-method
+#~ msgid "Shut down"
+#~ msgstr "Выключить"
+
+# shutdown-method
+#~ msgid "Turn off computer"
+#~ msgstr "Выключить компьютер"
+
+# shutdown-method
+#~ msgctxt "Restart computer"
+#~ msgid "Restart"
+#~ msgstr "Перезагрузить"
+
+# shutdown-method
+#~ msgid "Restart computer"
+#~ msgstr "Перезагрузить компьютер"
+
+#~ msgid "Save current session for next login"
+#~ msgstr "Сохранить текущий сеанс для следующего входа"
+
+# shutdown-method
+#~ msgctxt "Puts the system on standby"
+#~ msgid "Standby"
+#~ msgstr "Остановка"
+
+#~ msgid "Pause without logging out"
+#~ msgstr "Пауза без завершения сеанса"
+
+# shutdown-method
+#~ msgid "Hibernate"
+#~ msgstr "Спящий режим"
+
+# shutdown-method
+#~ msgid "Suspend to disk"
+#~ msgstr "Спящий режим"
+
+# shutdown-method
+#, fuzzy
+#~ msgid "Suspend"
+#~ msgstr "Ждущий режим"
+
+# shutdown-method
+#~ msgid "Suspend to RAM"
+#~ msgstr "Ждущий режим"
+
+#~ msgid "System"
+#~ msgstr "Система"
+
+#~ msgid "Home Folder"
+#~ msgstr "Домашняя папка"
+
+#~ msgid "Network Folders"
+#~ msgstr "Сетевые папки"
+
+#~ msgid "Documents"
+#~ msgstr "Документы"
+
+#~ msgid "Recently Used Documents"
+#~ msgstr "Последние документы"
+
+#~ msgid "Recently Used Applications"
+#~ msgstr "Последние приложения"
+
+#~ msgid "Run Command..."
+#~ msgstr "Выполнить команду..."
+
+#~ msgid "Run a command or a search query"
+#~ msgstr "Выполнить команду или поисковый запрос"
+
+#~ msgid "Removable Storage"
+#~ msgstr "Внешние носители"
+
+#~ msgid "Show 'Recently Installed'"
+#~ msgstr "Показывать «Последние установленные»"
+
+#~ msgid "Uninstall"
+#~ msgstr "Удалить"
+
+#~ msgid "Sort Alphabetically (Z to A)"
+#~ msgstr "Сортировать по алфавиту (от Я до А)"
+
+#~ msgid "Clear Recent Applications"
+#~ msgstr "Очистить список последних запущенных приложений"
+
+#~ msgid "Clear Recent Documents"
+#~ msgstr "Очистить список последних открытых документов"
+
+# shutdown-method
+#~ msgid "Sleep"
+#~ msgstr "Ждущий режим"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Николай Шафоростов, Леонид Кантер"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "shaforostoff@kde.ru, leon@asplinux.ru"
+
+#~ msgid ""
+#~ "Favorites, applications, computer places, recently used items and desktop "
+#~ "sessions"
+#~ msgstr ""
+#~ "Приложения, точки входа в файловую систему, последние открытые документы"
+
+#~ msgid "Switch to Classic Menu Style"
+#~ msgstr "Переключиться к классическому стилю меню"
+
+#~ msgid "&Icon:"
+#~ msgstr "&Значок:"
+
+#~ msgid "Games"
+#~ msgstr "Игры"
+
+#~ msgid "Storage"
+#~ msgstr "Диски"
+
+#~ msgid "Kickoff"
+#~ msgstr "Kickoff"
+
+#~ msgid "Application Launcher"
+#~ msgstr "Запуск приложений"
+
+#~ msgid "Bookmarks"
+#~ msgstr "Закладки"
+
+#~ msgid "System Settings"
+#~ msgstr "Параметры системы"
+
+#~ msgid "Switch User"
+#~ msgstr "Переключить пользователя"
+
+#~ msgid "Lock Screen"
+#~ msgstr "Заблокировать экран"
+
+# shutdown-method
+#~ msgctxt "Restart Computer"
+#~ msgid "Restart"
+#~ msgstr "Перезагрузить"
+
+#~ msgid "Switch to Application Launcher Style"
+#~ msgstr "Переключиться к современному стилю меню"
+
+#~ msgid "View"
+#~ msgstr "Вид"
+
+#~ msgctxt "@label:listbox How to present applications in a KMenu-like menu"
+#~ msgid "Format:"
+#~ msgstr "Формат:"
+
+#~ msgctxt "@item:inlistbox Format:"
+#~ msgid "Name - Description"
+#~ msgstr "Имя - Описание"
+
+#~ msgid "Show menu titles:"
+#~ msgstr "Показывать заголовки меню:"
+
+#~ msgid "Options"
+#~ msgstr "Параметры"
+
+#~ msgid "Advanced"
+#~ msgstr "Дополнительно"
+
+#~ msgid "Add to Desktop"
+#~ msgstr "Поместить на рабочий стол"
+
+#~ msgid "Add to Panel"
+#~ msgstr "Поместить на панель"
+
+#~ msgid "Eject"
+#~ msgstr "Извлечь"
+
+#~ msgid "Safely Remove"
+#~ msgstr "Безопасное извлечение"
+
+#~ msgctxt "login name, hostname"
+#~ msgid "User <b>%1</b> on <b>%2</b>"
+#~ msgstr "Пользователь <b>%1</b> на <b>%2</b>"
+
+#~ msgctxt "full name, login name, hostname"
+#~ msgid "<b>%1 (%2)</b> on <b>%3</b>"
+#~ msgstr "<b>%1 (%2)</b> на <b>%3</b>"
+
+#~ msgid "Switch to Kickoff Menu Style"
+#~ msgstr "Переключиться к стилю меню Kickoff"
+
+#~ msgid "run:/"
+#~ msgstr "run:/"
+
+#~ msgid "Web Searches"
+#~ msgstr "Поиск в Интернете"
+
+#~ msgid "Search web for '%1'"
+#~ msgstr "Искать «%1» в Интернете"
+
+#~ msgid "Lock the screen"
+#~ msgstr "Заблокировать экран"
+
+#~ msgid "Known Applications"
+#~ msgstr "Известные приложения"
+
+#, fuzzy
+#~ msgid "Classic Application Launcher"
+#~ msgstr "Запуск приложений"
+
+#~ msgctxt "@item:inlistbox View:"
+#~ msgid "Standard"
+#~ msgstr "Стандартные"
+
+#~ msgctxt "@item:inlistbox View:"
+#~ msgid "Favorites"
+#~ msgstr "Избранное"
+
+#~ msgctxt "@item:inlistbox View:"
+#~ msgid "Applications"
+#~ msgstr "Приложения"
+
+#~ msgctxt "@item:inlistbox View:"
+#~ msgid "Computer"
+#~ msgstr "Компьютер"
+
+#~ msgctxt "@item:inlistbox View:"
+#~ msgid "Leave"
+#~ msgstr "Выход"

@@ -1,0 +1,463 @@
+# Copyright (C) 2024 This file is copyright:
+# This file is distributed under the same license as the plasma-desktop package.
+#
+# Maris Nartiss <maris.kde@gmail.com>, 2019.
+# SPDX-FileCopyrightText: 2024, 2025 Toms Trasuns <toms.trasuns@posteo.net>
+msgid ""
+msgstr ""
+"Project-Id-Version: plasma-desktop\n"
+"Report-Msgid-Bugs-To: https://github.com/jinliu/plasma-applet-kickon/issues\n"
+"POT-Creation-Date: 2025-05-26 10:55+0800\n"
+"PO-Revision-Date: 2025-03-22 09:28+0200\n"
+"Last-Translator: Toms Trasuns <toms.trasuns@posteo.net>\n"
+"Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
+"Language: lv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
+"2);\n"
+"X-Generator: Lokalize 24.12.3\n"
+
+#: ../contents/config/config.qml
+msgid "General"
+msgstr "Pamata"
+
+#: ../contents/ui/code/tools.js
+msgid "Remove from Favorites"
+msgstr "Noņemt no iecienītajām"
+
+#: ../contents/ui/code/tools.js
+msgid "Add to Favorites"
+msgstr "Pievienot iecienītajām"
+
+#: ../contents/ui/code/tools.js
+msgid "On All Activities"
+msgstr "Visās aktivitātēs"
+
+#: ../contents/ui/code/tools.js
+msgid "On the Current Activity"
+msgstr "Pašreizējā aktivitātē"
+
+#: ../contents/ui/code/tools.js
+msgid "Show in Favorites"
+msgstr "Rādīt iecienītajās"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Icon:"
+msgstr "Ikona:"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@action:button"
+msgid "Change Application Launcher's icon"
+msgstr "Mainīt programmu palaidēja ikonu"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@info:whatsthis"
+msgid ""
+"Current icon is %1. Click to open menu to change the current icon or reset "
+"to the default icon."
+msgstr ""
+"Šobrīd ikona ir %1. Spiediet, lai atvērtu izvēlni un mainītu pašreizējo "
+"ikonu vai to atiestatītu uz noklusējuma ikonu."
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@info:tooltip"
+msgid "Icon name is \"%1\""
+msgstr "Ikonas nosaukums ir „%1“"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@item:inmenu Open icon chooser dialog"
+msgid "Choose…"
+msgstr "Izvēlēties…"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@info:whatsthis"
+msgid "Choose an icon for Application Launcher"
+msgstr "Izvēlieties ikonu programmu palaidējam"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@item:inmenu Reset icon to default"
+msgid "Reset to default icon"
+msgstr "Atiestatīt uz noklusējuma ikonu"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@action:inmenu"
+msgid "Remove icon"
+msgstr "Noņemt ikonu"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Show applications as:"
+msgstr "Rādīt programmas kā:"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Name only"
+msgstr "Tikai ar nosaukumu"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Description only"
+msgstr "Tikai ar aprakstu"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Name (Description)"
+msgstr "Nosaukums (apraksts)"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Description (Name)"
+msgstr "Apraksts (nosaukums)"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@label:textbox"
+msgid "Text label:"
+msgstr "Teksta etiķete:"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@info:placeholder"
+msgid "Type here to add a text label"
+msgstr "Rakstiet te, lai pievienota teksta etiķeti"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@action:button"
+msgid "Reset menu label"
+msgstr "Atiestatīt izvēlnes etiķeti"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@info"
+msgid "A text label cannot be set when the Panel is vertical."
+msgstr "Teksta etiķeti nevar uzlikt, panelim atrodoties vertikāli."
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Front page:"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml ../contents/ui/FullRepresentation.qml
+msgid "Favorites"
+msgstr "Iecienītās"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Recent apps:"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "rows"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Frequent files:"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Recent files:"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Icon size:"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Small"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Small-Medium"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Medium"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Large"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Huge"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Enormous"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "Application List options"
+msgid "App list:"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@option:check"
+msgid "Sort applications alphabetically"
+msgstr "Programmas kārtot alfabētiski"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@info:whatsthis"
+msgid ""
+"This doesn't affect how applications are sorted in either search results or "
+"the favorites page."
+msgstr ""
+"Šis iestatījums neietekmē programmu izkārtojumu rezultātu vai iecienīto "
+"programmu lapā."
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Use compact list item style"
+msgstr "Izmantot saraksta kompaktu stilu"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@info:usagetip under a checkbox when Touch Mode is on"
+msgid "Automatically disabled when in Touch Mode"
+msgstr "Automātiski izslēgt, atrodoties skārienjutīgā režīmā"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Highlight newly installed applications"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Switch sidebar categories when hovering over them"
+msgstr "Pārslēgt sānu joslas kategorijas, pārliekot tām peles rādītāju"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@action:button opens plasmasearch kcm"
+msgid "Configure Search Plugins…"
+msgstr "Konfigurēt meklēšanas spraudņus…"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Sidebar position:"
+msgstr "Sānu joslas atrašanās vieta:"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Right"
+msgstr "Pa labi"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Left"
+msgstr "Pa kreisi"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Show favorites:"
+msgstr "Rādīt iecienītās:"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "Part of a sentence: 'Show favorites in a grid'"
+msgid "In a grid"
+msgstr "Režģī"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "Part of a sentence: 'Show favorites in a list'"
+msgid "In a list"
+msgstr "Sarakstā"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Show all applications:"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "Part of a sentence: 'Show all applications in a grid'"
+msgid "In a grid"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "Part of a sentence: 'Show other applications in a list'"
+msgid "In a list"
+msgstr "Sarakstā"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Show buttons for:"
+msgstr "Rādīt pogas:"
+
+#: ../contents/ui/ConfigGeneral.qml ../contents/ui/LeaveButtons.qml
+msgid "Power"
+msgstr "Izslēgšanai"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Session"
+msgstr "Sesijai"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Power and session"
+msgstr "Izslēgšanai un sesijai"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "None"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Show action button captions"
+msgstr "Rādīt aktīvās pogas parakstus"
+
+#: ../contents/ui/FrontPageGridView.qml ../contents/ui/KickoffGridView.qml
+msgid "Grid with %1 rows, %2 columns"
+msgstr "Režģis ar %1 rindām, %2 kolonnām"
+
+#: ../contents/ui/FullRepresentation.qml
+msgid "All Apps >"
+msgstr ""
+
+#: ../contents/ui/FullRepresentation.qml
+msgid "Recent Apps"
+msgstr ""
+
+#: ../contents/ui/FullRepresentation.qml
+msgid "More >"
+msgstr ""
+
+#: ../contents/ui/FullRepresentation.qml
+msgid "Frequently Used Files"
+msgstr ""
+
+#: ../contents/ui/FullRepresentation.qml
+msgid "Recently Used Files"
+msgstr ""
+
+#: ../contents/ui/FullRepresentation.qml
+msgctxt "@info:status"
+msgid "No matches"
+msgstr "Nav atbilstību"
+
+#: ../contents/ui/Header.qml
+msgid "Open user settings"
+msgstr "Atvērt lietotāja iestatījumus"
+
+#: ../contents/ui/Header.qml
+msgid "< Back"
+msgstr ""
+
+#: ../contents/ui/Header.qml
+msgid "Keep Open"
+msgstr "Paturēt atvērtu"
+
+#: ../contents/ui/KickoffGridDelegate.qml
+#: ../contents/ui/KickoffListDelegate.qml
+msgctxt "Newly installed app, badge, keep short"
+msgid "New!"
+msgstr ""
+
+#: ../contents/ui/KickoffGridDelegate.qml
+#: ../contents/ui/KickoffListDelegate.qml
+#, fuzzy
+msgid "Newly installed application"
+msgstr "Rādīt citas programmas:"
+
+#: ../contents/ui/KickoffListDelegate.qml
+msgid "There is a newly installed application in this category"
+msgstr ""
+
+#: ../contents/ui/LeaveButtons.qml
+msgid "Leave"
+msgstr "Atstāt"
+
+#: ../contents/ui/LeaveButtons.qml
+msgid "More"
+msgstr "Vairāk"
+
+#: ../contents/ui/main.qml
+msgid "Edit Applications…"
+msgstr "Rediģēt programmas…"
+
+#, kde-format
+#~ msgctxt "General options"
+#~ msgid "General:"
+#~ msgstr "Pamata:"
+
+#, kde-format
+#~ msgid "Show other applications:"
+#~ msgstr "Rādīt citas programmas:"
+
+#, kde-format
+#~ msgctxt "Part of a sentence: 'Show other applications in a grid'"
+#~ msgid "In a grid"
+#~ msgstr "Režģī"
+
+#, kde-format
+#~ msgid "Applications"
+#~ msgstr "Programmas"
+
+#, kde-format
+#~ msgid "Places"
+#~ msgstr "Vietas"
+
+#, kde-format
+#~ msgctxt "category in Places sidebar"
+#~ msgid "Computer"
+#~ msgstr "Dators"
+
+#, kde-format
+#~ msgctxt "category in Places sidebar"
+#~ msgid "History"
+#~ msgstr "Vēsture"
+
+#, kde-format
+#~ msgctxt "category in Places sidebar"
+#~ msgid "Frequently Used"
+#~ msgstr "Biežāk izmantotās"
+
+#~ msgctxt "@item:inmenu Reset icon to default"
+#~ msgid "Clear Icon"
+#~ msgstr "Notīrīt ikonu"
+
+#, fuzzy
+#~| msgid "Search..."
+#~ msgid "Search…"
+#~ msgstr "Meklēt..."
+
+#, fuzzy
+#~| msgid "Leave"
+#~ msgid "Leave…"
+#~ msgstr "Atstāt"
+
+#, fuzzy
+#~| msgid "Edit Applications..."
+#~ msgid "Updating applications…"
+#~ msgstr "Rediģēt programmas..."
+
+#~ msgid "%2@%3 (%1)"
+#~ msgstr "%2@%3 (%1)"
+
+#~ msgid "%1@%2"
+#~ msgstr "%1@%2"
+
+#, fuzzy
+#~| msgid "Leave"
+#~ msgid "Leave..."
+#~ msgstr "Atstāt"
+
+#, fuzzy
+#~| msgctxt "@item:inmenu Open icon chooser dialog"
+#~| msgid "Choose..."
+#~ msgid "More..."
+#~ msgstr "Izvēlēties..."
+
+#~ msgid "Applications updated."
+#~ msgstr "Programmas ir atjauninātas."
+
+#~ msgid "Switch tabs on hover"
+#~ msgstr "Pārslēgt cilnes zem peles kursora"
+
+#~ msgid "All Applications"
+#~ msgstr "Visas programmas"
+
+#~ msgid "Often Used"
+#~ msgstr "Biežāk lietotās"
+
+#~ msgid "Active Tabs"
+#~ msgstr "Aktīvās cilnes"
+
+#~ msgid "Inactive Tabs"
+#~ msgstr "Neaktīvās cilnes"
+
+#~ msgid ""
+#~ "Drag tabs between the boxes to show/hide them, or reorder the visible "
+#~ "tabs by dragging."
+#~ msgstr ""
+#~ "Pārvelc cilnes starp kastēm, lai tās parādītu/paslēptu. Pārkārto redzamās "
+#~ "cilnes tās pārvelkot."
+
+#~ msgid "Expand search to bookmarks, files and emails"
+#~ msgstr "Meklēšanā ietvert grāmatzīmes, datnes un e-pastus"
+
+#~ msgid "Appearance"
+#~ msgstr "Izskats"
+
+#~ msgid "Menu Buttons"
+#~ msgstr "Izvēlnes pogas"
+
+#~ msgid "Visible Tabs"
+#~ msgstr "Redzamas cilnes"

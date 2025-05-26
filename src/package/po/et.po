@@ -1,0 +1,448 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Marek Laane <qiilaq69@gmail.com>, 2016, 2019.
+# Mihkel Tõnnov <mihhkel@gmail.com>, 2020.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: https://github.com/jinliu/plasma-applet-kickon/issues\n"
+"POT-Creation-Date: 2025-05-26 10:55+0800\n"
+"PO-Revision-Date: 2020-10-25 18:49+0100\n"
+"Last-Translator: Mihkel Tõnnov <mihhkel@gmail.com>\n"
+"Language-Team: Estonian <>\n"
+"Language: et\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 20.08.2\n"
+
+#: ../contents/config/config.qml
+msgid "General"
+msgstr "Üldine"
+
+#: ../contents/ui/code/tools.js
+msgid "Remove from Favorites"
+msgstr "Eemalda lemmikute seast"
+
+#: ../contents/ui/code/tools.js
+msgid "Add to Favorites"
+msgstr "Lisa lemmikute sekka"
+
+#: ../contents/ui/code/tools.js
+msgid "On All Activities"
+msgstr "Kõigis tegevustes"
+
+#: ../contents/ui/code/tools.js
+msgid "On the Current Activity"
+msgstr "Aktiivses tegevuses"
+
+#: ../contents/ui/code/tools.js
+msgid "Show in Favorites"
+msgstr "Näita lemmikutes"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Icon:"
+msgstr "Ikoon:"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@action:button"
+msgid "Change Application Launcher's icon"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@info:whatsthis"
+msgid ""
+"Current icon is %1. Click to open menu to change the current icon or reset "
+"to the default icon."
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@info:tooltip"
+msgid "Icon name is \"%1\""
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+#, fuzzy
+msgctxt "@item:inmenu Open icon chooser dialog"
+msgid "Choose…"
+msgstr "Vali..."
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@info:whatsthis"
+msgid "Choose an icon for Application Launcher"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@item:inmenu Reset icon to default"
+msgid "Reset to default icon"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@action:inmenu"
+msgid "Remove icon"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+#, fuzzy
+msgid "Show applications as:"
+msgstr "Rakenduste näitamine nime järgi"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Name only"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Description only"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Name (Description)"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Description (Name)"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@label:textbox"
+msgid "Text label:"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@info:placeholder"
+msgid "Type here to add a text label"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@action:button"
+msgid "Reset menu label"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@info"
+msgid "A text label cannot be set when the Panel is vertical."
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Front page:"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml ../contents/ui/FullRepresentation.qml
+msgid "Favorites"
+msgstr "Lemmikud"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Recent apps:"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "rows"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Frequent files:"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Recent files:"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Icon size:"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Small"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Small-Medium"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Medium"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Large"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Huge"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Enormous"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "Application List options"
+msgid "App list:"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+#, fuzzy
+msgctxt "@option:check"
+msgid "Sort applications alphabetically"
+msgstr "Sordi tähestiku järgi"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@info:whatsthis"
+msgid ""
+"This doesn't affect how applications are sorted in either search results or "
+"the favorites page."
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Use compact list item style"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@info:usagetip under a checkbox when Touch Mode is on"
+msgid "Automatically disabled when in Touch Mode"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Highlight newly installed applications"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Switch sidebar categories when hovering over them"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+#, fuzzy
+msgctxt "@action:button opens plasmasearch kcm"
+msgid "Configure Search Plugins…"
+msgstr "Seadista lubatud otsingupluginaid"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Sidebar position:"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Right"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Left"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+#, fuzzy
+msgid "Show favorites:"
+msgstr "Näita lemmikutes"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "Part of a sentence: 'Show favorites in a grid'"
+msgid "In a grid"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "Part of a sentence: 'Show favorites in a list'"
+msgid "In a list"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Show all applications:"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "Part of a sentence: 'Show all applications in a grid'"
+msgid "In a grid"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "Part of a sentence: 'Show other applications in a list'"
+msgid "In a list"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Show buttons for:"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml ../contents/ui/LeaveButtons.qml
+msgid "Power"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Session"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Power and session"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "None"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Show action button captions"
+msgstr ""
+
+#: ../contents/ui/FrontPageGridView.qml ../contents/ui/KickoffGridView.qml
+msgid "Grid with %1 rows, %2 columns"
+msgstr ""
+
+#: ../contents/ui/FullRepresentation.qml
+msgid "All Apps >"
+msgstr ""
+
+#: ../contents/ui/FullRepresentation.qml
+msgid "Recent Apps"
+msgstr ""
+
+#: ../contents/ui/FullRepresentation.qml
+msgid "More >"
+msgstr ""
+
+#: ../contents/ui/FullRepresentation.qml
+msgid "Frequently Used Files"
+msgstr ""
+
+#: ../contents/ui/FullRepresentation.qml
+msgid "Recently Used Files"
+msgstr ""
+
+#: ../contents/ui/FullRepresentation.qml
+msgctxt "@info:status"
+msgid "No matches"
+msgstr ""
+
+#: ../contents/ui/Header.qml
+msgid "Open user settings"
+msgstr ""
+
+#: ../contents/ui/Header.qml
+msgid "< Back"
+msgstr ""
+
+#: ../contents/ui/Header.qml
+msgid "Keep Open"
+msgstr ""
+
+#: ../contents/ui/KickoffGridDelegate.qml
+#: ../contents/ui/KickoffListDelegate.qml
+msgctxt "Newly installed app, badge, keep short"
+msgid "New!"
+msgstr ""
+
+#: ../contents/ui/KickoffGridDelegate.qml
+#: ../contents/ui/KickoffListDelegate.qml
+#, fuzzy
+msgid "Newly installed application"
+msgstr "Rakenduste näitamine nime järgi"
+
+#: ../contents/ui/KickoffListDelegate.qml
+msgid "There is a newly installed application in this category"
+msgstr ""
+
+#: ../contents/ui/LeaveButtons.qml
+msgid "Leave"
+msgstr "Väljumine"
+
+#: ../contents/ui/LeaveButtons.qml
+msgid "More"
+msgstr ""
+
+#: ../contents/ui/main.qml
+#, fuzzy
+msgid "Edit Applications…"
+msgstr "Muuda rakendusi..."
+
+#, fuzzy, kde-format
+#~| msgid "General:"
+#~ msgctxt "General options"
+#~ msgid "General:"
+#~ msgstr "Üldine:"
+
+#, fuzzy, kde-format
+#~| msgid "Show applications by name"
+#~ msgid "Show other applications:"
+#~ msgstr "Rakenduste näitamine nime järgi"
+
+#, kde-format
+#~ msgid "Applications"
+#~ msgstr "Rakendused"
+
+#, fuzzy, kde-format
+#~| msgid "Computer"
+#~ msgctxt "category in Places sidebar"
+#~ msgid "Computer"
+#~ msgstr "Arvuti"
+
+#, fuzzy, kde-format
+#~| msgid "History"
+#~ msgctxt "category in Places sidebar"
+#~ msgid "History"
+#~ msgstr "Ajalugu"
+
+#~ msgctxt "@item:inmenu Reset icon to default"
+#~ msgid "Clear Icon"
+#~ msgstr "Puhasta ikoon"
+
+#, fuzzy
+#~| msgid "Search..."
+#~ msgid "Search…"
+#~ msgstr "Otsi ..."
+
+#, fuzzy
+#~| msgid "Leave"
+#~ msgid "Leave…"
+#~ msgstr "Väljumine"
+
+#, fuzzy
+#~| msgid "Edit Applications..."
+#~ msgid "Updating applications…"
+#~ msgstr "Muuda rakendusi..."
+
+#~ msgid "%2@%3 (%1)"
+#~ msgstr "%2@%3 (%1)"
+
+#~ msgid "%1@%2"
+#~ msgstr "%1@%2"
+
+#, fuzzy
+#~| msgid "Leave"
+#~ msgid "Leave..."
+#~ msgstr "Väljumine"
+
+#, fuzzy
+#~| msgctxt "@item:inmenu Open icon chooser dialog"
+#~| msgid "Choose..."
+#~ msgid "More..."
+#~ msgstr "Vali..."
+
+#~ msgid "Applications updated."
+#~ msgstr "Rakendused on uuendatud."
+
+#~ msgid "Switch tabs on hover"
+#~ msgstr "Kaartide vahetamine hiirekursori kaardile viimisel"
+
+#~ msgid "All Applications"
+#~ msgstr "Kõik rakendused"
+
+#~ msgid "Often Used"
+#~ msgstr "Sageli kasutatud"
+
+#~ msgid "Active Tabs"
+#~ msgstr "Aktiivsed kaardid"
+
+#~ msgid "Inactive Tabs"
+#~ msgstr "Mitteaktiivsed kaardid"
+
+#~ msgid ""
+#~ "Drag tabs between the boxes to show/hide them, or reorder the visible "
+#~ "tabs by dragging."
+#~ msgstr ""
+#~ "Kaarte kastide vahel lohistades saab neid näidata lasta või peita, samuti "
+#~ "saab lohistades muuta nähtavate kaartide järjestust."
+
+#~ msgid "Expand search to bookmarks, files and emails"
+#~ msgstr "Otsingu laiendamine järjehoidjatele, failidele ja kirjadele"
+
+#~ msgid "Appearance"
+#~ msgstr "Välimus"

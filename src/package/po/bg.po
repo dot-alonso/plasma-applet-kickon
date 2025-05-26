@@ -1,0 +1,391 @@
+# Copyright (C) 2024 This file is copyright:
+# This file is distributed under the same license as the plasma-desktop package.
+#
+# SPDX-FileCopyrightText: 2022, 2023, 2024, 2025 Mincho Kondarev <mkondarev@yahoo.de>
+msgid ""
+msgstr ""
+"Project-Id-Version: plasma-desktop\n"
+"Report-Msgid-Bugs-To: https://github.com/jinliu/plasma-applet-kickon/issues\n"
+"POT-Creation-Date: 2025-05-26 10:55+0800\n"
+"PO-Revision-Date: 2025-05-18 11:41+0200\n"
+"Last-Translator: Mincho Kondarev <mkondarev@yahoo.de>\n"
+"Language-Team: Bulgarian <kde-i18n-doc@kde.org>\n"
+"Language: bg\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 25.07.70\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: ../contents/config/config.qml
+msgid "General"
+msgstr "Общи"
+
+#: ../contents/ui/code/tools.js
+msgid "Remove from Favorites"
+msgstr "Премахване от Предпочитани"
+
+#: ../contents/ui/code/tools.js
+msgid "Add to Favorites"
+msgstr "Добавяне в Предпочитани"
+
+#: ../contents/ui/code/tools.js
+msgid "On All Activities"
+msgstr "На всички дейности"
+
+#: ../contents/ui/code/tools.js
+msgid "On the Current Activity"
+msgstr "На текущата дейност"
+
+#: ../contents/ui/code/tools.js
+msgid "Show in Favorites"
+msgstr "Показване в Предпочитани"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Icon:"
+msgstr "Икона:"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@action:button"
+msgid "Change Application Launcher's icon"
+msgstr "Промяна на иконата на стартера на приложения"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@info:whatsthis"
+msgid ""
+"Current icon is %1. Click to open menu to change the current icon or reset "
+"to the default icon."
+msgstr ""
+"Текущата икона е %1. Щракнете, за да отворите менюто за промяна на текущата "
+"икона или за връщане на иконата по подразбиране."
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@info:tooltip"
+msgid "Icon name is \"%1\""
+msgstr "Името на иконата е „%1“"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@item:inmenu Open icon chooser dialog"
+msgid "Choose…"
+msgstr "Избиране…"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@info:whatsthis"
+msgid "Choose an icon for Application Launcher"
+msgstr "Избиране на икона за стартера на приложения"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@item:inmenu Reset icon to default"
+msgid "Reset to default icon"
+msgstr "Възстановяване на стандартната икона"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@action:inmenu"
+msgid "Remove icon"
+msgstr "Премахване на икона"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Show applications as:"
+msgstr "Показване на приложения като:"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Name only"
+msgstr "Само име"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Description only"
+msgstr "Само описание"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Name (Description)"
+msgstr "Име (описание)"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Description (Name)"
+msgstr "Описание (име)"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@label:textbox"
+msgid "Text label:"
+msgstr "Надпис:"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@info:placeholder"
+msgid "Type here to add a text label"
+msgstr "Добавете надпис"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@action:button"
+msgid "Reset menu label"
+msgstr "Възстановяване на етикета на менюто"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@info"
+msgid "A text label cannot be set when the Panel is vertical."
+msgstr "Не може да се зададе текстов етикет, когато панелът е вертикален."
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Front page:"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml ../contents/ui/FullRepresentation.qml
+msgid "Favorites"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Recent apps:"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "rows"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Frequent files:"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Recent files:"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Icon size:"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Small"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Small-Medium"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Medium"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Large"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Huge"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Enormous"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "Application List options"
+msgid "App list:"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@option:check"
+msgid "Sort applications alphabetically"
+msgstr "Сортиране на приложенията по азбучен ред"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@info:whatsthis"
+msgid ""
+"This doesn't affect how applications are sorted in either search results or "
+"the favorites page."
+msgstr ""
+"Това не влияе на начина на сортиране на приложенията в резултатите от "
+"търсенето или в страницата с предпочитани."
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Use compact list item style"
+msgstr "Компактен стил на списък"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@info:usagetip under a checkbox when Touch Mode is on"
+msgid "Automatically disabled when in Touch Mode"
+msgstr "Автоматично деактивиране в режим на таблет"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Highlight newly installed applications"
+msgstr "Маркиране на новоинсталирани приложения"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Switch sidebar categories when hovering over them"
+msgstr "Превключва категориите на страничната лента при посочване с мишката"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@action:button opens plasmasearch kcm"
+msgid "Configure Search Plugins…"
+msgstr "Конфигуриране на приставки за търсене…"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Sidebar position:"
+msgstr "Позиция на плъзгача:"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Right"
+msgstr "Вдясно"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Left"
+msgstr "Вляво"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Show favorites:"
+msgstr "Показване на Предпочитани:"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "Part of a sentence: 'Show favorites in a grid'"
+msgid "In a grid"
+msgstr "Плочки"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "Part of a sentence: 'Show favorites in a list'"
+msgid "In a list"
+msgstr "Списък"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Show all applications:"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "Part of a sentence: 'Show all applications in a grid'"
+msgid "In a grid"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "Part of a sentence: 'Show other applications in a list'"
+msgid "In a list"
+msgstr "Списък"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Show buttons for:"
+msgstr "Показване на бутони за:"
+
+#: ../contents/ui/ConfigGeneral.qml ../contents/ui/LeaveButtons.qml
+msgid "Power"
+msgstr "Захранване"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Session"
+msgstr "Сесия"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Power and session"
+msgstr "Захранване и сесия"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "None"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Show action button captions"
+msgstr "Показване на надписите на бутоните за действие"
+
+#: ../contents/ui/FrontPageGridView.qml ../contents/ui/KickoffGridView.qml
+msgid "Grid with %1 rows, %2 columns"
+msgstr "Плочки на %1 реда, %2 колони"
+
+#: ../contents/ui/FullRepresentation.qml
+msgid "All Apps >"
+msgstr ""
+
+#: ../contents/ui/FullRepresentation.qml
+msgid "Recent Apps"
+msgstr ""
+
+#: ../contents/ui/FullRepresentation.qml
+msgid "More >"
+msgstr ""
+
+#: ../contents/ui/FullRepresentation.qml
+msgid "Frequently Used Files"
+msgstr ""
+
+#: ../contents/ui/FullRepresentation.qml
+msgid "Recently Used Files"
+msgstr ""
+
+#: ../contents/ui/FullRepresentation.qml
+msgctxt "@info:status"
+msgid "No matches"
+msgstr "Няма съвпадения"
+
+#: ../contents/ui/Header.qml
+msgid "Open user settings"
+msgstr "Потребителски настройки"
+
+#: ../contents/ui/Header.qml
+msgid "< Back"
+msgstr ""
+
+#: ../contents/ui/Header.qml
+msgid "Keep Open"
+msgstr "Задържане отворен"
+
+#: ../contents/ui/KickoffGridDelegate.qml
+#: ../contents/ui/KickoffListDelegate.qml
+msgctxt "Newly installed app, badge, keep short"
+msgid "New!"
+msgstr "Ново!"
+
+#: ../contents/ui/KickoffGridDelegate.qml
+#: ../contents/ui/KickoffListDelegate.qml
+msgid "Newly installed application"
+msgstr "Новоинсталирано приложение"
+
+#: ../contents/ui/KickoffListDelegate.qml
+msgid "There is a newly installed application in this category"
+msgstr "В тази категория има новоинсталирано приложение"
+
+#: ../contents/ui/LeaveButtons.qml
+msgid "Leave"
+msgstr "Напускане"
+
+#: ../contents/ui/LeaveButtons.qml
+msgid "More"
+msgstr "Повече"
+
+#: ../contents/ui/main.qml
+msgid "Edit Applications…"
+msgstr "Редактиране на приложения…"
+
+#, kde-format
+#~ msgctxt "General options"
+#~ msgid "General:"
+#~ msgstr "Общи:"
+
+#, kde-format
+#~ msgid "Show other applications:"
+#~ msgstr "Показване на други приложения:"
+
+#, kde-format
+#~ msgctxt "Part of a sentence: 'Show other applications in a grid'"
+#~ msgid "In a grid"
+#~ msgstr "Плочки"
+
+#, kde-format
+#~ msgid "Applications"
+#~ msgstr "Приложения"
+
+#, kde-format
+#~ msgid "Places"
+#~ msgstr "Места"
+
+#, kde-format
+#~ msgid "Session and Power "
+#~ msgstr "Сесия и захранване "
+
+#, kde-format
+#~ msgctxt "category in Places sidebar"
+#~ msgid "Computer"
+#~ msgstr "Компютър"
+
+#, kde-format
+#~ msgctxt "category in Places sidebar"
+#~ msgid "History"
+#~ msgstr "История"
+
+#, kde-format
+#~ msgctxt "category in Places sidebar"
+#~ msgid "Frequently Used"
+#~ msgstr "Често използвани"

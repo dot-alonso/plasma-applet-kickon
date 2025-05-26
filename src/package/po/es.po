@@ -1,0 +1,394 @@
+# Spanish translations for plasma_applet_org.kde.plasma.kickoff.po package.
+# Copyright (C) 2014-2025 This file is copyright:
+# This file is distributed under the same license as the plasma-desktop package.
+# Automatically generated, 2014.
+#
+# SPDX-FileCopyrightText: 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025 Eloy Cuadra <ecuadra@eloihr.net>
+msgid ""
+msgstr ""
+"Project-Id-Version: plasma_applet_org.kde.plasma.kickoff\n"
+"Report-Msgid-Bugs-To: https://github.com/jinliu/plasma-applet-kickon/issues\n"
+"POT-Creation-Date: 2025-05-26 10:55+0800\n"
+"PO-Revision-Date: 2025-05-15 18:59+0100\n"
+"Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
+"Language-Team: Spanish <kde-l10n-es@kde.org>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 25.04.1\n"
+
+#: ../contents/config/config.qml
+msgid "General"
+msgstr "General"
+
+#: ../contents/ui/code/tools.js
+msgid "Remove from Favorites"
+msgstr "Eliminar de favoritos"
+
+#: ../contents/ui/code/tools.js
+msgid "Add to Favorites"
+msgstr "Añadir a favoritos"
+
+#: ../contents/ui/code/tools.js
+msgid "On All Activities"
+msgstr "En todas las actividades"
+
+#: ../contents/ui/code/tools.js
+msgid "On the Current Activity"
+msgstr "En la actividad actual"
+
+#: ../contents/ui/code/tools.js
+msgid "Show in Favorites"
+msgstr "Mostrar en favoritos"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Icon:"
+msgstr "Icono:"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@action:button"
+msgid "Change Application Launcher's icon"
+msgstr "Cambiar el icono del lanzador aplicaciones"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@info:whatsthis"
+msgid ""
+"Current icon is %1. Click to open menu to change the current icon or reset "
+"to the default icon."
+msgstr ""
+"El icono actual es %1. Pulse para abrir el menú para cambiar el icono actual "
+"o restaurar el icono predeterminado."
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@info:tooltip"
+msgid "Icon name is \"%1\""
+msgstr "El nombre del icono es «%1»"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@item:inmenu Open icon chooser dialog"
+msgid "Choose…"
+msgstr "Escoger…"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@info:whatsthis"
+msgid "Choose an icon for Application Launcher"
+msgstr "Escoger un icono para el lanzador de aplicaciones"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@item:inmenu Reset icon to default"
+msgid "Reset to default icon"
+msgstr "Restablecer el icono predeterminado"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@action:inmenu"
+msgid "Remove icon"
+msgstr "Eliminar icono"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Show applications as:"
+msgstr "Mostrar aplicaciones como:"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Name only"
+msgstr "Solo el nombre"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Description only"
+msgstr "Solo la descripción"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Name (Description)"
+msgstr "Nombre (Descripción)"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Description (Name)"
+msgstr "Descripción (Nombre)"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@label:textbox"
+msgid "Text label:"
+msgstr "Etiqueta de texto:"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@info:placeholder"
+msgid "Type here to add a text label"
+msgstr "Escriba aquí para añadir una etiqueta de texto"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@action:button"
+msgid "Reset menu label"
+msgstr "Reiniciar etiqueta de menú"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@info"
+msgid "A text label cannot be set when the Panel is vertical."
+msgstr "No se puede definir una etiqueta de texto cuando el panel es vertical."
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Front page:"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml ../contents/ui/FullRepresentation.qml
+msgid "Favorites"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Recent apps:"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "rows"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Frequent files:"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Recent files:"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Icon size:"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Small"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Small-Medium"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Medium"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Large"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Huge"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Enormous"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "Application List options"
+msgid "App list:"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@option:check"
+msgid "Sort applications alphabetically"
+msgstr "Ordenar aplicaciones alfabéticamente"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@info:whatsthis"
+msgid ""
+"This doesn't affect how applications are sorted in either search results or "
+"the favorites page."
+msgstr ""
+"Esto no afecta a cómo se ordenan las aplicaciones en los resultados de "
+"búsqueda ni en la página de favoritos."
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Use compact list item style"
+msgstr "Usar estilo de elementos de lista compacta"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@info:usagetip under a checkbox when Touch Mode is on"
+msgid "Automatically disabled when in Touch Mode"
+msgstr "Desactivado automáticamente en modo táctil"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Highlight newly installed applications"
+msgstr "Resaltar las aplicaciones instaladas recientemente"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Switch sidebar categories when hovering over them"
+msgstr ""
+"Cambiar las categorías de la barra lateral al situar el puntero sobre ellas"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@action:button opens plasmasearch kcm"
+msgid "Configure Search Plugins…"
+msgstr "Configurar los complementos de búsqueda…"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Sidebar position:"
+msgstr "Posición de la barra lateral:"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Right"
+msgstr "A la derecha"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Left"
+msgstr "A la izquierda"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Show favorites:"
+msgstr "Mostrar favoritos:"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "Part of a sentence: 'Show favorites in a grid'"
+msgid "In a grid"
+msgstr "En una cuadrícula"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "Part of a sentence: 'Show favorites in a list'"
+msgid "In a list"
+msgstr "En una lista"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Show all applications:"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "Part of a sentence: 'Show all applications in a grid'"
+msgid "In a grid"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "Part of a sentence: 'Show other applications in a list'"
+msgid "In a list"
+msgstr "En una lista"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Show buttons for:"
+msgstr "Mostrar botones para:"
+
+#: ../contents/ui/ConfigGeneral.qml ../contents/ui/LeaveButtons.qml
+msgid "Power"
+msgstr "Energía"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Session"
+msgstr "Sesión"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Power and session"
+msgstr "Energía y sesión"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "None"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Show action button captions"
+msgstr "Mostrar texto de los botones de acciones"
+
+#: ../contents/ui/FrontPageGridView.qml ../contents/ui/KickoffGridView.qml
+msgid "Grid with %1 rows, %2 columns"
+msgstr "Cuadrícula con %1 filas, %2 columnas"
+
+#: ../contents/ui/FullRepresentation.qml
+msgid "All Apps >"
+msgstr ""
+
+#: ../contents/ui/FullRepresentation.qml
+msgid "Recent Apps"
+msgstr ""
+
+#: ../contents/ui/FullRepresentation.qml
+msgid "More >"
+msgstr ""
+
+#: ../contents/ui/FullRepresentation.qml
+msgid "Frequently Used Files"
+msgstr ""
+
+#: ../contents/ui/FullRepresentation.qml
+msgid "Recently Used Files"
+msgstr ""
+
+#: ../contents/ui/FullRepresentation.qml
+msgctxt "@info:status"
+msgid "No matches"
+msgstr "Sin coincidencias"
+
+#: ../contents/ui/Header.qml
+msgid "Open user settings"
+msgstr "Abrir las preferencias del usuario"
+
+#: ../contents/ui/Header.qml
+msgid "< Back"
+msgstr ""
+
+#: ../contents/ui/Header.qml
+msgid "Keep Open"
+msgstr "Mantener abierta"
+
+#: ../contents/ui/KickoffGridDelegate.qml
+#: ../contents/ui/KickoffListDelegate.qml
+msgctxt "Newly installed app, badge, keep short"
+msgid "New!"
+msgstr "¡Nueva!"
+
+#: ../contents/ui/KickoffGridDelegate.qml
+#: ../contents/ui/KickoffListDelegate.qml
+msgid "Newly installed application"
+msgstr "Aplicación instalada recientemente"
+
+#: ../contents/ui/KickoffListDelegate.qml
+msgid "There is a newly installed application in this category"
+msgstr "Hay una aplicación instalada recientemente en esta categoría"
+
+#: ../contents/ui/LeaveButtons.qml
+msgid "Leave"
+msgstr ""
+
+#: ../contents/ui/LeaveButtons.qml
+msgid "More"
+msgstr "Más"
+
+#: ../contents/ui/main.qml
+msgid "Edit Applications…"
+msgstr "Editar aplicaciones…"
+
+#, kde-format
+#~ msgctxt "General options"
+#~ msgid "General:"
+#~ msgstr "General:"
+
+#, kde-format
+#~ msgid "Show other applications:"
+#~ msgstr "Mostrar otras aplicaciones:"
+
+#, kde-format
+#~ msgctxt "Part of a sentence: 'Show other applications in a grid'"
+#~ msgid "In a grid"
+#~ msgstr "En una cuadrícula"
+
+#, kde-format
+#~ msgid "Applications"
+#~ msgstr "Aplicaciones"
+
+#, kde-format
+#~ msgid "Places"
+#~ msgstr "Lugares"
+
+#, kde-format
+#~ msgid "Session and Power "
+#~ msgstr "Sesión y energía"
+
+#, kde-format
+#~ msgctxt "category in Places sidebar"
+#~ msgid "Computer"
+#~ msgstr "Equipo"
+
+#, kde-format
+#~ msgctxt "category in Places sidebar"
+#~ msgid "History"
+#~ msgstr "Historial"
+
+#, kde-format
+#~ msgctxt "category in Places sidebar"
+#~ msgid "Frequently Used"
+#~ msgstr "Usadas frecuentemente"

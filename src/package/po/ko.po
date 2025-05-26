@@ -1,0 +1,592 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+# SPDX-FileCopyrightText: 2014, 2015, 2016, 2017, 2019, 2021, 2022, 2023, 2024, 2025 Shinjo Park <kde@peremen.name>
+# JungHee Lee <daemul72@gmail.com>, 2021.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: https://github.com/jinliu/plasma-applet-kickon/issues\n"
+"POT-Creation-Date: 2025-05-26 10:55+0800\n"
+"PO-Revision-Date: 2025-04-07 00:20+0200\n"
+"Last-Translator: Shinjo Park <kde@peremen.name>\n"
+"Language-Team: Korean <kde-kr@kde.org>\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Lokalize 23.08.5\n"
+
+#: ../contents/config/config.qml
+msgid "General"
+msgstr "일반"
+
+#: ../contents/ui/code/tools.js
+msgid "Remove from Favorites"
+msgstr "책갈피에서 삭제"
+
+#: ../contents/ui/code/tools.js
+msgid "Add to Favorites"
+msgstr "책갈피에 추가"
+
+#: ../contents/ui/code/tools.js
+msgid "On All Activities"
+msgstr "모든 활동에"
+
+#: ../contents/ui/code/tools.js
+msgid "On the Current Activity"
+msgstr "현재 활동에만"
+
+#: ../contents/ui/code/tools.js
+msgid "Show in Favorites"
+msgstr "책갈피에 표시"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Icon:"
+msgstr "아이콘:"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@action:button"
+msgid "Change Application Launcher's icon"
+msgstr "앱 실행기 아이콘 변경"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@info:whatsthis"
+msgid ""
+"Current icon is %1. Click to open menu to change the current icon or reset "
+"to the default icon."
+msgstr ""
+"현재 아이콘은 %1입니다. 현재 아이콘을 변경하거나 기본 아이콘으로 초기화하려"
+"면 클릭하여 메뉴를 여십시오."
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@info:tooltip"
+msgid "Icon name is \"%1\""
+msgstr "아이콘 이름: \"%1\""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@item:inmenu Open icon chooser dialog"
+msgid "Choose…"
+msgstr "선택..."
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@info:whatsthis"
+msgid "Choose an icon for Application Launcher"
+msgstr "앱 실행기 아이콘 선택"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@item:inmenu Reset icon to default"
+msgid "Reset to default icon"
+msgstr "기본 아이콘으로 초기화"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@action:inmenu"
+msgid "Remove icon"
+msgstr "아이콘 삭제"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Show applications as:"
+msgstr "앱 표시 형식:"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Name only"
+msgstr "이름만"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Description only"
+msgstr "설명만"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Name (Description)"
+msgstr "이름(설명)"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Description (Name)"
+msgstr "설명(이름)"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@label:textbox"
+msgid "Text label:"
+msgstr "텍스트 이름표:"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@info:placeholder"
+msgid "Type here to add a text label"
+msgstr "텍스트 이름표를 추가하려면 입력"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@action:button"
+msgid "Reset menu label"
+msgstr "메뉴 이름표 초기화"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@info"
+msgid "A text label cannot be set when the Panel is vertical."
+msgstr "패널이 수직 방향일 때에는 텍스트 이름표를 설정할 수 없습니다."
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Front page:"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml ../contents/ui/FullRepresentation.qml
+msgid "Favorites"
+msgstr "책갈피"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Recent apps:"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "rows"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Frequent files:"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Recent files:"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Icon size:"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Small"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Small-Medium"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Medium"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Large"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Huge"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Enormous"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "Application List options"
+msgid "App list:"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@option:check"
+msgid "Sort applications alphabetically"
+msgstr "가나다순으로 앱 정렬"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@info:whatsthis"
+msgid ""
+"This doesn't affect how applications are sorted in either search results or "
+"the favorites page."
+msgstr ""
+"검색 결과나 책갈피 페이지에 앱이 표시되는 순서에는 영향을 주지 않습니다."
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Use compact list item style"
+msgstr "간략한 목록 항목 스타일 사용"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@info:usagetip under a checkbox when Touch Mode is on"
+msgid "Automatically disabled when in Touch Mode"
+msgstr "터치 모드에서 자동으로 비활성화됨"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Highlight newly installed applications"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Switch sidebar categories when hovering over them"
+msgstr "사이드바 위를 지나다닐 때 분류를 전환하기"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@action:button opens plasmasearch kcm"
+msgid "Configure Search Plugins…"
+msgstr "검색 플러그인 설정…"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Sidebar position:"
+msgstr "사이드바 위치:"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Right"
+msgstr "오른쪽"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Left"
+msgstr "왼쪽"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Show favorites:"
+msgstr "책갈피 표시:"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "Part of a sentence: 'Show favorites in a grid'"
+msgid "In a grid"
+msgstr "격자로"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "Part of a sentence: 'Show favorites in a list'"
+msgid "In a list"
+msgstr "목록으로"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Show all applications:"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "Part of a sentence: 'Show all applications in a grid'"
+msgid "In a grid"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "Part of a sentence: 'Show other applications in a list'"
+msgid "In a list"
+msgstr "목록으로"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Show buttons for:"
+msgstr "다음 단추 표시:"
+
+#: ../contents/ui/ConfigGeneral.qml ../contents/ui/LeaveButtons.qml
+msgid "Power"
+msgstr "전원"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Session"
+msgstr "세션"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Power and session"
+msgstr "전원과 세션"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "None"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Show action button captions"
+msgstr "동작 단추 캡션 표시"
+
+#: ../contents/ui/FrontPageGridView.qml ../contents/ui/KickoffGridView.qml
+msgid "Grid with %1 rows, %2 columns"
+msgstr "%1줄, %2칸 크기 격자"
+
+#: ../contents/ui/FullRepresentation.qml
+msgid "All Apps >"
+msgstr ""
+
+#: ../contents/ui/FullRepresentation.qml
+msgid "Recent Apps"
+msgstr ""
+
+#: ../contents/ui/FullRepresentation.qml
+msgid "More >"
+msgstr ""
+
+#: ../contents/ui/FullRepresentation.qml
+msgid "Frequently Used Files"
+msgstr ""
+
+#: ../contents/ui/FullRepresentation.qml
+msgid "Recently Used Files"
+msgstr ""
+
+#: ../contents/ui/FullRepresentation.qml
+msgctxt "@info:status"
+msgid "No matches"
+msgstr "검색 결과 없음"
+
+#: ../contents/ui/Header.qml
+msgid "Open user settings"
+msgstr "사용자 설정 열기"
+
+#: ../contents/ui/Header.qml
+msgid "< Back"
+msgstr ""
+
+#: ../contents/ui/Header.qml
+msgid "Keep Open"
+msgstr "열린 상태로 유지"
+
+#: ../contents/ui/KickoffGridDelegate.qml
+#: ../contents/ui/KickoffListDelegate.qml
+msgctxt "Newly installed app, badge, keep short"
+msgid "New!"
+msgstr ""
+
+#: ../contents/ui/KickoffGridDelegate.qml
+#: ../contents/ui/KickoffListDelegate.qml
+#, fuzzy
+msgid "Newly installed application"
+msgstr "최근 사용된 프로그램"
+
+#: ../contents/ui/KickoffListDelegate.qml
+msgid "There is a newly installed application in this category"
+msgstr ""
+
+#: ../contents/ui/LeaveButtons.qml
+msgid "Leave"
+msgstr "떠나기"
+
+#: ../contents/ui/LeaveButtons.qml
+msgid "More"
+msgstr "더 보기"
+
+#: ../contents/ui/main.qml
+msgid "Edit Applications…"
+msgstr "앱 편집…"
+
+#, kde-format
+#~ msgctxt "General options"
+#~ msgid "General:"
+#~ msgstr "일반:"
+
+#, kde-format
+#~ msgid "Show other applications:"
+#~ msgstr "다른 앱 표시:"
+
+#, kde-format
+#~ msgctxt "Part of a sentence: 'Show other applications in a grid'"
+#~ msgid "In a grid"
+#~ msgstr "격자로"
+
+#, kde-format
+#~ msgid "Applications"
+#~ msgstr "앱"
+
+#, kde-format
+#~ msgid "Places"
+#~ msgstr "위치"
+
+#, fuzzy, kde-format
+#~| msgid "Session actions"
+#~ msgid "Session and Power "
+#~ msgstr "세션 동작"
+
+#, kde-format
+#~ msgctxt "category in Places sidebar"
+#~ msgid "Computer"
+#~ msgstr "컴퓨터"
+
+#, kde-format
+#~ msgctxt "category in Places sidebar"
+#~ msgid "History"
+#~ msgstr "과거 기록"
+
+#, kde-format
+#~ msgctxt "category in Places sidebar"
+#~ msgid "Frequently Used"
+#~ msgstr "자주 사용함"
+
+#~ msgctxt "@item:inmenu Reset icon to default"
+#~ msgid "Clear Icon"
+#~ msgstr "아이콘 초기화"
+
+#~ msgid "Search…"
+#~ msgstr "검색…"
+
+#~ msgid "Primary actions:"
+#~ msgstr "기본 동작:"
+
+#~ msgid "Power actions"
+#~ msgstr "전원 동작"
+
+#~ msgid "Leave…"
+#~ msgstr "떠나기…"
+
+#~ msgid "Power…"
+#~ msgstr "전원…"
+
+#~ msgid "More…"
+#~ msgstr "더 보기…"
+
+#~ msgid "Updating applications…"
+#~ msgstr "프로그램 업데이트 중…"
+
+#~ msgid "Allow labels to have two lines"
+#~ msgstr "이름표에 두 줄 허용"
+
+#~ msgid "%2@%3 (%1)"
+#~ msgstr "%2@%3 (%1)"
+
+#~ msgid "%1@%2"
+#~ msgstr "%1@%2"
+
+#~ msgid "List with 1 item"
+#~ msgid_plural "List with %1 items"
+#~ msgstr[0] "항목 %1개가 있는 목록"
+
+#~ msgid "%1 submenu"
+#~ msgstr "%1 하위 메뉴"
+
+#~ msgid "Search..."
+#~ msgstr "찾기..."
+
+#~ msgid "Leave..."
+#~ msgstr "떠나기..."
+
+#~ msgid "Power..."
+#~ msgstr "전원..."
+
+#~ msgid "More..."
+#~ msgstr "더 보기..."
+
+#~ msgid "Applications updated."
+#~ msgstr "프로그램 업데이트됨."
+
+#~ msgid "Switch tabs on hover"
+#~ msgstr "지나다닐 때 탭 전환"
+
+#~ msgid "All Applications"
+#~ msgstr "모든 프로그램"
+
+#~ msgid "Often Used"
+#~ msgstr "자주 사용됨"
+
+#~ msgid "Active Tabs"
+#~ msgstr "활성 탭"
+
+#~ msgid "Inactive Tabs"
+#~ msgstr "비활성 탭"
+
+#~ msgid ""
+#~ "Drag tabs between the boxes to show/hide them, or reorder the visible "
+#~ "tabs by dragging."
+#~ msgstr ""
+#~ "상자에서 상자로 탭을 드래그해서 표시 및 숨김 상태를 변경하거나, 표시되는 "
+#~ "탭의 순서를 조정하려면 드래그하십시오."
+
+#~ msgid "Expand search to bookmarks, files and emails"
+#~ msgstr "책갈피, 파일, 이메일에서도 찾기"
+
+#~ msgid "Appearance"
+#~ msgstr "모양"
+
+#~ msgid "Menu Buttons"
+#~ msgstr "메뉴 단추"
+
+#~ msgid "Visible Tabs"
+#~ msgstr "표시되는 탭"
+
+#~ msgctxt "Type is a verb here, not a noun"
+#~ msgid "Type to search..."
+#~ msgstr "입력하여 찾기..."
+
+#~ msgctxt "@title:column"
+#~ msgid "Favorites"
+#~ msgstr "즐겨찾기"
+
+#~ msgid "Log out"
+#~ msgstr "로그아웃"
+
+#~ msgid "Lock"
+#~ msgstr "잠금"
+
+#~ msgid "Lock screen"
+#~ msgstr "화면 잠그기"
+
+#~ msgid "Switch user"
+#~ msgstr "사용자 전환"
+
+#~ msgid "Start a parallel session as a different user"
+#~ msgstr "다른 사용자로 새 세션 시작하기"
+
+#~ msgid "Shut down"
+#~ msgstr "끄기"
+
+#~ msgid "Turn off computer"
+#~ msgstr "컴퓨터를 끕니다"
+
+#~ msgctxt "Restart computer"
+#~ msgid "Restart"
+#~ msgstr "다시 시작"
+
+#~ msgid "Restart computer"
+#~ msgstr "컴퓨터를 다시 시작합니다"
+
+#~ msgid "Save current session for next login"
+#~ msgstr "다음 로그인을 위하여 현재 세션을 저장합니다"
+
+#~ msgctxt "Puts the system on standby"
+#~ msgid "Standby"
+#~ msgstr "대기 모드"
+
+#~ msgid "Pause without logging out"
+#~ msgstr "로그아웃하지 않고 일시 정지"
+
+#~ msgid "Hibernate"
+#~ msgstr "최대 절전 모드"
+
+#~ msgid "Suspend to disk"
+#~ msgstr "디스크 절전"
+
+#~ msgid "Suspend"
+#~ msgstr "대기 모드"
+
+#~ msgid "Suspend to RAM"
+#~ msgstr "RAM 절전"
+
+#~ msgid "System"
+#~ msgstr "시스템"
+
+#~ msgid "Home Folder"
+#~ msgstr "홈 폴더"
+
+#~ msgid "Network Folders"
+#~ msgstr "네트워크 폴더"
+
+#~ msgid "Documents"
+#~ msgstr "문서"
+
+#~ msgid "Recently Used Documents"
+#~ msgstr "최근 사용된 문서"
+
+#~ msgid "Run Command..."
+#~ msgstr "명령 실행..."
+
+#~ msgid "Run a command or a search query"
+#~ msgstr "명령 실행 및 질의 실행"
+
+#~ msgid "Removable Storage"
+#~ msgstr "이동식 저장소"
+
+#~ msgid "Show 'Recently Installed'"
+#~ msgstr "'최근 설치됨' 보이기"
+
+#~ msgid "Uninstall"
+#~ msgstr "삭제"
+
+#~ msgid "Sort Alphabetically (Z to A)"
+#~ msgstr "가나다 역순으로 정렬하기"
+
+#~ msgid "Clear Recent Applications"
+#~ msgstr "최근 프로그램 비우기"
+
+#~ msgid "Clear Recent Documents"
+#~ msgstr "최근 문서 비우기"
+
+#~ msgid "Sleep"
+#~ msgstr "대기 모드"
+
+#~ msgid "Plasma by KDE"
+#~ msgstr "KDE Plasma"
+
+#~ msgid "%1 on %2"
+#~ msgstr "%2의 %1"
+
+#~ msgid "Searching %1..."
+#~ msgstr "%1 검색 중..."

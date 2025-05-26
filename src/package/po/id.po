@@ -1,0 +1,485 @@
+# Copyright (C) 2024 This file is copyright:
+# This file is distributed under the same license as the plasma-desktop package.
+# Lorenz Adam Damara <lorenzrenz@gmail.com>, 2018.
+# SPDX-FileCopyrightText: 2018, 2019, 2021, 2022, 2024, 2025 Wantoyo <wantoyek@gmail.com>
+# Linerly <linerly@protonmail.com>, 2023.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: plasma-desktop\n"
+"Report-Msgid-Bugs-To: https://github.com/jinliu/plasma-applet-kickon/issues\n"
+"POT-Creation-Date: 2025-05-26 10:55+0800\n"
+"PO-Revision-Date: 2025-03-15 06:51+0700\n"
+"Last-Translator: Wantoyo <wantoyek@gmail.com>\n"
+"Language-Team: https://t.me/Localizations_KDE_Indonesia\n"
+"Language: id\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 24.12.1\n"
+
+#: ../contents/config/config.qml
+msgid "General"
+msgstr "Umum"
+
+#: ../contents/ui/code/tools.js
+msgid "Remove from Favorites"
+msgstr "Hapus dari Favorit"
+
+#: ../contents/ui/code/tools.js
+msgid "Add to Favorites"
+msgstr "Tambahkan ke Favorit"
+
+#: ../contents/ui/code/tools.js
+msgid "On All Activities"
+msgstr "Di Semua Activities"
+
+#: ../contents/ui/code/tools.js
+msgid "On the Current Activity"
+msgstr "Di Aktivitas Saat Ini"
+
+#: ../contents/ui/code/tools.js
+msgid "Show in Favorites"
+msgstr "Tampilkan di Favorit"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Icon:"
+msgstr "Ikon:"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@action:button"
+msgid "Change Application Launcher's icon"
+msgstr "Ubah ikon Peluncur Aplikasi"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@info:whatsthis"
+msgid ""
+"Current icon is %1. Click to open menu to change the current icon or reset "
+"to the default icon."
+msgstr ""
+"Ikon saat ini adalah %1. Klik untuk membuka menu untuk mengubah ikon saat "
+"ini atau mengatur ulang ke ikon bawaan."
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@info:tooltip"
+msgid "Icon name is \"%1\""
+msgstr "Nama ikon adalah \"%1\""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@item:inmenu Open icon chooser dialog"
+msgid "Choose…"
+msgstr "Pilih..."
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@info:whatsthis"
+msgid "Choose an icon for Application Launcher"
+msgstr "Pilih ikon untuk Peluncur Aplikasi"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@item:inmenu Reset icon to default"
+msgid "Reset to default icon"
+msgstr "Atur ulang ke ikon bawaan"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@action:inmenu"
+msgid "Remove icon"
+msgstr "Hapus ikon"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Show applications as:"
+msgstr "Tampilkan aplikasi sebagai:"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Name only"
+msgstr "Hanya nama"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Description only"
+msgstr "Hanya deskripsi"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Name (Description)"
+msgstr "Nama (deskripsi)"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Description (Name)"
+msgstr "Deskripsi (nama)"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@label:textbox"
+msgid "Text label:"
+msgstr "Label teks:"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@info:placeholder"
+msgid "Type here to add a text label"
+msgstr "Ketik di sini untuk menambahkan sebuah label teks"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@action:button"
+msgid "Reset menu label"
+msgstr "Atur ulang label menu"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@info"
+msgid "A text label cannot be set when the Panel is vertical."
+msgstr "Teks tidak dapat ditetapkan ketika Panel berada di posisi vertikal."
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Front page:"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml ../contents/ui/FullRepresentation.qml
+msgid "Favorites"
+msgstr "Favorit"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Recent apps:"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "rows"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Frequent files:"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Recent files:"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Icon size:"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Small"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Small-Medium"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Medium"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Large"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Huge"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Enormous"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "Application List options"
+msgid "App list:"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@option:check"
+msgid "Sort applications alphabetically"
+msgstr "Urutkan aplikasi secara alfabet"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@info:whatsthis"
+msgid ""
+"This doesn't affect how applications are sorted in either search results or "
+"the favorites page."
+msgstr ""
+"Ini tidak memengaruhi cara aplikasi diurutkan dalam hasil pencarian atau "
+"halaman favorit."
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Use compact list item style"
+msgstr "Gunakan gaya item daftar kecil"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@info:usagetip under a checkbox when Touch Mode is on"
+msgid "Automatically disabled when in Touch Mode"
+msgstr "Otomatis dinonaktifkan ketika di Mode Sentuh"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Highlight newly installed applications"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Switch sidebar categories when hovering over them"
+msgstr "Alihkan kategori bilah sisi ketika melintasi di atasnya"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@action:button opens plasmasearch kcm"
+msgid "Configure Search Plugins…"
+msgstr "Konfigurasi Plugin Pencarian..."
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Sidebar position:"
+msgstr "Posisi bilah sisi:"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Right"
+msgstr "Kanan"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Left"
+msgstr "Kiri"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Show favorites:"
+msgstr "Tampilkan favorit:"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "Part of a sentence: 'Show favorites in a grid'"
+msgid "In a grid"
+msgstr "Dalam sebuah kisi"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "Part of a sentence: 'Show favorites in a list'"
+msgid "In a list"
+msgstr "Dalam sebuah daftar"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Show all applications:"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "Part of a sentence: 'Show all applications in a grid'"
+msgid "In a grid"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "Part of a sentence: 'Show other applications in a list'"
+msgid "In a list"
+msgstr "Dalam sebuah daftar"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Show buttons for:"
+msgstr "Tampilkan tombol untuk:"
+
+#: ../contents/ui/ConfigGeneral.qml ../contents/ui/LeaveButtons.qml
+msgid "Power"
+msgstr "Daya"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Session"
+msgstr "Sesi"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Power and session"
+msgstr "Daya dan sesi"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "None"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Show action button captions"
+msgstr "Tampilkan bab tombol aksi"
+
+#: ../contents/ui/FrontPageGridView.qml ../contents/ui/KickoffGridView.qml
+msgid "Grid with %1 rows, %2 columns"
+msgstr "Kisikan dengan %1 baris, %2 kolom"
+
+#: ../contents/ui/FullRepresentation.qml
+msgid "All Apps >"
+msgstr ""
+
+#: ../contents/ui/FullRepresentation.qml
+msgid "Recent Apps"
+msgstr ""
+
+#: ../contents/ui/FullRepresentation.qml
+msgid "More >"
+msgstr ""
+
+#: ../contents/ui/FullRepresentation.qml
+msgid "Frequently Used Files"
+msgstr ""
+
+#: ../contents/ui/FullRepresentation.qml
+msgid "Recently Used Files"
+msgstr ""
+
+#: ../contents/ui/FullRepresentation.qml
+msgctxt "@info:status"
+msgid "No matches"
+msgstr "Tidak ada yang cocok"
+
+#: ../contents/ui/Header.qml
+msgid "Open user settings"
+msgstr "Buka pengaturan pengguna"
+
+#: ../contents/ui/Header.qml
+msgid "< Back"
+msgstr ""
+
+#: ../contents/ui/Header.qml
+msgid "Keep Open"
+msgstr "Tetap Buka"
+
+#: ../contents/ui/KickoffGridDelegate.qml
+#: ../contents/ui/KickoffListDelegate.qml
+msgctxt "Newly installed app, badge, keep short"
+msgid "New!"
+msgstr ""
+
+#: ../contents/ui/KickoffGridDelegate.qml
+#: ../contents/ui/KickoffListDelegate.qml
+#, fuzzy
+msgid "Newly installed application"
+msgstr "Tampilkan aplikasi lainnya:"
+
+#: ../contents/ui/KickoffListDelegate.qml
+msgid "There is a newly installed application in this category"
+msgstr ""
+
+#: ../contents/ui/LeaveButtons.qml
+msgid "Leave"
+msgstr "Tinggalkan"
+
+#: ../contents/ui/LeaveButtons.qml
+msgid "More"
+msgstr "Selebihnya"
+
+#: ../contents/ui/main.qml
+msgid "Edit Applications…"
+msgstr "Edit Aplikasi..."
+
+#, kde-format
+#~ msgctxt "General options"
+#~ msgid "General:"
+#~ msgstr "Umum:"
+
+#, kde-format
+#~ msgid "Show other applications:"
+#~ msgstr "Tampilkan aplikasi lainnya:"
+
+#, kde-format
+#~ msgctxt "Part of a sentence: 'Show other applications in a grid'"
+#~ msgid "In a grid"
+#~ msgstr "Dalam sebuah kisi"
+
+#, kde-format
+#~ msgid "Applications"
+#~ msgstr "Aplikasi"
+
+#, kde-format
+#~ msgid "Places"
+#~ msgstr "Tempat"
+
+#, kde-format
+#~ msgctxt "category in Places sidebar"
+#~ msgid "Computer"
+#~ msgstr "Komputer"
+
+#, kde-format
+#~ msgctxt "category in Places sidebar"
+#~ msgid "History"
+#~ msgstr "Histori"
+
+#, kde-format
+#~ msgctxt "category in Places sidebar"
+#~ msgid "Frequently Used"
+#~ msgstr "Sering Digunakan"
+
+#~ msgctxt "@item:inmenu Reset icon to default"
+#~ msgid "Clear Icon"
+#~ msgstr "Bersihkan Ikon"
+
+#, fuzzy
+#~| msgid "Search..."
+#~ msgid "Search…"
+#~ msgstr "Cari..."
+
+#~ msgid "Primary actions:"
+#~ msgstr "Aksi primer:"
+
+#, fuzzy
+#~| msgid "Leave"
+#~ msgid "Leave…"
+#~ msgstr "Tinggalkan"
+
+#, fuzzy
+#~| msgid "Power"
+#~ msgid "Power…"
+#~ msgstr "Daya"
+
+#, fuzzy
+#~| msgid "More"
+#~ msgid "More…"
+#~ msgstr "Selebihnya"
+
+#, fuzzy
+#~| msgid "Edit Applications..."
+#~ msgid "Updating applications…"
+#~ msgstr "Ubah Aplikasi..."
+
+#~ msgid "Allow labels to have two lines"
+#~ msgstr "Izinkan label untuk memiliki dua baris"
+
+#~ msgid "%2@%3 (%1)"
+#~ msgstr "%2@%3 (%1)"
+
+#~ msgid "%1@%2"
+#~ msgstr "%1@%2"
+
+#~ msgid "List with 1 item"
+#~ msgid_plural "List with %1 items"
+#~ msgstr[0] "Daftarkan dengan 1 item"
+#~ msgstr[1] "Daftarkan dengan %1 item"
+
+#~ msgid "%1 submenu"
+#~ msgstr "%1 submenu"
+
+#~ msgid "Leave..."
+#~ msgstr "Tinggalkan..."
+
+#~ msgid "Power..."
+#~ msgstr "Daya..."
+
+#~ msgid "More..."
+#~ msgstr "Selebihnya..."
+
+#~ msgid "Applications updated."
+#~ msgstr "Aplikasi diperbarui."
+
+#~ msgid "Switch tabs on hover"
+#~ msgstr "Beralih tab pada saat kursor melayang diatasnya"
+
+#~ msgid "All Applications"
+#~ msgstr "Semua Aplikasi"
+
+#~ msgid "Often Used"
+#~ msgstr "Sering Digunakan"
+
+#~ msgid "Active Tabs"
+#~ msgstr "Tab-tab Aktif"
+
+#~ msgid "Inactive Tabs"
+#~ msgstr "Tab-tab Takaktif"
+
+#~ msgid ""
+#~ "Drag tabs between the boxes to show/hide them, or reorder the visible "
+#~ "tabs by dragging."
+#~ msgstr ""
+#~ "Seret tab diantara kotak untuk menampilkan/menyembunyikan nya, atau "
+#~ "urutkan kembali tab yang terlihat dengan menyeretnya."
+
+#~ msgid "Expand search to bookmarks, files and emails"
+#~ msgstr "Perluas pencarian untuk markah, berkas dan surel"
+
+#~ msgid "Appearance"
+#~ msgstr "Tampilan"
+
+#~ msgid "Menu Buttons"
+#~ msgstr "Tombol Menu"
+
+#~ msgid "Visible Tabs"
+#~ msgstr "Tab yang Terlihat"

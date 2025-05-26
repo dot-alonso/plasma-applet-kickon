@@ -1,0 +1,465 @@
+# Copyright (C) YEAR This file is copyright:
+# This file is distributed under the same license as the plasma-desktop package.
+#
+# Xəyyam Qocayev <xxmn77@gmail.com>, 2020, 2021, 2022, 2023.
+msgid ""
+msgstr ""
+"Project-Id-Version: plasma-desktop\n"
+"Report-Msgid-Bugs-To: https://github.com/jinliu/plasma-applet-kickon/issues\n"
+"POT-Creation-Date: 2025-05-26 10:55+0800\n"
+"PO-Revision-Date: 2023-02-19 16:44+0400\n"
+"Last-Translator: Kheyyam <xxmn77@gmail.com>\n"
+"Language-Team: Azerbaijani <kde-i18n-doc@kde.org>\n"
+"Language: az\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 22.12.2\n"
+
+#: ../contents/config/config.qml
+msgid "General"
+msgstr "Ümumi"
+
+#: ../contents/ui/code/tools.js
+msgid "Remove from Favorites"
+msgstr "Seçilmişlərdən silmək"
+
+#: ../contents/ui/code/tools.js
+msgid "Add to Favorites"
+msgstr "Seçilmişlərə əlavə etmək"
+
+#: ../contents/ui/code/tools.js
+msgid "On All Activities"
+msgstr "Bütün İş otaqlarında"
+
+#: ../contents/ui/code/tools.js
+msgid "On the Current Activity"
+msgstr "Cari İş otağında"
+
+#: ../contents/ui/code/tools.js
+msgid "Show in Favorites"
+msgstr "Seçilmişlərdə göstərmək"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Icon:"
+msgstr "İkon:"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@action:button"
+msgid "Change Application Launcher's icon"
+msgstr "Tətbiq başladıcının nişanını dəyiş"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@info:whatsthis"
+msgid ""
+"Current icon is %1. Click to open menu to change the current icon or reset "
+"to the default icon."
+msgstr ""
+"%1 hazırkı nişandır. Nişanı dəyişmək menyusunu açmaq və ya standart nişana "
+"qaytarmaq üçün vurun."
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@info:tooltip"
+msgid "Icon name is \"%1\""
+msgstr "Nişanın adı: \"%1\""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@item:inmenu Open icon chooser dialog"
+msgid "Choose…"
+msgstr "Seçim…"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@info:whatsthis"
+msgid "Choose an icon for Application Launcher"
+msgstr "Tətbiq başladıcı üçün bir nişan seç"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@item:inmenu Reset icon to default"
+msgid "Reset to default icon"
+msgstr "Standart nişana qaytarın"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@action:inmenu"
+msgid "Remove icon"
+msgstr "Nişanı silin"
+
+#: ../contents/ui/ConfigGeneral.qml
+#, fuzzy
+msgid "Show applications as:"
+msgstr "Başqa tətbiqləri göstərmək:"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Name only"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Description only"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Name (Description)"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Description (Name)"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@label:textbox"
+msgid "Text label:"
+msgstr "Mətnli etiketi:"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@info:placeholder"
+msgid "Type here to add a text label"
+msgstr "Mətnli etiketi buraya yazaraqəlavə edin"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@action:button"
+msgid "Reset menu label"
+msgstr "Menyu başlığını sıfırla"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@info"
+msgid "A text label cannot be set when the Panel is vertical."
+msgstr "Panel şaquli olduqda mətnli etiketi əlavə etmək mümkün deyil."
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Front page:"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml ../contents/ui/FullRepresentation.qml
+msgid "Favorites"
+msgstr "Seçilmişlər"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Recent apps:"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "rows"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Frequent files:"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Recent files:"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Icon size:"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Small"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Small-Medium"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Medium"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Large"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Huge"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Enormous"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "Application List options"
+msgid "App list:"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+#, fuzzy
+msgctxt "@option:check"
+msgid "Sort applications alphabetically"
+msgstr "Həmişə tətbiqləri əlifba sırası ilə çeşidləmək"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@info:whatsthis"
+msgid ""
+"This doesn't affect how applications are sorted in either search results or "
+"the favorites page."
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Use compact list item style"
+msgstr "Yəğcam siyahı üslubundan istifadə edin"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@info:usagetip under a checkbox when Touch Mode is on"
+msgid "Automatically disabled when in Touch Mode"
+msgstr "Toxunma ekranı rejimində avtomatik söndürülsün"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Highlight newly installed applications"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Switch sidebar categories when hovering over them"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+#, fuzzy
+msgctxt "@action:button opens plasmasearch kcm"
+msgid "Configure Search Plugins…"
+msgstr "Aktiv axtarış qoşmalarını tənzimləyin..."
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Sidebar position:"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Right"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Left"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Show favorites:"
+msgstr "Seçilmişləri göstərmək:"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "Part of a sentence: 'Show favorites in a grid'"
+msgid "In a grid"
+msgstr "Torda"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "Part of a sentence: 'Show favorites in a list'"
+msgid "In a list"
+msgstr "Siyahıda"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Show all applications:"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "Part of a sentence: 'Show all applications in a grid'"
+msgid "In a grid"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "Part of a sentence: 'Show other applications in a list'"
+msgid "In a list"
+msgstr "Siyahıda"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Show buttons for:"
+msgstr "Düymələri bunun üçün göstərin:"
+
+#: ../contents/ui/ConfigGeneral.qml ../contents/ui/LeaveButtons.qml
+msgid "Power"
+msgstr "El. qidalanması"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Session"
+msgstr "Sesiya"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Power and session"
+msgstr "Enerji və sessiya"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "None"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Show action button captions"
+msgstr "Fəaliyyət düyməsi başlıqlarını göstərin"
+
+#: ../contents/ui/FrontPageGridView.qml ../contents/ui/KickoffGridView.qml
+msgid "Grid with %1 rows, %2 columns"
+msgstr "%1 sətirli %2 sütunli şəbəkə"
+
+#: ../contents/ui/FullRepresentation.qml
+msgid "All Apps >"
+msgstr ""
+
+#: ../contents/ui/FullRepresentation.qml
+msgid "Recent Apps"
+msgstr ""
+
+#: ../contents/ui/FullRepresentation.qml
+msgid "More >"
+msgstr ""
+
+#: ../contents/ui/FullRepresentation.qml
+msgid "Frequently Used Files"
+msgstr ""
+
+#: ../contents/ui/FullRepresentation.qml
+msgid "Recently Used Files"
+msgstr ""
+
+#: ../contents/ui/FullRepresentation.qml
+msgctxt "@info:status"
+msgid "No matches"
+msgstr "Uyğun gələn yoxdur"
+
+#: ../contents/ui/Header.qml
+msgid "Open user settings"
+msgstr "İstifadəçi ayarlarını açın"
+
+#: ../contents/ui/Header.qml
+msgid "< Back"
+msgstr ""
+
+#: ../contents/ui/Header.qml
+msgid "Keep Open"
+msgstr "Açıq saxlayın"
+
+#: ../contents/ui/KickoffGridDelegate.qml
+#: ../contents/ui/KickoffListDelegate.qml
+msgctxt "Newly installed app, badge, keep short"
+msgid "New!"
+msgstr ""
+
+#: ../contents/ui/KickoffGridDelegate.qml
+#: ../contents/ui/KickoffListDelegate.qml
+#, fuzzy
+msgid "Newly installed application"
+msgstr "Başqa tətbiqləri göstərmək:"
+
+#: ../contents/ui/KickoffListDelegate.qml
+msgid "There is a newly installed application in this category"
+msgstr ""
+
+#: ../contents/ui/LeaveButtons.qml
+msgid "Leave"
+msgstr "Çıxış"
+
+#: ../contents/ui/LeaveButtons.qml
+msgid "More"
+msgstr "Daha çox"
+
+#: ../contents/ui/main.qml
+msgid "Edit Applications…"
+msgstr "Tətbiqər siyahısına düzəliş…"
+
+#, kde-format
+#~ msgctxt "General options"
+#~ msgid "General:"
+#~ msgstr "Əsas:"
+
+#, kde-format
+#~ msgid "Show other applications:"
+#~ msgstr "Başqa tətbiqləri göstərmək:"
+
+#, kde-format
+#~ msgctxt "Part of a sentence: 'Show other applications in a grid'"
+#~ msgid "In a grid"
+#~ msgstr "Torda"
+
+#, kde-format
+#~ msgid "Applications"
+#~ msgstr "Tətbiqlər"
+
+#, kde-format
+#~ msgid "Places"
+#~ msgstr "Giriş Nöqtələri"
+
+#, kde-format
+#~ msgctxt "category in Places sidebar"
+#~ msgid "Computer"
+#~ msgstr "Kompyuter"
+
+#, kde-format
+#~ msgctxt "category in Places sidebar"
+#~ msgid "History"
+#~ msgstr "Tarixçə"
+
+#, kde-format
+#~ msgctxt "category in Places sidebar"
+#~ msgid "Frequently Used"
+#~ msgstr "Tez-tez istifadə olunan"
+
+#~ msgctxt "@item:inmenu Reset icon to default"
+#~ msgid "Clear Icon"
+#~ msgstr "İkonu silmək"
+
+#~ msgid "Search…"
+#~ msgstr "Axtarış…"
+
+#~ msgid "Primary actions:"
+#~ msgstr "İlkin fəaliyyət:"
+
+#~ msgid "Leave…"
+#~ msgstr "Tərk etmək..."
+
+#~ msgid "Power…"
+#~ msgstr "El. qidalanması…"
+
+#~ msgid "More…"
+#~ msgstr "Daha çox…"
+
+#~ msgid "Updating applications…"
+#~ msgstr "Tətbiqlər yenilənir…"
+
+#~ msgid "Allow labels to have two lines"
+#~ msgstr "Adların ikisətirli olmasına icazə verin"
+
+#~ msgid "%2@%3 (%1)"
+#~ msgstr "%2@%3 (%1)"
+
+#~ msgid "%1@%2"
+#~ msgstr "%1@%2"
+
+#~ msgid "List with 1 item"
+#~ msgid_plural "List with %1 items"
+#~ msgstr[0] "%1 elementli siyahı"
+#~ msgstr[1] "%1 elementli siyahı"
+
+#~ msgid "%1 submenu"
+#~ msgstr "%1 alt menyu"
+
+#~ msgid "Leave..."
+#~ msgstr "Çıxış..."
+
+#~ msgid "Power..."
+#~ msgstr "El. qidalanması..."
+
+#~ msgid "More..."
+#~ msgstr "Daha çox..."
+
+#~ msgid "Applications updated."
+#~ msgstr "Tətbiqlər yeniləndi"
+
+#~ msgid "Switch tabs on hover"
+#~ msgstr "Üzərində dayandıqda vərəqə keçid"
+
+#~ msgid "All Applications"
+#~ msgstr "Bütün tətbiqlər"
+
+#~ msgid "Often Used"
+#~ msgstr "Tez-tez istifadə olunanlar"
+
+#~ msgid "Active Tabs"
+#~ msgstr "Aktiv vərəqlər"
+
+#~ msgid "Inactive Tabs"
+#~ msgstr "Qeyri-aktiv vərəqlər"
+
+#~ msgid ""
+#~ "Drag tabs between the boxes to show/hide them, or reorder the visible "
+#~ "tabs by dragging."
+#~ msgstr ""
+#~ "Əlavə etmək, vərəqi ləğv etmək, və onların süzənini dəyişmək üçün "
+#~ "düymələrin yerinin dəyişdirilməsi"
+
+#~ msgid "Expand search to bookmarks, files and emails"
+#~ msgstr "Əlfəcinlər, fayllar və e-poçtlar arasında axtarmaq"

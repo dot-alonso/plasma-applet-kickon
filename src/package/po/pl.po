@@ -1,0 +1,569 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+# SPDX-FileCopyrightText: 2014, 2015, 2016, 2017, 2019, 2021, 2022, 2023, 2024, 2025 Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: https://github.com/jinliu/plasma-applet-kickon/issues\n"
+"POT-Creation-Date: 2025-05-26 10:55+0800\n"
+"PO-Revision-Date: 2025-05-10 12:06+0200\n"
+"Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
+"Language-Team: Polish <kde-i18n-doc@kde.org>\n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: ../contents/config/config.qml
+msgid "General"
+msgstr "Ogólne"
+
+#: ../contents/ui/code/tools.js
+msgid "Remove from Favorites"
+msgstr "Usuń z ulubionych"
+
+#: ../contents/ui/code/tools.js
+msgid "Add to Favorites"
+msgstr "Dodaj do ulubionych"
+
+#: ../contents/ui/code/tools.js
+msgid "On All Activities"
+msgstr "Na wszystkich aktywnościach"
+
+#: ../contents/ui/code/tools.js
+msgid "On the Current Activity"
+msgstr "Na bieżącej aktywności"
+
+#: ../contents/ui/code/tools.js
+msgid "Show in Favorites"
+msgstr "Pokaż w ulubionych"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Icon:"
+msgstr "Ikona:"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@action:button"
+msgid "Change Application Launcher's icon"
+msgstr "Zmień ikonę uruchamiacza aplikacji"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@info:whatsthis"
+msgid "Current icon is %1. Click to open menu to change the current icon or reset to the default icon."
+msgstr "Bieżąca ikona to %1. Naciśnij, aby otworzyć menu do zmiany bieżącej ikony lub przywrócić ikonę domyślną."
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@info:tooltip"
+msgid "Icon name is \"%1\""
+msgstr "Nazwa ikony to \"%1\""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@item:inmenu Open icon chooser dialog"
+msgid "Choose…"
+msgstr "Wybierz..."
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@info:whatsthis"
+msgid "Choose an icon for Application Launcher"
+msgstr "Wybierz ikonę uruchamiacza aplikacji"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@item:inmenu Reset icon to default"
+msgid "Reset to default icon"
+msgstr "Przywróć domyślną ikonę"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@action:inmenu"
+msgid "Remove icon"
+msgstr "Usuń ikonę"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Show applications as:"
+msgstr "Pokazuj programy jako:"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Name only"
+msgstr "Tylko nazwy"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Description only"
+msgstr "Tylko opisy"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Name (Description)"
+msgstr "Nazwa (opis)"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Description (Name)"
+msgstr "Opis (nazwa)"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@label:textbox"
+msgid "Text label:"
+msgstr "Napis:"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@info:placeholder"
+msgid "Type here to add a text label"
+msgstr "Zacznij pisać tutaj, aby dodać napis"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@action:button"
+msgid "Reset menu label"
+msgstr "Wyzeruj napis menu"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@info"
+msgid "A text label cannot be set when the Panel is vertical."
+msgstr "Nie można ustawić napisu, gdy panel jest w pionie."
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Front page:"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml ../contents/ui/FullRepresentation.qml
+msgid "Favorites"
+msgstr "Ulubione"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Recent apps:"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "rows"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Frequent files:"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Recent files:"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Icon size:"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Small"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Small-Medium"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Medium"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Large"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Huge"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Enormous"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "Application List options"
+msgid "App list:"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@option:check"
+msgid "Sort applications alphabetically"
+msgstr "Szereguj programy alfabetycznie"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@info:whatsthis"
+msgid "This doesn't affect how applications are sorted in either search results or the favorites page."
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Use compact list item style"
+msgstr "Oszczędzaj miejsce przy przedstawianiu na liście"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@info:usagetip under a checkbox when Touch Mode is on"
+msgid "Automatically disabled when in Touch Mode"
+msgstr "Wyłączone w trybie dotykowym"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Highlight newly installed applications"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Switch sidebar categories when hovering over them"
+msgstr "Przełączaj kategorie paska bocznego najeżdżając na nie"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@action:button opens plasmasearch kcm"
+msgid "Configure Search Plugins…"
+msgstr "Ustawienia wtyczek wyszukiwarek…"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Sidebar position:"
+msgstr "Położenie paska bocznego:"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Right"
+msgstr "Po prawej"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Left"
+msgstr "Po lewej"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Show favorites:"
+msgstr "Pokaż ulubione:"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "Part of a sentence: 'Show favorites in a grid'"
+msgid "In a grid"
+msgstr "Na siatce"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "Part of a sentence: 'Show favorites in a list'"
+msgid "In a list"
+msgstr "Na liście"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Show all applications:"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "Part of a sentence: 'Show all applications in a grid'"
+msgid "In a grid"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "Part of a sentence: 'Show other applications in a list'"
+msgid "In a list"
+msgstr "Na liście"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Show buttons for:"
+msgstr "Pokaż przyciski dla:"
+
+#: ../contents/ui/ConfigGeneral.qml ../contents/ui/LeaveButtons.qml
+msgid "Power"
+msgstr "Zasilania"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Session"
+msgstr "Posiedzenia"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Power and session"
+msgstr "Zasilania i posiedzenia"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "None"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Show action button captions"
+msgstr "Dodatkowo pokaż napis do przycisku"
+
+#: ../contents/ui/FrontPageGridView.qml ../contents/ui/KickoffGridView.qml
+msgid "Grid with %1 rows, %2 columns"
+msgstr "Siatka o %1 wierszach, %2 kolumnach"
+
+#: ../contents/ui/FullRepresentation.qml
+msgid "All Apps >"
+msgstr ""
+
+#: ../contents/ui/FullRepresentation.qml
+msgid "Recent Apps"
+msgstr ""
+
+#: ../contents/ui/FullRepresentation.qml
+msgid "More >"
+msgstr ""
+
+#: ../contents/ui/FullRepresentation.qml
+msgid "Frequently Used Files"
+msgstr ""
+
+#: ../contents/ui/FullRepresentation.qml
+msgid "Recently Used Files"
+msgstr ""
+
+#: ../contents/ui/FullRepresentation.qml
+msgctxt "@info:status"
+msgid "No matches"
+msgstr "Brak pasujących wyrażeń"
+
+#: ../contents/ui/Header.qml
+msgid "Open user settings"
+msgstr "Przejdź do ustawień użytkownika"
+
+#: ../contents/ui/Header.qml
+msgid "< Back"
+msgstr ""
+
+#: ../contents/ui/Header.qml
+msgid "Keep Open"
+msgstr "Pozostaw otwartym"
+
+#: ../contents/ui/KickoffGridDelegate.qml ../contents/ui/KickoffListDelegate.qml
+msgctxt "Newly installed app, badge, keep short"
+msgid "New!"
+msgstr ""
+
+#: ../contents/ui/KickoffGridDelegate.qml ../contents/ui/KickoffListDelegate.qml
+#, fuzzy
+msgid "Newly installed application"
+msgstr "Ostatnio używane programy"
+
+#: ../contents/ui/KickoffListDelegate.qml
+msgid "There is a newly installed application in this category"
+msgstr ""
+
+#: ../contents/ui/LeaveButtons.qml
+msgid "Leave"
+msgstr "Wyjdź"
+
+#: ../contents/ui/LeaveButtons.qml
+msgid "More"
+msgstr "Więcej"
+
+#: ../contents/ui/main.qml
+msgid "Edit Applications…"
+msgstr "Edytuj programy..."
+
+#, kde-format
+#~ msgctxt "General options"
+#~ msgid "General:"
+#~ msgstr "Ogólne:"
+
+#, kde-format
+#~ msgid "Show other applications:"
+#~ msgstr "Pokaż pozostałe programy:"
+
+#, kde-format
+#~ msgctxt "Part of a sentence: 'Show other applications in a grid'"
+#~ msgid "In a grid"
+#~ msgstr "Na siatce"
+
+#, kde-format
+#~ msgid "Applications"
+#~ msgstr "Programy"
+
+#, kde-format
+#~ msgid "Places"
+#~ msgstr "Miejsca"
+
+#, fuzzy, kde-format
+#~| msgid "Session actions"
+#~ msgid "Session and Power "
+#~ msgstr "Działania sesji"
+
+#, kde-format
+#~ msgctxt "category in Places sidebar"
+#~ msgid "Computer"
+#~ msgstr "Komputer"
+
+#, kde-format
+#~ msgctxt "category in Places sidebar"
+#~ msgid "History"
+#~ msgstr "Historia"
+
+#, kde-format
+#~ msgctxt "category in Places sidebar"
+#~ msgid "Frequently Used"
+#~ msgstr "Często używane"
+
+#~ msgctxt "@item:inmenu Reset icon to default"
+#~ msgid "Clear Icon"
+#~ msgstr "Wyczyść ikonę"
+
+#~ msgid "Search…"
+#~ msgstr "Szukaj..."
+
+#~ msgid "Primary actions:"
+#~ msgstr "Działania główne:"
+
+#~ msgid "Power actions"
+#~ msgstr "Działania zasilania"
+
+#~ msgid "Leave…"
+#~ msgstr "Wyjdź..."
+
+#~ msgid "Power…"
+#~ msgstr "Zasilanie..."
+
+#~ msgid "More…"
+#~ msgstr "Więcej..."
+
+#~ msgid "Updating applications…"
+#~ msgstr "Uaktualnianie programów..."
+
+#~ msgid "Allow labels to have two lines"
+#~ msgstr "Zezwól na dwa wiersze w etykietach"
+
+#~ msgid "%2@%3 (%1)"
+#~ msgstr "%2@%3 (%1)"
+
+#~ msgid "%1@%2"
+#~ msgstr "%1@%2"
+
+#~ msgid "List with 1 item"
+#~ msgid_plural "List with %1 items"
+#~ msgstr[0] "Lista o 1 wierszu"
+#~ msgstr[1] "Lista o %1 wierszach"
+#~ msgstr[2] "Lista o %1 wierszach"
+
+#~ msgid "%1 submenu"
+#~ msgstr "%1 podmenu"
+
+#~ msgid "Leave..."
+#~ msgstr "Wyjdź..."
+
+#~ msgid "Power..."
+#~ msgstr "Zasilanie"
+
+#~ msgid "More..."
+#~ msgstr "Więcej..."
+
+#~ msgid "Applications updated."
+#~ msgstr "Uaktualnione programy."
+
+#~ msgid "Switch tabs on hover"
+#~ msgstr "Przełączaj na kartę po najechaniu"
+
+#~ msgid "All Applications"
+#~ msgstr "Wszystkie programy"
+
+#~ msgid "Often Used"
+#~ msgstr "Najczęściej używane"
+
+#~ msgid "Active Tabs"
+#~ msgstr "Włączone karty"
+
+#~ msgid "Inactive Tabs"
+#~ msgstr "Wyłączone karty"
+
+#~ msgid "Drag tabs between the boxes to show/hide them, or reorder the visible tabs by dragging."
+#~ msgstr "Przeciągaj karty pomiędzy polami, aby je pokazać/ukryć lub przeszereguj widoczne karty poprzez ich przeciąganie. "
+
+#~ msgid "Expand search to bookmarks, files and emails"
+#~ msgstr "Rozszerz wyszukiwanie na zakładki, pliki i pocztę"
+
+#~ msgid "Appearance"
+#~ msgstr "Wygląd"
+
+#~ msgid "Menu Buttons"
+#~ msgstr "Przyciski menu"
+
+#~ msgid "Visible Tabs"
+#~ msgstr "Widoczne karty"
+
+#~ msgctxt "@title:column"
+#~ msgid "Favorites"
+#~ msgstr "Ulubione"
+
+#~ msgid "Log out"
+#~ msgstr "Wyloguj"
+
+#~ msgid "Lock"
+#~ msgstr "Zablokuj"
+
+#~ msgid "Lock screen"
+#~ msgstr "Zablokuj ekran"
+
+#~ msgid "Switch user"
+#~ msgstr "Przełącz użytkownika"
+
+#~ msgid "Start a parallel session as a different user"
+#~ msgstr "Rozpocznij sesję innego użytkownika"
+
+#~ msgid "Shut down"
+#~ msgstr "Wyłącz"
+
+#~ msgid "Turn off computer"
+#~ msgstr "Wyłącz komputer"
+
+#~ msgctxt "Restart computer"
+#~ msgid "Restart"
+#~ msgstr "Uruchom ponownie"
+
+#~ msgid "Restart computer"
+#~ msgstr "Uruchom komputer ponownie"
+
+#~ msgid "Save current session for next login"
+#~ msgstr "Zapisz bieżącą sesję do następnego logowania"
+
+#~ msgctxt "Puts the system on standby"
+#~ msgid "Standby"
+#~ msgstr "Uśpij"
+
+#~ msgid "Pause without logging out"
+#~ msgstr "Wstrzymaj bez wylogowywania"
+
+#~ msgid "Hibernate"
+#~ msgstr "Hibernuj"
+
+#~ msgid "Suspend to disk"
+#~ msgstr "Zapisz na dysk i uśpij"
+
+#~ msgid "Suspend"
+#~ msgstr "Uśpij"
+
+#~ msgid "Suspend to RAM"
+#~ msgstr "Zapisz do pamięci i uśpij"
+
+#~ msgid "System"
+#~ msgstr "System"
+
+#~ msgid "Home Folder"
+#~ msgstr "Katalog domowy"
+
+#~ msgid "Network Folders"
+#~ msgstr "Katalogi sieciowe"
+
+#~ msgid "Documents"
+#~ msgstr "Dokumenty"
+
+#~ msgid "Recently Used Documents"
+#~ msgstr "Ostatnio używane dokumenty"
+
+#~ msgid "Run Command..."
+#~ msgstr "Wykonaj polecenie..."
+
+#~ msgid "Run a command or a search query"
+#~ msgstr "Wykonuje polecenie lub wyszukuje"
+
+#~ msgid "Removable Storage"
+#~ msgstr "Nośniki wymienne"
+
+#~ msgid "Show 'Recently Installed'"
+#~ msgstr "Pokaż 'Ostatnio wgrane'"
+
+#~ msgid "Uninstall"
+#~ msgstr "Odinstaluj"
+
+#~ msgid "Sort Alphabetically (Z to A)"
+#~ msgstr "Uszereguj alfabetycznie (od Z do A)"
+
+#~ msgid "Clear Recent Applications"
+#~ msgstr "Wyczyść ostatnie programy"
+
+#~ msgid "Clear Recent Documents"
+#~ msgstr "Wyczyść ostatnie dokumenty"
+
+#~ msgid "Sleep"
+#~ msgstr "Uśpij"
+
+#~ msgid "Add To Favorites In This Activity Only"
+#~ msgstr "Dodaj do ulubionych tylko w tym działaniu"
+
+#~ msgid "Plasma by KDE"
+#~ msgstr "Plazma dzięki KDE"

@@ -1,0 +1,388 @@
+# Copyright (C) 2024 This file is copyright:
+# This file is distributed under the same license as the plasma-desktop package.
+#
+# SPDX-FileCopyrightText: 2024 kali <skkalwar999@gmail.com>
+msgid ""
+msgstr ""
+"Project-Id-Version: plasma-desktop\n"
+"Report-Msgid-Bugs-To: https://github.com/jinliu/plasma-applet-kickon/issues\n"
+"POT-Creation-Date: 2025-05-26 10:55+0800\n"
+"PO-Revision-Date: 2024-12-20 22:01+0530\n"
+"Last-Translator: kali <skkalwar999@gmail.com>\n"
+"Language-Team: Sanskrit <kde-i18n-doc@kde.org>\n"
+"Language: sa\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n>2);\n"
+"X-Generator: Lokalize 24.08.2\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#: ../contents/config/config.qml
+msgid "General"
+msgstr "सर्वत्रगत"
+
+#: ../contents/ui/code/tools.js
+msgid "Remove from Favorites"
+msgstr "प्रियतः निष्कासयन्तु"
+
+#: ../contents/ui/code/tools.js
+msgid "Add to Favorites"
+msgstr "प्रियतमेषु योजयन्तु"
+
+#: ../contents/ui/code/tools.js
+msgid "On All Activities"
+msgstr "सर्वेषु क्रियाकलापेषु"
+
+#: ../contents/ui/code/tools.js
+msgid "On the Current Activity"
+msgstr "वर्तमान क्रियाकलापस्य विषये"
+
+#: ../contents/ui/code/tools.js
+msgid "Show in Favorites"
+msgstr "प्रियाः इत्यत्र दर्शयतु"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Icon:"
+msgstr "चिह्नम् :"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@action:button"
+msgid "Change Application Launcher's icon"
+msgstr "अनुप्रयोगप्रक्षेपकस्य चिह्नं परिवर्तयन्तु"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@info:whatsthis"
+msgid ""
+"Current icon is %1. Click to open menu to change the current icon or reset "
+"to the default icon."
+msgstr ""
+"वर्तमान चिह्नं %1 अस्ति । वर्तमानचिह्नं परिवर्तयितुं अथवा पूर्वनिर्धारितचिह्नं प्रति "
+"पुनःस्थापयितुं विकल्पसूचि उद्घाटयितुं नोदनम् कुर्वन्तु ।."
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@info:tooltip"
+msgid "Icon name is \"%1\""
+msgstr "चिह्नस्य नाम \"%1\" अस्ति ।"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@item:inmenu Open icon chooser dialog"
+msgid "Choose…"
+msgstr "चिनुत…"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@info:whatsthis"
+msgid "Choose an icon for Application Launcher"
+msgstr "अनुप्रयोगप्रक्षेपकस्य कृते एकं चिह्नं चिनोतु"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@item:inmenu Reset icon to default"
+msgid "Reset to default icon"
+msgstr "पूर्वनिर्धारितं चिह्नं प्रति पुनः निरूपयतु"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@action:inmenu"
+msgid "Remove icon"
+msgstr "चिह्नं निष्कासयन्तु"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Show applications as:"
+msgstr "अनुप्रयोगाः यथा दर्शयन्तु :"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Name only"
+msgstr "नाममात्रम्"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Description only"
+msgstr "वर्णनमात्रम्"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Name (Description)"
+msgstr "नाम (विवरण)"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Description (Name)"
+msgstr "विवरणम् (नाम)"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@label:textbox"
+msgid "Text label:"
+msgstr "पाठ्य नामपत्र:"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@info:placeholder"
+msgid "Type here to add a text label"
+msgstr "पाठ्य नामपत्रं योजयितुं अत्र लिखन्तु"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@action:button"
+msgid "Reset menu label"
+msgstr "विकल्पसूचि नामपत्र पुनः निरूपयतु"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@info"
+msgid "A text label cannot be set when the Panel is vertical."
+msgstr "यदा पटलः लम्बवत् भवति तदा पाठ्य नामपत्रं निरूपयतु न शक्यते ।."
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Front page:"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml ../contents/ui/FullRepresentation.qml
+msgid "Favorites"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Recent apps:"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "rows"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Frequent files:"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Recent files:"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Icon size:"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Small"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Small-Medium"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Medium"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Large"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Huge"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Enormous"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "Application List options"
+msgid "App list:"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+#, fuzzy
+msgctxt "@option:check"
+msgid "Sort applications alphabetically"
+msgstr "अनुप्रयोगान् सर्वदा वर्णमालानुसारं क्रमयन्तु"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@info:whatsthis"
+msgid ""
+"This doesn't affect how applications are sorted in either search results or "
+"the favorites page."
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Use compact list item style"
+msgstr "संकुचितसूचीवस्तुशैल्याः उपयोगं कुर्वन्तु"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@info:usagetip under a checkbox when Touch Mode is on"
+msgid "Automatically disabled when in Touch Mode"
+msgstr "स्पर्शविधौ स्थित्वा स्वयमेव अक्षमम्"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Highlight newly installed applications"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Switch sidebar categories when hovering over them"
+msgstr "तेषां उपरि भ्रमन् पार्श्वपट्टिकावर्गान् परिवर्तयन्तु"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@action:button opens plasmasearch kcm"
+msgid "Configure Search Plugins…"
+msgstr "अन्वेषणप्लगिन् विन्यस्तं कुर्वन्तु…"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Sidebar position:"
+msgstr "पार्श्वपट्टिकायाः स्थितिः :"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Right"
+msgstr "दक्षिणः"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Left"
+msgstr "वामः"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Show favorites:"
+msgstr "प्रियं दर्शयतु :"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "Part of a sentence: 'Show favorites in a grid'"
+msgid "In a grid"
+msgstr "रेखागणे"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "Part of a sentence: 'Show favorites in a list'"
+msgid "In a list"
+msgstr "एकस्मिन् सूचीयां"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Show all applications:"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "Part of a sentence: 'Show all applications in a grid'"
+msgid "In a grid"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "Part of a sentence: 'Show other applications in a list'"
+msgid "In a list"
+msgstr "एकस्मिन् सूचीयां"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Show buttons for:"
+msgstr "कृते गण्ड दर्शयतु:"
+
+#: ../contents/ui/ConfigGeneral.qml ../contents/ui/LeaveButtons.qml
+msgid "Power"
+msgstr "विद्युत्"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Session"
+msgstr "सत्र"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Power and session"
+msgstr "विद्युत्ः सत्रं च"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "None"
+msgstr ""
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Show action button captions"
+msgstr "क्रिया गण्डस्य शीर्षकं दर्शयतु"
+
+#: ../contents/ui/FrontPageGridView.qml ../contents/ui/KickoffGridView.qml
+msgid "Grid with %1 rows, %2 columns"
+msgstr "%1 पङ्क्तयः, %2 स्तम्भाः च सह जालम्"
+
+#: ../contents/ui/FullRepresentation.qml
+msgid "All Apps >"
+msgstr ""
+
+#: ../contents/ui/FullRepresentation.qml
+msgid "Recent Apps"
+msgstr ""
+
+#: ../contents/ui/FullRepresentation.qml
+msgid "More >"
+msgstr ""
+
+#: ../contents/ui/FullRepresentation.qml
+msgid "Frequently Used Files"
+msgstr ""
+
+#: ../contents/ui/FullRepresentation.qml
+msgid "Recently Used Files"
+msgstr ""
+
+#: ../contents/ui/FullRepresentation.qml
+msgctxt "@info:status"
+msgid "No matches"
+msgstr "न मेलनं भवति"
+
+#: ../contents/ui/Header.qml
+msgid "Open user settings"
+msgstr "उपयोक्तृसमायोजनानि उद्घाटयन्तु"
+
+#: ../contents/ui/Header.qml
+msgid "< Back"
+msgstr ""
+
+#: ../contents/ui/Header.qml
+msgid "Keep Open"
+msgstr "उद्घाटितं भवतु"
+
+#: ../contents/ui/KickoffGridDelegate.qml
+#: ../contents/ui/KickoffListDelegate.qml
+msgctxt "Newly installed app, badge, keep short"
+msgid "New!"
+msgstr ""
+
+#: ../contents/ui/KickoffGridDelegate.qml
+#: ../contents/ui/KickoffListDelegate.qml
+#, fuzzy
+msgid "Newly installed application"
+msgstr "अन्ये अनुप्रयोगाः दर्शयन्तु :"
+
+#: ../contents/ui/KickoffListDelegate.qml
+msgid "There is a newly installed application in this category"
+msgstr ""
+
+#: ../contents/ui/LeaveButtons.qml
+msgid "Leave"
+msgstr "त्यजतु"
+
+#: ../contents/ui/LeaveButtons.qml
+msgid "More"
+msgstr "अधिकः"
+
+#: ../contents/ui/main.qml
+msgid "Edit Applications…"
+msgstr "अनुप्रयोगाः सम्पादयतु…"
+
+#, kde-format
+#~ msgctxt "General options"
+#~ msgid "General:"
+#~ msgstr "सर्वत्रगत:"
+
+#, kde-format
+#~ msgid "Show other applications:"
+#~ msgstr "अन्ये अनुप्रयोगाः दर्शयन्तु :"
+
+#, kde-format
+#~ msgctxt "Part of a sentence: 'Show other applications in a grid'"
+#~ msgid "In a grid"
+#~ msgstr "रेखागणे"
+
+#, kde-format
+#~ msgid "Applications"
+#~ msgstr "अनुप्रयोगाः"
+
+#, kde-format
+#~ msgid "Places"
+#~ msgstr "स्थानाः"
+
+#, kde-format
+#~ msgctxt "category in Places sidebar"
+#~ msgid "Computer"
+#~ msgstr "सङ्गणक्"
+
+#, kde-format
+#~ msgctxt "category in Places sidebar"
+#~ msgid "History"
+#~ msgstr "इतिहासः"
+
+#, kde-format
+#~ msgctxt "category in Places sidebar"
+#~ msgid "Frequently Used"
+#~ msgstr "बहुधा प्रयुक्तम्"
